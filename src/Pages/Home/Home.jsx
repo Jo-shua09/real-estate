@@ -3,7 +3,7 @@ import Hero from "./sections/hero";
 
 const Home = () => {
   return (
-    <div>
+    <div className="">
       <Hero />
     </div>
   );

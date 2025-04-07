@@ -4,7 +4,7 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <div className="w-full h-full section-page">
+    <div className="w-full h-full section-page border-b border-gray-800">
       <div className="flex items-center justify-between w-full md:flex-nowrap flex-wrap gap-y-5">
         <div className="w-full">
           <Link to="/" className="flex items-center gap-x-2">
@@ -17,7 +17,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="w-full">
+        <div className="w-full md:block hidden">
           <ul className=" flex items-center justify-between place-content-center text-2xl font-medium">
             <Link to="/">
               <li

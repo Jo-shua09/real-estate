@@ -8,7 +8,11 @@ const Header = () => {
   };
 
   return (
-    <div className={`w-full h-20 ${!show ? "block" : "hidden"}`}>
+    <div
+      className={`w-full h-20 border-b border-gray-800 ${
+        !show ? "block" : "hidden"
+      }`}
+    >
       <div className="text-center flex items-center justify-center py-3 px-10 bg-header bg-center bg-no-repeat bg-cover">
         <p className="text-2xl w-full normal-case text-white/70">
           ✨Discover Your Dream Property with Estatein{" "}

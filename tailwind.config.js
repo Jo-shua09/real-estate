@@ -5,6 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         header: "url('/src/assets/images/general/header.svg')",
+        hero: "url('/src/assets/images/general/hero.svg')",
       },
     },
   },

@@ -10,7 +10,7 @@ const AppLayout = () => {
     <div className="max-w-[180rem] w-full m-auto">
       <Header />
       <Navbar />
-      <div className="max-w-[150rem] w-full m-auto section-page">
+      <div className="max-w-[150rem] w-full m-auto">
         <Outlet />
         <Banner />
         <Footer />

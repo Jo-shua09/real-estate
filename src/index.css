@@ -13,10 +13,6 @@
   transition: all 0.3s ease-in-out;
   font-family: "Urbanist", sans-serif;
 }
-a,
-img {
-  cursor: pointer;
-}
 
 body {
   font-family: "Urbanist", sans-serif;
@@ -36,7 +32,7 @@ html {
 }
 
 .section-page {
-  padding: 1em 2.2%;
+  padding: 1em 3rem;
 }
 
 @media (max-width: 991px) {
