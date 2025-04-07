@@ -5,7 +5,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full h-full section-page">
-      <div className="flex items-center justify-between w-full md:flex-nowrap flex-wrap">
+      <div className="flex items-center justify-between w-full md:flex-nowrap flex-wrap gap-y-5">
         <div className="w-full">
           <Link to="/" className="flex items-center gap-x-2">
             <img
@@ -30,7 +30,7 @@ const Navbar = () => {
             </Link>
             <Link to="/about">
               <li
-                className={`list-none  rounded-lg py-4 px-7 hover:bg-black/20 border-gray-800 transition-all duration-200 ${
+                className={`list-none  rounded-lg py-4 px-7 text-nowrap hover:bg-black/20 border-gray-800 transition-all duration-200 ${
                   location.pathname == "/about" ? "bg-black/20 border" : ""
                 }`}
               >
