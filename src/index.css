@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  font-family: "Urbanist", sans-serif;
+}
+a,
+img {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Urbanist", sans-serif;
+  scroll-behavior: smooth;
+  font-weight: 400;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+.scroll-bar html {
+  scrollbar-width: 0.1rem;
+}
+
+.section-page {
+  padding: 1em 2.2%;
+}
+
+@media (max-width: 991px) {
+  html {
+    scroll-behavior: smooth;
+    font-size: 55.5%;
+  }
+  .section-two {
+    padding: 2rem 2.2%;
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    scroll-behavior: smooth;
+    font-size: 50%;
+  }
+}
