@@ -4,7 +4,7 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <div className="w-full h-full section-page border-b border-gray-800">
+    <div className="w-full h-full section-page border-b border-white/5">
       <div className="flex items-center justify-between w-full md:flex-nowrap flex-wrap gap-y-5">
         <div className="w-full">
           <Link to="/" className="flex items-center gap-x-2">
@@ -21,7 +21,7 @@ const Navbar = () => {
           <ul className=" flex items-center justify-between place-content-center text-2xl font-medium">
             <Link to="/">
               <li
-                className={`list-none  rounded-lg py-4 px-7 hover:bg-black/20 border-gray-800 ${
+                className={`list-none  rounded-lg py-4 px-7 hover:bg-black/20 border-white/5 ${
                   location.pathname == "/" ? "bg-black/20 border" : ""
                 }`}
               >
@@ -30,7 +30,7 @@ const Navbar = () => {
             </Link>
             <Link to="/about">
               <li
-                className={`list-none  rounded-lg py-4 px-7 text-nowrap hover:bg-black/20 border-gray-800 transition-all duration-200 ${
+                className={`list-none  rounded-lg py-4 px-7 text-nowrap hover:bg-black/20 border-white/5 transition-all duration-200 ${
                   location.pathname == "/about" ? "bg-black/20 border" : ""
                 }`}
               >
@@ -39,7 +39,7 @@ const Navbar = () => {
             </Link>
             <Link to="/property">
               <li
-                className={`list-none  rounded-lg py-4 px-7 hover:bg-black/20 border-gray-800 transition-all duration-200 ${
+                className={`list-none  rounded-lg py-4 px-7 hover:bg-black/20 border-white/5 transition-all duration-200 ${
                   location.pathname == "/property" ? "bg-black/20 border" : ""
                 }`}
               >
@@ -48,7 +48,7 @@ const Navbar = () => {
             </Link>
             <Link to="/services">
               <li
-                className={`list-none  rounded-lg py-4 px-7 hover:bg-black/20 border-gray-800 transition-all duration-200 ${
+                className={`list-none  rounded-lg py-4 px-7 hover:bg-black/20 border-white/5 transition-all duration-200 ${
                   location.pathname == "/services" ? "bg-black/20 border" : ""
                 }`}
               >
@@ -61,7 +61,7 @@ const Navbar = () => {
         <div className="w-full place-content-end flex">
           <Link to="/contact">
             <button
-              className={`rounded-lg py-4 px-7 bg-black/20 shadow-xl hover:bg-purple-600 delay-100 text-2xl border-gray-800 transition-all duration-200 ${
+              className={`rounded-lg py-4 px-7 bg-black/20 shadow-xl hover:bg-purple-600 delay-100 text-2xl border-white/5 transition-all duration-200 ${
                 location.pathname == "/contact" ? "bg-purple-600" : ""
               }`}
             >

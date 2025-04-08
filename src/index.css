@@ -32,7 +32,11 @@ html {
 }
 
 .section-page {
-  padding: 1em 3rem;
+  padding: 1em 2rem;
+}
+
+.section {
+  padding: 5rem 3rem 2rem 2rem;
 }
 
 @media (max-width: 991px) {
