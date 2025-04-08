@@ -1,14 +1,14 @@
 [
   {
     "property_id": 1,
-    "property_name": "Bertina Churchman",
-    "image_url": "https://ning.com/quam/a/odio/in/hac/habitasse/platea.xml?lorem=congue&vitae=etiam&mattis=justo&nibh=etiam&ligula=pretium&nec=iaculis",
+    "property_name": "Sunset Villa",
+    "image_url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6",
     "features": "swimming pool",
     "amenities": "concierge",
     "property_type": "condo",
     "size_sqft": 3750,
     "year_built": 1957,
-    "description": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
+    "description": "Welcome to this stunning luxury condo featuring breathtaking views and modern amenities. This meticulously maintained residence offers an open concept living space with high-end finishes throughout. The gourmet kitchen boasts stainless steel appliances and granite countertops. The spacious master suite includes a walk-in closet and ensuite bathroom. Building amenities include 24/7 concierge service, a resort-style swimming pool, and a state-of-the-art fitness center. Located in a prime location with easy access to shopping, dining, and entertainment.",
     "price": 376775,
     "bedrooms": 3,
     "bathrooms": 4,
@@ -16,19 +16,19 @@
     "lot_size_acres": 5.7,
     "hoa_fee": 268.44,
     "open_house_date": "4/14/2022",
-    "virtual_tour_url": "http://live.com/auctor/sed/tristique.html?sollicitudin=erat&mi=tortor&sit=sollicitudin&amet=mi&lobortis=sit&sapien=amet&sapien=lobortis&non=sapien&mi=sapien&integer=non&ac=mi&neque=integer&duis=ac&bibendum=neque&morbi=duis&non=bibendum&quam=morbi&nec=non&dui=quam&luctus=nec&rutrum=dui&nulla=luctus&tellus=rutrum&in=nulla&sagittis=tellus&dui=in&vel=sagittis&nisl=dui&duis=vel&ac=nisl&nibh=duis&fusce=ac&lacus=nibh&purus=fusce&aliquet=lacus&at=purus&feugiat=aliquet&non=at&pretium=feugiat&quis=non&lectus=pretium&suspendisse=quis&potenti=lectus&in=suspendisse&eleifend=potenti&quam=in&a=eleifend&odio=quam&in=a&hac=odio&habitasse=in&platea=hac&dictumst=habitasse&maecenas=platea&ut=dictumst&massa=maecenas&quis=ut&augue=massa&luctus=quis&tincidunt=augue&nulla=luctus&mollis=tincidunt&molestie=nulla&lorem=mollis&quisque=molestie",
-    "floor_plan_image": "http://psu.edu/feugiat/non/pretium/quis.html?commodo=leo&placerat=odio&praesent=condimentum&blandit=id&nam=luctus&nulla=nec&integer=molestie&pede=sed&justo=justo&lacinia=pellentesque&eget=viverra&tincidunt=pede&eget=ac&tempus=diam&vel=cras&pede=pellentesque&morbi=volutpat&porttitor=dui&lorem=maecenas&id=tristique&ligula=est&suspendisse=et&ornare=tempus&consequat=semper&lectus=est&in=quam&est=pharetra&risus=magna&auctor=ac&sed=consequat&tristique=metus&in=sapien&tempus=ut&sit=nunc&amet=vestibulum&sem=ante&fusce=ipsum&consequat=primis&nulla=in&nisl=faucibus&nunc=orci&nisl=luctus&duis=et&bibendum=ultrices&felis=posuere&sed=cubilia&interdum=curae&venenatis=mauris"
+    "virtual_tour_url": "http://example.com/virtual-tour/sunset-villa",
+    "floor_plan_image": "http://example.com/floorplans/sunset-villa.jpg"
   },
   {
     "property_id": 2,
-    "property_name": "Myrwyn Mitchell",
-    "image_url": "http://furl.net/turpis.xml?quis=cras&libero=pellentesque&nullam=volutpat&sit=dui&amet=maecenas&turpis=tristique&elementum=est&ligula=et&vehicula=tempus&consequat=semper&morbi=est&a=quam&ipsum=pharetra&integer=magna&a=ac&nibh=consequat&in=metus&quis=sapien&justo=ut&maecenas=nunc&rhoncus=vestibulum&aliquam=ante&lacus=ipsum&morbi=primis&quis=in&tortor=faucibus&id=orci&nulla=luctus&ultrices=et&aliquet=ultrices&maecenas=posuere&leo=cubilia&odio=curae&condimentum=mauris&id=viverra&luctus=diam&nec=vitae&molestie=quam&sed=suspendisse&justo=potenti&pellentesque=nullam&viverra=porttitor&pede=lacus&ac=at&diam=turpis&cras=donec&pellentesque=posuere&volutpat=metus&dui=vitae&maecenas=ipsum&tristique=aliquam&est=non",
+    "property_name": "Harbor Heights",
+    "image_url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750",
     "features": "garage",
     "amenities": "gym",
     "property_type": "apartment",
     "size_sqft": 3618,
     "year_built": 1904,
-    "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\n\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
+    "description": "Discover luxury living at Harbor Heights. This exceptional apartment features soaring ceilings and abundant natural light throughout. The chef's kitchen is equipped with premium appliances and custom cabinetry. Residents enjoy access to a full-service fitness center, private parking garage, and beautifully landscaped courtyard. The master bedroom offers a spa-like bathroom and generous closet space. Additional highlights include hardwood floors, in-unit laundry, and smart home technology. Perfectly situated near waterfront parks, trendy restaurants, and public transportation.",
     "price": 323945,
     "bedrooms": 6,
     "bathrooms": 1,
@@ -36,8 +36,8 @@
     "lot_size_acres": 8.5,
     "hoa_fee": 230.17,
     "open_house_date": "2/4/2022",
-    "virtual_tour_url": "https://yahoo.com/eget/nunc/donec/quis/orci.js?arcu=in&libero=congue",
-    "floor_plan_image": "http://comsenz.com/sit.png?morbi=odio&vestibulum=in&velit=hac&id=habitasse&pretium=platea&iaculis=dictumst&diam=maecenas&erat=ut&fermentum=massa&justo=quis&nec=augue&condimentum=luctus&neque=tincidunt&sapien=nulla&placerat=mollis&ante=molestie&nulla=lorem&justo=quisque&aliquam=ut&quis=erat&turpis=curabitur&eget=gravida&elit=nisi&sodales=at&scelerisque=nibh&mauris=in&sit=hac&amet=habitasse&eros=platea&suspendisse=dictumst&accumsan=aliquam&tortor=augue&quis=quam&turpis=sollicitudin&sed=vitae&ante=consectetuer&vivamus=eget&tortor=rutrum&duis=at&mattis=lorem&egestas=integer&metus=tincidunt"
+    "virtual_tour_url": "http://example.com/virtual-tour/harbor-heights",
+    "floor_plan_image": "http://example.com/floorplans/harbor-heights.jpg"
   },
   {
     "property_id": 3,
