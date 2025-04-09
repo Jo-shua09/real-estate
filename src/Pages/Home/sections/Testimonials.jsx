@@ -1,6 +1,8 @@
-import "swiper/css";
-import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import { useState, useEffect } from "react";
 import { ArrowBack, ArrowForward, Star } from "@mui/icons-material";
 import SectionIntro from "../../../Components/SectionIntro";
 import { Button2 } from "../../../Components/general/Button";
@@ -35,6 +37,11 @@ const Testimonials = () => {
         <Swiper
           spaceBetween={10}
           onSlideChange={handleSlideChange}
+          modules={[Navigation]}
+          navigation={{
+            nextEl: "#next-button",
+            prevEl: "#prev-button",
+          }}
           breakpoints={{
             400: {
               slidesPerView: 1,

@@ -93,7 +93,7 @@ const unsplashImages = [
   "https://images.unsplash.com/photo-1570129477492-45c003edd2be",
   "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
   "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
-  "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b"
+  "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b",
 ];
 
 // Add these new arrays after the unsplashImages array
@@ -102,7 +102,7 @@ const floorPlanImages = [
   "https://images.unsplash.com/photo-1600607687101-9df5087c2dc9",
   "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
   "https://images.unsplash.com/photo-1600607688969-a5bfcd646154",
-  "https://images.unsplash.com/photo-1600607687644-c7171b42498b"
+  "https://images.unsplash.com/photo-1600607687644-c7171b42498b",
 ];
 
 const virtualTourUrls = [
@@ -110,20 +110,38 @@ const virtualTourUrls = [
   "https://my.matterport.com/show/?m=VAXg7e9PX6S",
   "https://my.matterport.com/show/?m=CoPaqg99KJF",
   "https://my.matterport.com/show/?m=8jYMzwgs7Yd",
-  "https://my.matterport.com/show/?m=PXKqTBNkjyK"
+  "https://my.matterport.com/show/?m=PXKqTBNkjyK",
 ];
 
 // Add these arrays after your existing constants
 const commenters = [
-  "Emma Thompson", "James Wilson", "Sophia Garcia", "Lucas Chen", 
-  "Isabella Martinez", "Oliver Brown", "Ava Johnson", "Ethan Davis",
-  "Mia Anderson", "Noah Taylor", "Charlotte Lee", "William Wright"
+  "Emma Thompson",
+  "James Wilson",
+  "Sophia Garcia",
+  "Lucas Chen",
+  "Isabella Martinez",
+  "Oliver Brown",
+  "Ava Johnson",
+  "Ethan Davis",
+  "Mia Anderson",
+  "Noah Taylor",
+  "Charlotte Lee",
+  "William Wright",
 ];
 
 const locations = [
-  "New York, USA", "California, USA", "Florida, USA", "Texas, USA",
-  "Illinois, USA", "Washington, USA", "Massachusetts, USA", "Oregon, USA",
-  "Colorado, USA", "Arizona, USA", "Nevada, USA", "Michigan, USA"
+  "New York, USA",
+  "California, USA",
+  "Florida, USA",
+  "Texas, USA",
+  "Illinois, USA",
+  "Washington, USA",
+  "Massachusetts, USA",
+  "Oregon, USA",
+  "Colorado, USA",
+  "Arizona, USA",
+  "Nevada, USA",
+  "Michigan, USA",
 ];
 
 const avatarImages = [
@@ -134,7 +152,7 @@ const avatarImages = [
   "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
   "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
   "https://images.unsplash.com/photo-1517841905240-472988babdf9",
-  "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6"
+  "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6",
 ];
 
 const commentTexts = [
@@ -145,7 +163,7 @@ const commentTexts = [
   "Incredible value for such a prime location. The views are breathtaking!",
   "The virtual tour was very helpful. Can't wait to see it in person!",
   "Modern design meets classic comfort. This is exactly what I'm looking for.",
-  "The floor plan is well thought out and the finishes are exceptional."
+  "The floor plan is well thought out and the finishes are exceptional.",
 ];
 
 // Add this function to generate random comments
@@ -158,10 +176,14 @@ const generateComments = () => {
       id: i + 1,
       author: getRandomItem(commenters),
       location: getRandomItem(locations),
-      avatar: `${getRandomItem(avatarImages)}?auto=format&fit=crop&w=150&h=150&q=80`,
+      avatar: `${getRandomItem(
+        avatarImages
+      )}?auto=format&fit=crop&w=150&h=150&q=80`,
       rating: getRandomNumber(3, 5), // Random rating between 3-5 stars
       comment: getRandomItem(commentTexts),
-      date: new Date(Date.now() - getRandomNumber(1, 30) * 24 * 60 * 60 * 1000).toLocaleDateString() // Random date within last 30 days
+      date: new Date(
+        Date.now() - getRandomNumber(1, 30) * 24 * 60 * 60 * 1000
+      ).toLocaleDateString(), // Random date within last 30 days
     });
   }
 
@@ -184,7 +206,9 @@ const generateMockData = () => {
     properties.push({
       property_id: i,
       property_name: propertyName,
-      image_url: `${getRandomItem(unsplashImages)}?auto=format&fit=crop&w=800&h=600&q=80`,
+      image_url: `${getRandomItem(
+        unsplashImages
+      )}?auto=format&fit=crop&w=800&h=600&q=80`,
       features: feature,
       amenities: amenity,
       property_type: propertyType,
@@ -199,7 +223,9 @@ const generateMockData = () => {
       hoa_fee: Number((Math.random() * 400 + 100).toFixed(2)),
       open_house_date: getRandomDate(),
       virtual_tour_url: getRandomItem(virtualTourUrls),
-      floor_plan_image: `${getRandomItem(floorPlanImages)}?auto=format&fit=crop&w=800&h=600&q=80`,
+      floor_plan_image: `${getRandomItem(
+        floorPlanImages
+      )}?auto=format&fit=crop&w=800&h=600&q=80`,
       comments: generateComments(), // Add this line before the closing bracket
     });
   }
@@ -218,3 +244,6 @@ try {
 } catch (error) {
   console.error("Error writing mock data:", error);
 }
+
+// TO RUN/ GENERATE THE MOCK DATA
+// TYPE AND RUN "node utils/generateMockData.js" IN YOUR TERMINAL

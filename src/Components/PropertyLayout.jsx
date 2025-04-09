@@ -1,7 +1,9 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/navigation";
 import { useEffect, useState } from "react";
 import PropertyCard from "./PropertyCard";
-import { Swiper, SwiperSlide } from "swiper/react";
 import { ArrowBack, ArrowForward } from "@mui/icons-material";
 import SectionIntro from "./SectionIntro";
 import { Button2 } from "./general/Button";
@@ -38,6 +40,11 @@ const PropertyLayout = () => {
         <Swiper
           spaceBetween={10}
           onSlideChange={handleSlideChange}
+          modules={[Navigation]}
+          navigation={{
+            nextEl: "#next-button",
+            prevEl: "#prev-button",
+          }}
           breakpoints={{
             400: {
               slidesPerView: 1,

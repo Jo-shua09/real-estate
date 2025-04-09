@@ -1,9 +1,9 @@
 import {
+  Apartment,
   ArrowForward,
-  HotelClassOutlined,
   HouseSidingTwoTone,
-  MoneyTwoTone,
-  Sunny,
+  Payments,
+  WbSunny,
 } from "@mui/icons-material";
 import React from "react";
 
@@ -23,7 +23,7 @@ const HeroBanner = () => {
 
         <div className="rounded-xl w-full relative bg-white/5 h-[15rem] py-10 text-center gap-y-4">
           <div className="border-t border-b rounded-full p-4 w-fit m-auto h-fit border-purple-600 ">
-            <MoneyTwoTone className="border-t border-b rounded-full p-2 border-purple-600 !text-7xl text-purple-600" />
+            <Payments className="border-t border-b rounded-full p-2 border-purple-600 !text-7xl text-purple-600" />
           </div>
           <p className="text-2xl font-medium my-5 text-white/70">
             unlock property value
@@ -33,7 +33,7 @@ const HeroBanner = () => {
 
         <div className="rounded-xl w-full relative bg-white/5 h-[15rem] py-10 text-center gap-y-4">
           <div className="border-t border-b rounded-full p-4 w-fit m-auto h-fit border-purple-600 ">
-            <HotelClassOutlined className="border-t border-b rounded-full p-2 border-purple-600 !text-7xl text-purple-600" />
+            <Apartment className="border-t border-b rounded-full p-2 border-purple-600 !text-7xl text-purple-600" />
           </div>
           <p className="text-2xl font-medium my-5 text-white/70">
             effortless property management
@@ -43,7 +43,7 @@ const HeroBanner = () => {
 
         <div className="rounded-xl w-full relative bg-white/5 h-[15rem] py-10 text-center gap-y-4">
           <div className="border-t border-b rounded-full p-4 w-fit m-auto h-fit border-purple-600 ">
-            <Sunny className="border-t border-b rounded-full p-2 border-purple-600 !text-7xl text-purple-600" />
+            <WbSunny className="border-t border-b rounded-full p-2 border-purple-600 !text-7xl text-purple-600" />
           </div>
           <p className="text-2xl font-medium my-5 text-white/70">
             smart investment, informed decisions
