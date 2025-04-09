@@ -39,8 +39,8 @@ const Testimonials = () => {
           onSlideChange={handleSlideChange}
           modules={[Navigation]}
           navigation={{
-            nextEl: "#next-button",
-            prevEl: "#prev-button",
+            nextEl: "#next-button2",
+            prevEl: "#prev-button2",
           }}
           breakpoints={{
             400: {
@@ -111,7 +111,7 @@ const Testimonials = () => {
 
             <div className="flex items-center gap-x-5">
               <ArrowBack
-                id="prev-button"
+                id="prev-button2"
                 className={`!text-6xl border border-white/5 cursor-pointer flex items-center rounded-full p-3 ${
                   currentSlide == 0
                     ? "opacity-50 cursor-not-allowed"
@@ -125,7 +125,7 @@ const Testimonials = () => {
               </div>
 
               <ArrowForward
-                id="next-button"
+                id="next-button2"
                 className={`!text-6xl border border-white/5 cursor-pointer flex items-center rounded-full p-3 ${
                   currentSlide == testimonials.slice(0, 26).length
                     ? "opacity-50 cursor-not-allowed"
