@@ -15,11 +15,29 @@ const Testimonials = () => {
     fetch("/mock_data.json")
       .then((res) => res.json())
       .then((data) => {
-        // Collect all comments from all properties
-        const allComments = data.flatMap((property) => property.comments);
+        // Create unique IDs by combining property ID with comment ID
+        const allComments = data.properties?.flatMap((property) =>
+          (property.comments || []).map((comment) => ({
+            ...comment,
+            uniqueId: `${property.property_id}-${comment.id}`
+          }))
+        ) || [];
         setTestimonials(allComments);
+      })
+      .catch((error) => {
+        console.error("Error fetching testimonials:", error);
       });
   }, []);
+
+  //   useEffect(() => {
+  //     fetch("/mock_data.json")
+  //       .then((res) => res.json())
+  //       .then((data) => {
+  //         // Collect all comments from all properties
+  //         const allComments = data.flatMap((property) => property.comments);
+  //         setTestimonials(allComments);
+  //       });
+  //   }, []);
 
   const handleSlideChange = (swiper) => {
     setCurrentSlide(swiper.activeIndex);
@@ -54,9 +72,13 @@ const Testimonials = () => {
             },
           }}
         >
+          // Update the key in the mapping section
           {testimonials.slice(0, 30).map((testimonial) => (
-            <SwiperSlide key={testimonial.id}>
-              <div className="border py-10 px-8 border-white/5 rounded-xl w-full p-6 h-[25rem] flex flex-col gap-y-7 ">
+            <SwiperSlide key={testimonial.uniqueId}>
+              <div
+                key={testimonial.uniqueId}
+                className="border py-10 px-8 border-white/5 rounded-xl w-full p-6 h-[25rem] flex flex-col gap-y-7"
+              >
                 <div className="flex items-center gap-x-1">
                   {[...Array(5)].map((_, index) => (
                     <Star

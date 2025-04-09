@@ -10,19 +10,30 @@ import { Button2 } from "./general/Button";
 
 const PropertyLayout = () => {
   const [properties, setProperties] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  const handleSlideChange = (swiper) => {
+    setCurrentSlide(swiper.activeIndex);
+  };
 
   useEffect(() => {
     fetch("/mock_data.json")
       .then((res) => res.json())
       .then((data) => {
-        setProperties(data);
+        setProperties(data.properties || []);
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        setError(err);
+        setIsLoading(false);
       });
   }, []);
 
-  const handleSlideChange = (swiper) => {
-    setCurrentSlide(swiper.activeIndex);
-  };
+  // Add loading and error states
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>Error loading properties</div>;
 
   return (
     <div className="w-full">
@@ -57,11 +68,12 @@ const PropertyLayout = () => {
             },
           }}
         >
-          {properties.slice(0, 30).map((property) => (
-            <SwiperSlide key={property.id}>
-              <PropertyCard property={property} />
-            </SwiperSlide>
-          ))}
+          {properties &&
+            properties.slice(0, 30).map((property) => (
+              <SwiperSlide key={property.property_id}>
+                <PropertyCard property={property} />
+              </SwiperSlide>
+            ))}
         </Swiper>
 
         <div className="border-t border-white/5 mt-10">
