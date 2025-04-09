@@ -1,23 +1,18 @@
 import PropTypes from "prop-types";
 /**
- * Button component that displays a button with a name and price.
+ * Button component that displays a button with a name.
  * @param {string} name - The text to display on the button.
- * @param {number} price - The price to display next to the button text.
  */
-const Button = ({ name, price }) => {
+const Button = ({ name }) => {
   return (
-    <button className="sm:text-2xl w-full text-nowrap font-Rubik text-[1.15rem] bg-gray-900 text-white uppercase py-4 px-14 rounded-lg font-semibold">
+    <button className="bg-purple-600 hover:scale-95 rounded-xl text-2xl font-semibold capitalize flex items-center justify-center py-5 px-7 hover:bg-purple-900">
       {name}
-      <span className="text-yellow-600 sm:text-2xl w-full font-Rubik text-[1.15rem]">
-        ${price}
-      </span>
     </button>
   );
 };
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
 };
 /**
  * Button2 component that displays a button with a name.
@@ -25,7 +20,7 @@ Button.propTypes = {
  */
 const Button2 = ({ name }) => {
   return (
-    <button className="sm:text-2xl font-Rubik text-[1.15rem] bg-blue-600 max-w-max text-white uppercase py-4 px-14 rounded-lg font-bold">
+    <button className="hidden items-center md:flex justify-center capitalize rounded-xl py-5 px-7 bg-black/20 border border-white/5 hover:bg-purple-600 text-2xl font-semibold">
       {name}
     </button>
   );

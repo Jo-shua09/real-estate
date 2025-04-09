@@ -1,6 +1,7 @@
 import { Bathtub, BedRounded, Villa } from "@mui/icons-material";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Button } from "./general/Button";
 
 const PropertyCard = ({ property }) => {
   const [show, setShow] = useState(false);
@@ -12,21 +13,18 @@ const PropertyCard = ({ property }) => {
   const handlePropertyClick = (property) => {
     navigate(`/property/${property.property_name}`, {
       state: {
-        image: property.image_url,
-        name: property.property_name,
-        price: property.price,
-        description: property.description,
+        ...property,
       },
     });
   };
 
   return (
-    <div className="border border-white/5 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+    <div className="border border-white/5 rounded-xl p-6 w-full h-fit shadow-lg hover:shadow-xl transition-all">
       <div className="">
         <img
           src={property.image_url}
           alt={property.property_name}
-          className="w-full h-[25rerem] object-cover rounded-xl"
+          className="w-full h-[25rem] object-cover rounded-xl"
         />
       </div>
 
@@ -48,7 +46,7 @@ const PropertyCard = ({ property }) => {
           </span>
         </div>
 
-        <div className="flex justify-between gap-x-3 my-4 items-center">
+        <div className="flex justify-between gap-x-3 my-4 items-center w-full">
           <div className="rounded-full px-5 py-2 flex gap-x-2 bg-black/20 border-white/5 border items-center justify-center">
             <BedRounded className="!text-5xl" />
             <span className="text-xl text-nowrap font-semibold flex items-center">
@@ -78,13 +76,9 @@ const PropertyCard = ({ property }) => {
               ${property.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
             </p>
           </div>
-
-          <button
-            onClick={handlePropertyClick}
-            className="bg-purple-600 hover:scale-95 rounded-xl text-2xl font-semibold capitalize flex items-center justify-center py-5 px-7"
-          >
-            view property details
-          </button>
+          <div onClick={() => handlePropertyClick(property)}>
+            <Button name="view property details" />
+          </div>
         </div>
       </div>
     </div>
