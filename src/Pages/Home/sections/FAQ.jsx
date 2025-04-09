@@ -1,7 +1,3 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
 import SectionIntro from "../../../Components/SectionIntro";
 import { useEffect, useState } from "react";
 import { Add, Remove } from "@mui/icons-material";
