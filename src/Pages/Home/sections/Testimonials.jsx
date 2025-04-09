@@ -40,17 +40,17 @@ const Testimonials = () => {
               slidesPerView: 1,
             },
             768: {
-              slidesPerView: 4,
+              slidesPerView: 3,
             },
             1024: {
               slidesPerView: 4,
             },
           }}
         >
-          {testimonials.map((testimonial) => (
+          {testimonials.slice(0, 30).map((testimonial) => (
             <SwiperSlide key={testimonial.id}>
-              <div className="border py-10 px-8 border-white/5 rounded-xl p-6 h-full">
-                <div className="flex items-center gap-x-1 mb-14">
+              <div className="border py-10 px-8 border-white/5 rounded-xl w-full p-6 h-[25rem] flex flex-col gap-y-7 ">
+                <div className="flex items-center gap-x-1">
                   {[...Array(5)].map((_, index) => (
                     <Star
                       key={index}
@@ -63,11 +63,11 @@ const Testimonials = () => {
                   ))}
                 </div>
 
-                <p className="my-10 normal-case text-2xl font-medium">
+                <p className="my-3 normal-case text-2xl font-medium">
                   {testimonial.comment}
                 </p>
 
-                <div className=" flex items-end border justify-between">
+                <div className=" flex justify-between items-end w-full">
                   <div className="flex items-center gap-x-4">
                     <img
                       src={testimonial.avatar}
@@ -96,10 +96,35 @@ const Testimonials = () => {
           <div className="mt-2 flex justify-between w-full items-center">
             <div className="md:flex hidden text-xl normal-case font-semibold">
               {String(currentSlide + 1).padStart(2, "0")} of{" "}
-              {testimonials.length}
+              {testimonials.slice(0, 30).length}
             </div>
             <div className="md:hidden flex">
-              <Button2 name="View All Testimonials" />
+              <Button2 name="View All Properties" />
+            </div>
+
+            <div className="flex items-center gap-x-5">
+              <ArrowBack
+                id="prev-button"
+                className={`!text-6xl border border-white/5 cursor-pointer flex items-center rounded-full p-3 ${
+                  currentSlide == 0
+                    ? "opacity-50 cursor-not-allowed"
+                    : "bg-black/30"
+                }`}
+              />
+
+              <div className="md:hidden flex text-xl normal-case font-semibold">
+                {String(currentSlide + 1).padStart(2, "0")} of{" "}
+                {testimonials.slice(0, 30).length}
+              </div>
+
+              <ArrowForward
+                id="next-button"
+                className={`!text-6xl border border-white/5 cursor-pointer flex items-center rounded-full p-3 ${
+                  currentSlide == testimonials.slice(0, 26).length
+                    ? "opacity-50 cursor-not-allowed"
+                    : "bg-black/30"
+                }`}
+              />
             </div>
           </div>
         </div>

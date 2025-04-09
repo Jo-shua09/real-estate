@@ -47,21 +47,21 @@ const PropertyCard = ({ property }) => {
         </div>
 
         <div className="flex justify-between gap-x-3 my-4 items-center w-full">
-          <div className="rounded-full px-5 py-2 flex gap-x-2 bg-black/20 border-white/5 border items-center justify-center">
+          <div className="rounded-full px-5 py-2 flex gap-x-2 bg-white/5 border-white/5 border items-center justify-center">
             <BedRounded className="!text-5xl" />
             <span className="text-xl text-nowrap font-semibold flex items-center">
               {property.bedrooms}-bedrooms
             </span>
           </div>
 
-          <div className="rounded-full px-5 py-2 flex gap-x-2 bg-black/20 border-white/5 border items-center justify-center">
+          <div className="rounded-full px-5 py-2 flex gap-x-2 bg-white/5 border-white/5 border items-center justify-center">
             <Bathtub className="!text-5xl" />
             <span className="text-xl text-nowrap font-semibold flex items-center">
               {property.bathrooms}-bathrooms
             </span>
           </div>
 
-          <div className="rounded-full px-5 py-2 flex gap-x-2 bg-black/20 border-white/5 border items-center justify-center">
+          <div className="rounded-full px-5 py-2 flex gap-x-2 bg-white/5 border-white/5 border items-center justify-center">
             <Villa className="!text-5xl" />
             <span className="text-xl text-nowrap font-semibold flex items-center">
               {property.property_type}
