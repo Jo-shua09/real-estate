@@ -3,7 +3,7 @@ import { Button2 } from "./general/Button";
 import Abstract from "/src/assets/images/general/Abstract.png";
 import { Link } from "react-router-dom";
 
-const HeaderIntro = ({ title, description, name, linkPath }) => {
+const SectionIntro = ({ title, description, name, linkPath }) => {
   return (
     <div>
       <div className="w-full">
@@ -28,4 +28,4 @@ const HeaderIntro = ({ title, description, name, linkPath }) => {
   );
 };
 
-export default HeaderIntro;
+export default SectionIntro;

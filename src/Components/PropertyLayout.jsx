@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import PropertyCard from "./PropertyCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { ArrowBack, ArrowForward } from "@mui/icons-material";
-import HeaderIntro from "./HeaderIntro";
+import SectionIntro from "./SectionIntro";
 import { Button2 } from "./general/Button";
 
 const PropertyLayout = () => {
@@ -24,7 +24,7 @@ const PropertyLayout = () => {
 
   return (
     <div className="w-full">
-      <HeaderIntro
+      <SectionIntro
         description="  Explore our handpicked selection of featured properties. Each
        listing offers a glimpse into exceptional homes and investments
        available through Estatein. Click 'View Details' for more

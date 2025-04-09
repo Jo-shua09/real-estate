@@ -1,37 +1,16 @@
-import "swiper/css";
-import { useState, useEffect } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { ArrowBack, ArrowForward, Star } from "@mui/icons-material";
+import React from "react";
 import SectionIntro from "../../../Components/SectionIntro";
-import { Button2 } from "../../../Components/general/Button";
 
-const Testimonials = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [testimonials, setTestimonials] = useState([]);
-
-  useEffect(() => {
-    fetch("/mock_data.json")
-      .then((res) => res.json())
-      .then((data) => {
-        // Collect all comments from all properties
-        const allComments = data.flatMap((property) => property.comments);
-        setTestimonials(allComments);
-      });
-  }, []);
-
-  const handleSlideChange = (swiper) => {
-    setCurrentSlide(swiper.activeIndex);
-  };
-
+const FAQ = () => {
   return (
-    <div className="w-full section h-full">
+    <div className="w-full section">
       <SectionIntro
-        name="view all testimonials"
-        title="what our client say"
-        description="Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs."
+        title="frequently asked questions"
+        name="view all FAQ's"
+        description="Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way."
       />
 
-      <div className="mt-16">
+      {/* <div className="mt-16">
         <Swiper
           spaceBetween={10}
           onSlideChange={handleSlideChange}
@@ -128,9 +107,9 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
 
-export default Testimonials;
+export default FAQ;
