@@ -1,6 +1,9 @@
+// Import the 'fs' module so we can write files to the computer
 import fs from "fs";
 
-// Define arrays for random data generation
+// === ARRAYS OF SAMPLE DATA ===
+// These are used to create realistic fake property info
+
 const adjectives = [
   "Luxury",
   "Modern",
@@ -64,25 +67,28 @@ const propertyTypes = [
   "villa",
 ];
 
-// Helper function to get random item from array
+// === HELPER FUNCTIONS ===
+
+// Get a random item from any array
 const getRandomItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
-// Helper function to get random number between min and max
+// Get a random number between two values
 const getRandomNumber = (min, max) =>
   Math.floor(Math.random() * (max - min + 1)) + min;
 
-// Helper function to get random date in the next 3 months
+// Get a random future date (within the next 3 months)
 const getRandomDate = () => {
   const today = new Date();
   const future = new Date(today.setMonth(today.getMonth() + 3));
   const randomDate = new Date(
     today.getTime() + Math.random() * (future.getTime() - today.getTime())
   );
-  return randomDate.toLocaleDateString();
+  return randomDate.toLocaleDateString(); // Format date as MM/DD/YYYY
 };
 
-// Add this array near the top with other constants
-// Replace the unsplashImages array with these verified URLs
+// === IMAGES & EXTRAS ===
+
+// Images of houses (randomly used for each listing)
 const unsplashImages = [
   "https://images.unsplash.com/photo-1564013799919-ab600027ffc6",
   "https://images.unsplash.com/photo-1576941089067-2de3c901e126",
@@ -96,7 +102,7 @@ const unsplashImages = [
   "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b",
 ];
 
-// Add these new arrays after the unsplashImages array
+// Optional floor plans and virtual tours
 const floorPlanImages = [
   "https://images.unsplash.com/photo-1600566752355-35792bedcfea",
   "https://images.unsplash.com/photo-1600607687101-9df5087c2dc9",
@@ -113,7 +119,9 @@ const virtualTourUrls = [
   "https://my.matterport.com/show/?m=PXKqTBNkjyK",
 ];
 
-// Add these arrays after your existing constants
+// === COMMENT DATA ===
+// Used to generate fake reviews for each property
+
 const commenters = [
   "Emma Thompson",
   "James Wilson",
@@ -166,9 +174,9 @@ const commentTexts = [
   "The floor plan is well thought out and the finishes are exceptional.",
 ];
 
-// Add this function to generate random comments
+// === Function to Generate Fake Comments ===
 const generateComments = () => {
-  const numberOfComments = getRandomNumber(2, 5); // Random number of comments per property
+  const numberOfComments = getRandomNumber(2, 5); // Random 2–5 comments
   const comments = [];
 
   for (let i = 0; i < numberOfComments; i++) {
@@ -179,18 +187,18 @@ const generateComments = () => {
       avatar: `${getRandomItem(
         avatarImages
       )}?auto=format&fit=crop&w=150&h=150&q=80`,
-      rating: getRandomNumber(3, 5), // Random rating between 3-5 stars
+      rating: getRandomNumber(3, 5), // Star rating between 3 and 5
       comment: getRandomItem(commentTexts),
       date: new Date(
         Date.now() - getRandomNumber(1, 30) * 24 * 60 * 60 * 1000
-      ).toLocaleDateString(), // Random date within last 30 days
+      ).toLocaleDateString(),
     });
   }
 
   return comments;
 };
 
-// In your generateMockData function, add comments to each property
+// === Function to Generate 100 Fake Property Listings ===
 const generateMockData = () => {
   const properties = [];
 
@@ -202,7 +210,6 @@ const generateMockData = () => {
     const feature = getRandomItem(features);
     const amenity = getRandomItem(amenities);
 
-    // In the generateMockData function, update the image_url:
     properties.push({
       property_id: i,
       property_name: propertyName,
@@ -219,26 +226,30 @@ const generateMockData = () => {
       bedrooms: getRandomNumber(1, 6),
       bathrooms: getRandomNumber(1, 5),
       garage_spaces: getRandomNumber(0, 3),
-      lot_size_acres: Number((Math.random() * 9.9 + 0.1).toFixed(1)),
-      hoa_fee: Number((Math.random() * 400 + 100).toFixed(2)),
+      lot_size_acres: Number((Math.random() * 9.9 + 0.1).toFixed(1)), // Lot size between 0.1 and 10 acres
+      hoa_fee: Number((Math.random() * 400 + 100).toFixed(2)), // Random HOA fee
       open_house_date: getRandomDate(),
       virtual_tour_url: getRandomItem(virtualTourUrls),
       floor_plan_image: `${getRandomItem(
         floorPlanImages
       )}?auto=format&fit=crop&w=800&h=600&q=80`,
-      comments: generateComments(), // Add this line before the closing bracket
+      comments: generateComments(), // Add the list of comments
     });
   }
 
   return properties;
 };
 
-// Generate and save the data
+// === Save the Generated Data to a JSON File ===
+
 const mockData = generateMockData();
+
+// Update the path to match your project folder
 const outputPath =
   "c:/Users/joshu/Documents/Developer Projects/React Webs/Real Estate Website/real-estate/public/mock_data.json";
 
 try {
+  // Convert to JSON and write to file
   fs.writeFileSync(outputPath, JSON.stringify(mockData, null, 2));
   console.log("Mock data generated successfully!");
 } catch (error) {
