@@ -113,7 +113,62 @@ const virtualTourUrls = [
   "https://my.matterport.com/show/?m=PXKqTBNkjyK"
 ];
 
-// Generate mock data
+// Add these arrays after your existing constants
+const commenters = [
+  "Emma Thompson", "James Wilson", "Sophia Garcia", "Lucas Chen", 
+  "Isabella Martinez", "Oliver Brown", "Ava Johnson", "Ethan Davis",
+  "Mia Anderson", "Noah Taylor", "Charlotte Lee", "William Wright"
+];
+
+const locations = [
+  "New York, USA", "California, USA", "Florida, USA", "Texas, USA",
+  "Illinois, USA", "Washington, USA", "Massachusetts, USA", "Oregon, USA",
+  "Colorado, USA", "Arizona, USA", "Nevada, USA", "Michigan, USA"
+];
+
+const avatarImages = [
+  "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
+  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+  "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
+  "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+  "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+  "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+  "https://images.unsplash.com/photo-1517841905240-472988babdf9",
+  "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6"
+];
+
+const commentTexts = [
+  "Absolutely stunning property! The attention to detail is remarkable.",
+  "Had an amazing experience viewing this property. The amenities are top-notch!",
+  "The location is perfect and the interior design is spectacular.",
+  "This property exceeded all my expectations. Truly a luxury living experience.",
+  "Incredible value for such a prime location. The views are breathtaking!",
+  "The virtual tour was very helpful. Can't wait to see it in person!",
+  "Modern design meets classic comfort. This is exactly what I'm looking for.",
+  "The floor plan is well thought out and the finishes are exceptional."
+];
+
+// Add this function to generate random comments
+const generateComments = () => {
+  const numberOfComments = getRandomNumber(2, 5); // Random number of comments per property
+  const comments = [];
+
+  for (let i = 0; i < numberOfComments; i++) {
+    comments.push({
+      id: i + 1,
+      author: getRandomItem(commenters),
+      location: getRandomItem(locations),
+      avatar: `${getRandomItem(avatarImages)}?auto=format&fit=crop&w=150&h=150&q=80`,
+      rating: getRandomNumber(3, 5), // Random rating between 3-5 stars
+      comment: getRandomItem(commentTexts),
+      date: new Date(Date.now() - getRandomNumber(1, 30) * 24 * 60 * 60 * 1000).toLocaleDateString() // Random date within last 30 days
+    });
+  }
+
+  return comments;
+};
+
+// In your generateMockData function, add comments to each property
 const generateMockData = () => {
   const properties = [];
 
@@ -145,6 +200,7 @@ const generateMockData = () => {
       open_house_date: getRandomDate(),
       virtual_tour_url: getRandomItem(virtualTourUrls),
       floor_plan_image: `${getRandomItem(floorPlanImages)}?auto=format&fit=crop&w=800&h=600&q=80`,
+      comments: generateComments(), // Add this line before the closing bracket
     });
   }
 

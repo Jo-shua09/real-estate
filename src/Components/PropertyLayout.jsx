@@ -1,12 +1,12 @@
-import Abstract from "/src/assets/images/general/Abstract.png";
 import "swiper/css";
 import { useEffect, useState } from "react";
 import PropertyCard from "./PropertyCard";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { ArrowBack, ArrowForward } from "@mui/icons-material";
+import HeaderIntro from "./HeaderIntro";
 import { Button2 } from "./general/Button";
-import { Link } from "react-router-dom";
 
-const PropertyLayout = ({ title, description }) => {
+const PropertyLayout = () => {
   const [properties, setProperties] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -41,26 +41,17 @@ const PropertyLayout = ({ title, description }) => {
 
   return (
     <div className="w-full">
-      <div className="w-full">
-        <img
-          src={Abstract}
-          alt="abstract image"
-          className="w-fit h-fit object-cover"
-        />
-        <div className="flex items-end justify-between md:gap-x-96 my-5 w-full">
-          <div className="flex-[2] flex flex-col gap-y-5">
-            <h3 className="text-5xl font-semibold">{title}</h3>
-            <p className="normal-case text-white/70 text-2xl">{description}</p>
-          </div>
-          <Link to="/property">
-            <div className="">
-              <Button2 name="View All Properties" />
-            </div>
-          </Link>
-        </div>
-      </div>
+      <HeaderIntro
+        description="  Explore our handpicked selection of featured properties. Each
+       listing offers a glimpse into exceptional homes and investments
+       available through Estatein. Click 'View Details' for more
+       information."
+        title="Featured Properties"
+        name="View All Properties"
+        linkPath="/property"
+      />
 
-      <div className="my-16">
+      <div className="mt-16">
         <Swiper
           spaceBetween={10}
           onSlideChange={handleSlideChange}
@@ -82,13 +73,41 @@ const PropertyLayout = ({ title, description }) => {
             </SwiperSlide>
           ))}
         </Swiper>
+
         <div className="border-t border-white/5 mt-10">
-          <div className="mt-2 flex justify-between w-full">
-            <div className="text-xl normal-case font-semibold">
+          <div className="mt-2 flex justify-between w-full items-center">
+            <div className="md:flex hidden text-xl normal-case font-semibold">
               {String(currentSlide + 1).padStart(2, "0")} of{" "}
               {properties.slice(0, 30).length}
             </div>
-            <div className=""></div>
+            <div className="md:hidden flex">
+              <Button2 name="View All Properties" />
+            </div>
+
+            <div className="flex items-center gap-x-5">
+              <ArrowBack
+                id="prev-button"
+                className={`!text-6xl border border-white/5 cursor-pointer flex items-center rounded-full p-3 ${
+                  currentSlide == 0
+                    ? "opacity-50 cursor-not-allowed"
+                    : "bg-black/30"
+                }`}
+              />
+
+              <div className="md:hidden flex text-xl normal-case font-semibold">
+                {String(currentSlide + 1).padStart(2, "0")} of{" "}
+                {properties.slice(0, 30).length}
+              </div>
+
+              <ArrowForward
+                id="next-button"
+                className={`!text-6xl border border-white/5 cursor-pointer flex items-center rounded-full p-3 ${
+                  currentSlide == properties.slice(0, 27).length
+                    ? "opacity-50 cursor-not-allowed"
+                    : "bg-black/30"
+                }`}
+              />
+            </div>
           </div>
         </div>
       </div>

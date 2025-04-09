@@ -22,7 +22,7 @@ const Header = () => {
         </p>
         <Close
           onClick={handleShow}
-          className="!text-5xl bg-black/20 rounded-full p-2 font-bold cursor-pointer hover:bg-black"
+          className="!text-5xl bg-white/5 rounded-full p-2 font-bold cursor-pointer hover:bg-black"
         />
       </div>
     </div>

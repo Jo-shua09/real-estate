@@ -26,20 +26,20 @@ const Hero = () => {
 
           <div className="flex items-center justify-between text-center md:text-left gap-5 flex-wrap md:flex-nowrap w-full">
             <div className="flex items-center justify-between gap-5 w-full sm:flex-[2]">
-              <div className="w-full flex flex-col gap-y-3 rounded-xl border border-white/5 bg-black/20 py-4 px-5">
+              <div className="w-full flex flex-col gap-y-3 rounded-xl border border-white/5 bg-white/5 py-4 px-5">
                 <h4 className=" text-4xl font-bold">200+</h4>
                 <p className="text-2xl text-white/70 font-medium text-nowrap">
                   happy customers
                 </p>
               </div>
-              <div className="w-full flex flex-col gap-y-3 rounded-xl border border-white/5 bg-black/20 py-4 px-5">
+              <div className="w-full flex flex-col gap-y-3 rounded-xl border border-white/5 bg-white/5 py-4 px-5">
                 <h4 className=" text-4xl font-bold">10k+</h4>
                 <p className="text-2xl text-white/70 font-medium text-nowrap">
                   properties for charts
                 </p>
               </div>
             </div>
-            <div className="w-full flex flex-col sm:flex-1 gap-y-3 rounded-xl border border-white/5 bg-black/20 py-4 px-5">
+            <div className="w-full flex flex-col sm:flex-1 gap-y-3 rounded-xl border border-white/5 bg-white/5 py-4 px-5">
               <h4 className=" text-4xl font-bold">16+</h4>
               <p className="text-2xl text-white/70 font-medium text-nowrap">
                 years of experience
@@ -48,7 +48,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="absolute md:top-10 md:w-[120px] md:h-[120px] bg-black/30 rounded-full w-[100px] h-[100px] md:-right-20 -top-36 right-[70%]">
+        <div className="absolute md:top-10 md:w-[120px] md:h-[120px] bg-black/30 rounded-full border border-white/10 w-[100px] h-[100px] p-2  md:-right-20 -top-36 right-[70%]">
           <div className="relative w-full h-full -rotate-45">
             <div className="absolute w-full h-full">
               <svg viewBox="0 0 100 100" className="w-full h-full">
@@ -58,14 +58,14 @@ const Hero = () => {
                     d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
                   />
                 </defs>
-                <text className="text-xl font-semibold fill-white">
+                <text className="text-xl font-medium fill-white">
                   <textPath href="#circle" startOffset="0%">
                     ✨ discover your dream property ✨
                   </textPath>
                 </text>
               </svg>
             </div>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black/40 p-3 rounded-full">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/5 border border-white/10 p-5 rounded-full">
               <ArrowForward className="!text-5xl rotate-12" />
             </div>
           </div>

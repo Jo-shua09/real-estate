@@ -20,7 +20,7 @@ Button.propTypes = {
  */
 const Button2 = ({ name }) => {
   return (
-    <button className="hidden items-center md:flex justify-center capitalize rounded-xl py-5 px-7 bg-black/20 border border-white/5 hover:bg-purple-600 text-2xl font-semibold">
+    <button className="items-center justify-center capitalize rounded-xl py-5 px-7 bg-black/20 border border-white/5 hover:bg-purple-600 text-2xl font-semibold">
       {name}
     </button>
   );
