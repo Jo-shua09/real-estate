@@ -4,8 +4,8 @@ import { ArrowForward } from "@mui/icons-material";
 
 const Hero = () => {
   return (
-    <div className="w-full flex items-start justify-between flex-wrap-reverse h-full md:flex-nowrap ">
-      <div className="relative md:flex-1 w-full h-full place-content-center bg-black px-9">
+    <div className="w-full flex items-start justify-between flex-wrap-reverse h-full md:flex-nowrap">
+      <div className="relative md:flex-1 w-full h-full place-content-center px-9">
         <div className="flex items-start gap-y-10 flex-col py-20">
           <h1 className="text-5xl font-semibold normal-case leading-[3.5rem]">
             Discover Your Dream <br /> Property with Estatein
@@ -48,7 +48,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="absolute md:top-10 md:w-[120px] md:h-[120px] bg-black/30 rounded-full border border-white/10 w-[100px] h-[100px] p-2  md:-right-20 -top-36 right-[70%]">
+        <div className="absolute md:top-10 md:w-[120px] md:h-[120px] bg-black/30 rounded-full border border-white/10 w-[100px] h-[100px] p-2  md:-right-20 -top-28 right-[70%]">
           <div className="relative w-full h-full -rotate-45">
             <div className="absolute w-full h-full">
               <svg viewBox="0 0 100 100" className="w-full h-full">
@@ -72,8 +72,8 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="md:flex-1 w-full bg-hero bg-cover bg-no-repeat bg-center">
-        <div className="w-full h-[40rem]">
+      <div className="md:flex-1 w-full mt-10 mx-9 md:m-0 bg-hero bg-center bg-no-repeat bg-cover md:rounded-none rounded-xl bg-white/5">
+        <div className="w-full h-[40rem] md:rounded-none px-10">
           <img
             src={HeroImage}
             alt="hero image"

@@ -8,32 +8,15 @@ import { Button2 } from "./general/Button";
 
 const PropertyLayout = () => {
   const [properties, setProperties] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
-    const fetchProperties = async () => {
-      try {
-        const response = await fetch("/mock_data.json");
-        if (!response.ok) {
-          throw new Error("Failed to fetch properties");
-        }
-        const data = await response.json();
+    fetch("/mock_data.json")
+      .then((res) => res.json())
+      .then((data) => {
         setProperties(data);
-      } catch (err) {
-        setError(err.message);
-        console.error("Failed to load data:", err);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchProperties();
+      });
   }, []);
-
-  if (isLoading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error}</div>;
 
   const handleSlideChange = (swiper) => {
     setCurrentSlide(swiper.activeIndex);
