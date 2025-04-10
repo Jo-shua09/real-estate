@@ -16,30 +16,30 @@ const Hero = () => {
           </p>
 
           <div className="flex items-center flex-wrap md:flex-nowrap justify-between gap-5 md:w-1/3 w-full">
-            <button className="w-full text-2xl text-nowrap h-[5rem] md:h-[4.5rem] px-7 bg-black/20 border-white/5 hover:scale-95 rounded-lg border flex items-center justify-center capitalize font-semibold">
+            <button className="w-full text-2xl text-nowrap h-[5rem] md:h-[4.5rem] px-7 bg-black/20 border-white/5 hover:scale-95 rounded-xl border-2 flex items-center justify-center capitalize font-semibold">
               learn more
             </button>
-            <button className="w-full text-2xl text-nowrap h-[5rem] hover:bg-purple-900 md:h-[4.5rem] px-7 bg-purple-600 rounded-lg hover:scale-95 flex items-center justify-center capitalize font-semibold">
+            <button className="w-full text-2xl text-nowrap h-[5rem] hover:bg-purple-900 md:h-[4.5rem] px-7 bg-purple-600 rounded-xl hover:scale-95 flex items-center justify-center capitalize font-semibold">
               browse properties
             </button>
           </div>
 
           <div className="flex items-center justify-between text-center md:text-left gap-5 flex-wrap md:flex-nowrap w-full">
             <div className="flex items-center justify-between gap-5 w-full sm:flex-[2]">
-              <div className="w-full flex flex-col gap-y-3 rounded-xl border border-white/5 bg-white/5 py-4 px-5">
+              <div className="w-full flex flex-col gap-y-3 rounded-xl border-2 border-white/5 bg-white/5 py-4 px-5">
                 <h4 className=" text-4xl font-bold">200+</h4>
                 <p className="text-2xl text-white/70 font-medium text-nowrap">
                   happy customers
                 </p>
               </div>
-              <div className="w-full flex flex-col gap-y-3 rounded-xl border border-white/5 bg-white/5 py-4 px-5">
+              <div className="w-full flex flex-col gap-y-3 rounded-xl border-2 border-white/5 bg-white/5 py-4 px-5">
                 <h4 className=" text-4xl font-bold">10k+</h4>
                 <p className="text-2xl text-white/70 font-medium text-nowrap">
                   properties for charts
                 </p>
               </div>
             </div>
-            <div className="w-full flex flex-col sm:flex-1 gap-y-3 rounded-xl border border-white/5 bg-white/5 py-4 px-5">
+            <div className="w-full flex flex-col sm:flex-1 gap-y-3 rounded-xl border-2 border-white/5 bg-white/5 py-4 px-5">
               <h4 className=" text-4xl font-bold">16+</h4>
               <p className="text-2xl text-white/70 font-medium text-nowrap">
                 years of experience
