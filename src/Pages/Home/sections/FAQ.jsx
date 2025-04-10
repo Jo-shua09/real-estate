@@ -46,7 +46,7 @@ const FAQ = () => {
 
             {activeIndex === faq.id && (
               <div className="p-6 bg-black/10">
-                <p className="text-xl normal-case text-white/70">
+                <p className="text-[1.35rem] normal-case text-white/70">
                   {faq.answer}
                 </p>
               </div>

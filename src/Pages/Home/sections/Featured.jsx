@@ -2,7 +2,7 @@ import PropertyLayout from "../../../Components/PropertyLayout";
 
 const Featured = () => {
   return (
-    <div className="w-full section">
+    <div className="w-full">
       <PropertyLayout />
     </div>
   );
