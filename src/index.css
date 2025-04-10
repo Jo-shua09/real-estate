@@ -20,6 +20,7 @@ body {
   font-weight: 400;
   background-color: #000000f5;
   color: white;
+  overflow: hidden;
 }
 
 html {
