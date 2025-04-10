@@ -20,7 +20,7 @@ const Banner = () => {
         </div>
         <div className="flex section items-center md:flex-nowrap flex-wrap justify-between gap-y-10 w-full absolute md:top-16 top-0 left-0">
           <div className="md:flex-[2] flex flex-col gap-y-5 w-full">
-            <h1 className="text-5xl font-semibold">
+            <h1 className="md:text-5xl text-3xl font-semibold">
               Start Your Real Estate Journey Today
             </h1>
             <p className="text-2xl text-white/70 normal-case font-medium">
