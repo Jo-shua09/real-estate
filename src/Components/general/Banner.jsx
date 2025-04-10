@@ -10,13 +10,13 @@ const Banner = () => {
           <img
             src={bannerLeft}
             alt="banner left image"
-            className="w-fit h-[32rem] md:h-[28rem] brightness-75"
+            className="w-fit h-[32rem] md:h-[28rem] brightness-90"
           />
 
           <img
             src={bannerRight}
             alt="banner left image"
-            className="w-fit brightness-75 h-[32rem] md:h-[28rem]"
+            className="w-fit brightness-90 h-[32rem] md:h-[28rem]"
           />
         </div>
         <div className="flex section items-center md:flex-nowrap flex-wrap justify-between gap-y-10 w-full absolute md:top-16 top-0 left-0">
