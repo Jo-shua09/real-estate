@@ -26,7 +26,7 @@ const Testimonials = () => {
       title="What our clients say"
       description="Read the success stories and heartfelt testimonials..."
       buttonText="View All Testimonials"
-      linkPath="/testimonials"
+      linkPath=""
       navPrevId="prev-button2"
       navNextId="next-button2"
       breakpoints={{

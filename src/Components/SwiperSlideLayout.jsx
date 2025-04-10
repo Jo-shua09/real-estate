@@ -65,7 +65,7 @@ const SwiperSlideLayout = ({
             </div>
 
             <div className="md:hidden flex">
-              <Button2 name={buttonText} />
+              <Button2 name={buttonText} linkPath={linkPath} />
             </div>
 
             <div className="flex items-center gap-x-5">

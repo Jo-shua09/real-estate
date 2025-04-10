@@ -1,47 +1,29 @@
-import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 /**
  * Button component that displays a button with a name.
  * @param {string} name - The text to display on the button.
  */
-const Button = ({ name }) => {
+const Button = ({ name, linkPath }) => {
   return (
-    <button className="bg-purple-600 hover:scale-95 rounded-xl text-2xl font-semibold capitalize flex items-center justify-center py-5 px-7 hover:bg-purple-900">
-      {name}
-    </button>
+    <Link to={linkPath}>
+      <button className="bg-purple-600 hover:scale-95 rounded-xl text-2xl font-semibold capitalize flex items-center justify-center py-5 px-7 hover:bg-purple-900>">
+        {name}
+      </button>
+    </Link>
   );
 };
 
-Button.propTypes = {
-  name: PropTypes.string.isRequired,
-};
 /**
  * Button2 component that displays a button with a name.
  * @param {string} name - The text to display on the button.
  */
-const Button2 = ({ name }) => {
+const Button2 = ({ name, linkPath }) => {
   return (
-    <button className="items-center justify-center capitalize rounded-xl py-5 px-7 bg-white/5 border border-white/5 hover:bg-purple-600 text-2xl font-semibold">
-      {name}
-    </button>
+    <Link to={linkPath}>
+      <button className="items-center justify-center capitalize rounded-xl py-5 px-7 bg-white/5 border border-white/5 hover:bg-purple-600 text-2xl font-semibold">
+        {name}
+      </button>
+    </Link>
   );
 };
-
-Button2.propTypes = {
-  name: PropTypes.string.isRequired,
-};
-/**
- * Button3 component that displays a button with a name.
- * @param {string} name - The text to display on the button.
- */
-const Button3 = ({ name }) => {
-  return (
-    <button className="sm:text-2xl w-max h-[4.2rem] font-Rubik text-[1.15rem] bg-gray-900 text-white uppercase py-4 px-14 rounded-lg font-semibold">
-      {name}
-    </button>
-  );
-};
-
-Button3.propTypes = {
-  name: PropTypes.string.isRequired,
-};
-export { Button, Button2, Button3 };
+export { Button, Button2 };
