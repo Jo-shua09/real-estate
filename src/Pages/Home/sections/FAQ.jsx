@@ -1,7 +1,7 @@
 import SectionIntro from "../../../Components/SectionIntro";
 import { useEffect, useState } from "react";
 import { Add, Remove } from "@mui/icons-material";
-import mockData from '../../../assets/mock_data.json';  // Add this import
+import mockData from "../../../assets/mock_data.json"; // Add this import
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -27,7 +27,7 @@ const FAQ = () => {
         {faqs.map((faq) => (
           <div
             key={faq.id}
-            className="border border-white/5 rounded-xl overflow-hidden"
+            className="border-2 border-white/5 rounded-xl overflow-hidden"
           >
             <button
               className="w-full p-6 flex justify-between items-center bg-black/20 hover:bg-black/30 transition-all"

@@ -4,7 +4,7 @@ import bannerRight from "../../assets/Images/General/banner-right.svg";
 
 const Banner = () => {
   return (
-    <div className="w-full my-20 !mb-0 border border-l-0 border-r-0 border-white/5">
+    <div className="w-full my-20 !mb-0 border-2 border-l-0 border-r-0 border-white/5">
       <div className="relative w-full h-full">
         <div className="flex justify-between w-full">
           <img

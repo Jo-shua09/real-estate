@@ -19,7 +19,7 @@ const PropertyCard = ({ property }) => {
   };
 
   return (
-    <div className="border border-white/5 rounded-xl p-6 w-full h-fit shadow-lg hover:shadow-xl transition-all">
+    <div className="border-2 border-white/5 rounded-xl p-6 w-full h-fit shadow-lg hover:shadow-xl transition-all">
       <div className="">
         <img
           src={property.image_url}
@@ -46,22 +46,22 @@ const PropertyCard = ({ property }) => {
           </span>
         </div>
 
-        <div className="flex justify-between gap-x-3 my-4 items-center w-full">
-          <div className="rounded-full px-5 py-2 flex gap-x-2 bg-white/5 border-white/5 border items-center justify-center">
+        <div className="flex justify-between gap-x-3 my-6 items-center w-full">
+          <div className="rounded-full px-5 py-2 flex gap-x-2 bg-white/5 border-white/5 border-2 items-center justify-center">
             <BedRounded className="!text-5xl" />
             <span className="text-xl text-nowrap font-semibold flex items-center">
               {property.bedrooms}-bedrooms
             </span>
           </div>
 
-          <div className="rounded-full px-5 py-2 flex gap-x-2 bg-white/5 border-white/5 border items-center justify-center">
+          <div className="rounded-full px-5 py-2 flex gap-x-2 bg-white/5 border-white/5 border-2 items-center justify-center">
             <Bathtub className="!text-5xl" />
             <span className="text-xl text-nowrap font-semibold flex items-center">
               {property.bathrooms}-bathrooms
             </span>
           </div>
 
-          <div className="rounded-full px-5 py-2 flex gap-x-2 bg-white/5 border-white/5 border items-center justify-center">
+          <div className="rounded-full px-5 py-2 flex gap-x-2 bg-white/5 border-white/5 border-2 items-center justify-center">
             <Villa className="!text-5xl" />
             <span className="text-xl text-nowrap font-semibold flex items-center">
               {property.property_type}

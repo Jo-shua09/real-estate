@@ -20,7 +20,7 @@ const Button = ({ name, linkPath }) => {
 const Button2 = ({ name, linkPath }) => {
   return (
     <Link to={linkPath}>
-      <button className="items-center justify-center capitalize rounded-xl py-5 px-7 bg-white/5 border border-white/5 hover:bg-purple-600 text-2xl font-semibold">
+      <button className="items-center justify-center capitalize rounded-xl py-5 px-7 bg-white/5 border-2 border-white/5 hover:bg-purple-600 text-2xl font-semibold">
         {name}
       </button>
     </Link>

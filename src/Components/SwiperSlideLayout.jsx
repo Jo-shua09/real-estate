@@ -57,7 +57,7 @@ const SwiperSlideLayout = ({
           ))}
         </Swiper>
 
-        <div className="border-t border-white/5 mt-10">
+        <div className="border-t-2 border-white/5 mt-10">
           <div className="mt-2 flex justify-between w-full items-center">
             <div className="md:flex hidden text-xl normal-case font-semibold">
               {String(currentSlide + 1).padStart(2, "0")} of{" "}
