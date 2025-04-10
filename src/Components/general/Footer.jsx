@@ -117,7 +117,8 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="section-page flex-wrap-reverse md:flex-nowrap !py-7 bg-white/10 w-full flex md:justify-between gap-y-10 justify-center items-center">
+
+      <div className="section-page flex-wrap-reverse md:flex-nowrap !py-5 bg-white/10 w-full flex md:justify-between gap-y-10 justify-center items-center">
         <div className="flex md:flex-row flex-col gap-5 items-center w-full">
           <p className="text-2xl font-semibold">@2025 All rights reserved</p>
           <p className="text-2xl font-semibold">
