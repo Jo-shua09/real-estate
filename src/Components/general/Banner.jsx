@@ -1,7 +1,5 @@
-import { Link } from "react-router-dom";
-import { Button } from "./Button";
-import bannerLeft from "/src/assets/images/general/banner-left.svg";
-import bannerRight from "/src/assets/images/general/banner-right.svg";
+import bannerLeft from "../../assets/images/general/banner-left.svg";
+import bannerRight from "../../assets/images/general/banner-right.svg";
 
 const Banner = () => {
   return (
