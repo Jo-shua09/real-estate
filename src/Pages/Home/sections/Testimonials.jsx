@@ -1,23 +1,19 @@
 import { useEffect, useState } from "react";
 import SwiperSlideLayout from "../../../Components/SwiperSlideLayout";
 import { Star } from "@mui/icons-material";
+import mockData from '../../../assets/mock_data.json';  // Add this import
 
 const Testimonials = () => {
   const [testimonials, setTestimonials] = useState([]);
 
   useEffect(() => {
-    fetch("/mock_data.json")
-      .then((res) => res.json())
-      .then((data) => {
-        const allComments =
-          data.properties?.flatMap((property) =>
-            (property.comments || []).map((comment) => ({
-              ...comment,
-              uniqueId: `${property.property_id}-${comment.id}`,
-            }))
-          ) || [];
-        setTestimonials(allComments);
-      });
+    const allComments = mockData.properties?.flatMap((property) =>
+      (property.comments || []).map((comment) => ({
+        ...comment,
+        uniqueId: `${property.property_id}-${comment.id}`,
+      }))
+    ) || [];
+    setTestimonials(allComments);
   }, []);
 
   return (

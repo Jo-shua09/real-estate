@@ -1,18 +1,16 @@
 import { useEffect, useState } from "react";
 import PropertyCard from "./PropertyCard";
 import SwiperSlideLayout from "./SwiperSlideLayout";
+import mockData from "../assets/mock_data.json"; // Add this import
 
 const PropertyLayout = () => {
   const [properties, setProperties] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/mock_data.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setProperties(data.properties || []);
-        setIsLoading(false);
-      });
+    // Replace fetch with direct import
+    setProperties(mockData.properties || []);
+    setIsLoading(false);
   }, []);
 
   if (isLoading) return <div>Loading...</div>;

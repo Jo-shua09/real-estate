@@ -1,15 +1,14 @@
 import SectionIntro from "../../../Components/SectionIntro";
 import { useEffect, useState } from "react";
 import { Add, Remove } from "@mui/icons-material";
+import mockData from '../../../assets/mock_data.json';  // Add this import
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [faqs, setFaqs] = useState([]);
 
   useEffect(() => {
-    fetch("/mock_data.json")
-      .then((res) => res.json())
-      .then((data) => setFaqs(data.faqs));
+    setFaqs(mockData.faqs || []);
   }, []);
 
   const toggleFAQ = (index) => {
