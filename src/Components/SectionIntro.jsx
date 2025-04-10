@@ -1,6 +1,6 @@
 import React from "react";
 import { Button2 } from "./general/Button";
-import Abstract from "/src/assets/images/general/Abstract.png";
+import Abstract from "/src/assets/Images/General/Abstract.png";
 import { Link } from "react-router-dom";
 
 const SectionIntro = ({ title, description, name, linkPath }) => {
