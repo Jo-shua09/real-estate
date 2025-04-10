@@ -1,6 +1,6 @@
 import React from "react";
-import Hero from "./sections/hero";
 import HeroBanner from "./sections/HeroBanner";
+import Hero from "./sections/Hero";
 import Featured from "./sections/Featured";
 import Testimonials from "./sections/Testimonials";
 import FAQ from "./sections/FAQ";
