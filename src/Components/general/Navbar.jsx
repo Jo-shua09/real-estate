@@ -1,5 +1,5 @@
 import { Close, Menu } from "@mui/icons-material";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
@@ -9,6 +9,23 @@ const Navbar = () => {
   const handleMenu = () => {
     setOpen(!open);
   };
+
+  // Close mobile menu on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      if (open) {
+        setOpen(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [open]);
+
+  // Close mobile menu on navigation
+  useEffect(() => {
+    setOpen(false);
+  }, [location]);
 
   return (
     <div className="w-full h-full section-page border-b border-white/5">
