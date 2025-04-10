@@ -1,5 +1,5 @@
-import bannerLeft from "../../assets/images/general/banner-left.svg";
-import bannerRight from "../../assets/images/general/banner-right.svg";
+import bannerLeft from "../../assets/Images/General/banner-left.svg";
+import bannerRight from "../../assets/Images/General/banner-right.svg";
 
 const Banner = () => {
   return (
