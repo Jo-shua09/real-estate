@@ -34,10 +34,11 @@ const Banner = () => {
             </p>
           </div>
           <div className="md:flex-1 md:w-fit w-full place-content-end items-end flex">
-            <Link to="property">
-              <button className="bg-purple-600 hover:scale-95 rounded-xl md:w-fit w-full h-[5rem] text-2xl font-semibold capitalize flex items-center justify-center py-5 px-7 hover:bg-purple-900>">
-                explore properties
-              </button>
+            <Link
+              to="property"
+              className="bg-purple-600 hover:scale-95 rounded-xl md:w-fit w-full h-[5rem] text-2xl font-semibold capitalize flex items-center justify-center py-5 px-7 hover:bg-purple-900"
+            >
+              <button className="capitalize">explore properties</button>
             </Link>
           </div>
         </div>
