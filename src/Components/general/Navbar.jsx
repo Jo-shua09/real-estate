@@ -1,5 +1,5 @@
 import { Close, Menu } from "@mui/icons-material";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
@@ -10,34 +10,19 @@ const Navbar = () => {
     setOpen(!open);
   };
 
-  // Close mobile menu on scroll
-  useEffect(() => {
-    const handleScroll = () => {
-      if (open) {
-        setOpen(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [open]);
-
-  // Close mobile menu on navigation
-  useEffect(() => {
-    setOpen(false);
-  }, [location]);
-
   return (
-    <div className="w-full h-full section-page border-b border-white/5">
+    <div className="w-full h-full section-page border-b border-white/5 relative">
       <div className="flex items-center justify-between w-full md:flex-nowrap flex-wrap gap-y-5">
         <div className="md:w-full w-fit">
           <Link to="/" className="flex items-center gap-x-2">
             <img
               src="/Logo.svg"
               alt="Logo image"
-              className="object-cover w-10 h-10"
+              className="object-cover md:w-10 md:h-10 w-14 h-14"
             />
-            <span className="md:text-3xl text-4xl font-bold">Estatein</span>
+            <span className="md:text-3xl text-[2.5rem] font-bold">
+              Estatein
+            </span>
           </Link>
         </div>
 
@@ -100,19 +85,43 @@ const Navbar = () => {
 
         {/* MOBILE MENU HANDLER */}
         <div className="md:hidden w-fit">
-          {!open ? (
-            <Menu onClick={handleMenu} className="!text-5xl cursor-pointer" />
-          ) : (
-            <Close onClick={handleMenu} className="!text-5xl cursor-pointer" />
-          )}
+          <Menu
+            onClick={handleMenu}
+            className="transition-all duration-200 delay-200 !text-6xl cursor-pointer"
+          />
         </div>
       </div>
       {/* MOBILE MENU */}
-      <div className={`md:hidden my-5 ${open ? "block" : "hidden"}`}>
-        <ul className="flex flex-col gap-y-5 bg-black/20 w-full p-2 text-2xl font-medium">
+      <div
+        className={`md:hidden absolute top-0 left-0 px-5 ease-in-out w-full !h-screen bg-white/5 shadow-[1px_1px_5px_rgba(0,0,0,0.5)] backdrop-blur-2xl backdrop-brightness-90 z-[999999] ${
+          open
+            ? "translate-x-full transition-all duration-200"
+            : "translate-x-0"
+        }`}
+      >
+        <div className="flex items-center justify-between w-full py-5">
+          <div className="md:w-full w-fit">
+            <Link to="/" className="flex items-center gap-x-2">
+              <img
+                src="/Logo.svg"
+                alt="Logo image"
+                className="object-cover md:w-10 md:h-10 w-14 h-14"
+              />
+              <span className="md:text-3xl text-[2.5rem] font-bold">
+                Estatein
+              </span>
+            </Link>
+          </div>
+          <Close
+            onClick={handleMenu}
+            className="transition-all duration-200 delay-200 !text-6xl cursor-pointer"
+          />
+        </div>
+
+        <ul className="flex flex-col gap-y-5 w-full h-full mt-10 text-3xl rounded-xl font-semibold">
           <Link to="/">
             <li
-              className={`list-none rounded-lg py-4 px-7 hover:bg-black/20 border-white/5 ${
+              className={`list-none rounded-xl py-6 px-7 hover:bg-black/20 border-white/5 ${
                 location.pathname === "/" ? "bg-black/20 border-2" : ""
               }`}
             >
@@ -121,7 +130,7 @@ const Navbar = () => {
           </Link>
           <Link to="/about">
             <li
-              className={`list-none rounded-lg py-4 px-7 text-nowrap hover:bg-black/20 border-white/5 transition-all duration-200 ${
+              className={`list-none rounded-xl py-6 px-7 text-nowrap hover:bg-black/20 border-white/5 transition-all duration-200 ${
                 location.pathname === "/about" ? "bg-black/20 border-2" : ""
               }`}
             >
@@ -130,7 +139,7 @@ const Navbar = () => {
           </Link>
           <Link to="/property">
             <li
-              className={`list-none rounded-lg py-4 px-7 hover:bg-black/20 border-white/5 transition-all duration-200 ${
+              className={`list-none rounded-xl py-6 px-7 hover:bg-black/20 border-white/5 transition-all duration-200 ${
                 location.pathname === "/property" ? "bg-black/20 border-2" : ""
               }`}
             >
@@ -139,11 +148,20 @@ const Navbar = () => {
           </Link>
           <Link to="/services">
             <li
-              className={`list-none rounded-lg py-4 px-7 hover:bg-black/20 border-white/5 transition-all duration-200 ${
+              className={`list-none rounded-xl py-6 px-7 hover:bg-black/20 border-white/5 transition-all duration-200 ${
                 location.pathname === "/services" ? "bg-black/20 border-2" : ""
               }`}
             >
               services
+            </li>
+          </Link>
+          <Link to="/contact">
+            <li
+              className={`list-none rounded-xl py-6 px-7 hover:bg-black/20 border-white/5 transition-all duration-200 ${
+                location.pathname === "/contact" ? "bg-black/20 border-2" : ""
+              }`}
+            >
+              contact
             </li>
           </Link>
         </ul>
