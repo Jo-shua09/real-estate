@@ -42,7 +42,7 @@ const Hero = () => {
               <div className="w-full flex flex-col gap-y-3 rounded-xl border-2 border-white/5 bg-white/5 py-4 px-5">
                 <h4 className=" text-4xl font-bold">10k+</h4>
                 <p className="text-2xl text-white/70 font-medium text-nowrap">
-                  properties for charts
+                  properties for clients
                 </p>
               </div>
             </div>

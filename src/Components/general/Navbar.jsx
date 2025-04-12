@@ -1,5 +1,5 @@
 import { Close, Menu } from "@mui/icons-material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
@@ -9,6 +9,10 @@ const Navbar = () => {
   const handleMenu = () => {
     setOpen(!open);
   };
+
+  useEffect(() => {
+    location.pathname;
+  }, [!open]);
 
   return (
     <div className="w-full h-full section-page border-b border-white/5 relative">
@@ -91,6 +95,7 @@ const Navbar = () => {
           />
         </div>
       </div>
+
       {/* MOBILE MENU */}
       <div
         className={`md:hidden absolute top-0 left-0 px-5 ease-in-out w-full !h-screen bg-white/5 shadow-[1px_1px_5px_rgba(0,0,0,0.5)] backdrop-blur-2xl backdrop-brightness-90 z-[999999] ${

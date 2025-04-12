@@ -297,7 +297,6 @@ const generateMockData = () => {
 };
 
 // === Save the Generated Data to a JSON File ===
-
 const mockData = generateMockData();
 
 // Update the path to match your project folder

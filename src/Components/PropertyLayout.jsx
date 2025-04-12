@@ -12,7 +12,7 @@ const PropertyLayout = () => {
     setIsLoading(false);
   }, []);
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) return <div>Loading contents</div>;
 
   return (
     <SwiperSlideLayout

@@ -10,15 +10,16 @@ const Banner = () => {
           <img
             src={bannerLeft}
             alt="banner left image"
-            className="w-fit h-[32rem] md:h-[28rem] brightness-90"
+            className="w-fit h-[32rem] md:h-[28rem]"
           />
 
           <img
             src={bannerRight}
             alt="banner left image"
-            className="w-fit brightness-90 h-[32rem] md:h-[28rem]"
+            className="w-fit h-[32rem] md:h-[28rem]"
           />
         </div>
+
         <div className="flex section items-center md:flex-nowrap flex-wrap justify-between gap-y-10 w-full absolute md:top-16 top-0 left-0">
           <div className="md:flex-[2] flex flex-col gap-y-5 w-full">
             <h1 className="md:text-5xl text-3xl font-semibold">
@@ -33,6 +34,7 @@ const Banner = () => {
               personalized assistance.
             </p>
           </div>
+
           <div className="md:flex-1 md:w-fit w-full place-content-end items-end flex">
             <Link
               to="/properties"
