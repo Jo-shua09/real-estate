@@ -8,6 +8,7 @@ const Achievement = () => {
         <SectionIntro
           title="our achievements"
           description="Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary."
+          hideButton={true}
         />
       </div>
       <div className=""></div>

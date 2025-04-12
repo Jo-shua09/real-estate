@@ -1,10 +1,10 @@
 import React from "react";
-import AboutImage from "/src/assets/Images/About/about-hero.jpg";
+import AboutImage from "/src/assets/Images/About/about-hero.png";
 import Abstract from "/src/assets/Images/General/Abstract.png";
 
 const AboutHero = () => {
   return (
-    <div className="w-full h-full flex items-center flex-wrap-reverse md:flex-nowrap gap-x-20 justify-between gap-y-10 section">
+    <div className="w-full h-full flex items-center flex-wrap-reverse md:flex-nowrap gap-x-20 justify-between gap-y-10 section-page">
       <div className="md:flex-1 w-full">
         <img
           src={Abstract}
@@ -46,8 +46,8 @@ const AboutHero = () => {
         </div>
       </div>
 
-      <div className="md:flex-1 w-full md:m-0 bg-hero bg-center bg-no-repeat bg-cover md:rounded-none rounded-xl bg-white/5">
-        <div className="w-full h-[40rem] md:rounded-none px-10">
+      <div className="md:flex-1 w-full mt-5 md:m-0 bg-hero bg-center bg-no-repeat bg-cover md:rounded-none !rounded-xl border-2 border-white/5">
+        <div className="w-full h-[40rem] md:rounded-none rounded-xl">
           <img
             src={AboutImage}
             alt="hero image"

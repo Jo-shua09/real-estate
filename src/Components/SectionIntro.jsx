@@ -2,7 +2,7 @@ import React from "react";
 import { Button2 } from "./general/Button";
 import Abstract from "/src/assets/Images/General/Abstract.png";
 
-const SectionIntro = ({ title, description, name, linkPath }) => {
+const SectionIntro = ({ title, description, name, linkPath, hideButton }) => {
   return (
     <div>
       <div className="w-full">
@@ -16,9 +16,11 @@ const SectionIntro = ({ title, description, name, linkPath }) => {
             <h3 className="text-5xl font-semibold">{title}</h3>
             <p className="normal-case text-white/70 text-2xl">{description}</p>
           </div>
-          <div className="md:flex hidden">
-            <Button2 name={name} linkPath={linkPath} />
-          </div>
+          {!hideButton && (
+            <div className="md:flex hidden">
+              <Button2 name={name} linkPath={linkPath} />
+            </div>
+          )}
         </div>
       </div>
     </div>
