@@ -11,7 +11,7 @@ const PropertyCard = ({ property }) => {
 
   const navigate = useNavigate();
   const handlePropertyClick = (property) => {
-    navigate(`/property/${property.property_name}`, {
+    navigate(`/properties/${property.property_name}`, {
       state: {
         ...property,
       },

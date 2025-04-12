@@ -46,10 +46,10 @@ const Navbar = () => {
                 about us
               </li>
             </Link>
-            <Link to="/property">
+            <Link to="/properties">
               <li
                 className={`list-none rounded-lg py-4 px-7 hover:bg-black/20 border-white/5 transition-all duration-200 ${
-                  location.pathname === "/property"
+                  location.pathname === "/properties"
                     ? "bg-black/20 border-2"
                     : ""
                 }`}
@@ -95,8 +95,8 @@ const Navbar = () => {
       <div
         className={`md:hidden absolute top-0 left-0 px-5 ease-in-out w-full !h-screen bg-white/5 shadow-[1px_1px_5px_rgba(0,0,0,0.5)] backdrop-blur-2xl backdrop-brightness-90 z-[999999] ${
           open
-            ? "translate-x-full transition-all duration-200"
-            : "translate-x-0"
+            ? "translate-x-0"
+            : "translate-x-full transition-all duration-200"
         }`}
       >
         <div className="flex items-center justify-between w-full py-5">
@@ -137,10 +137,12 @@ const Navbar = () => {
               about us
             </li>
           </Link>
-          <Link to="/property">
+          <Link to="/properties">
             <li
               className={`list-none rounded-xl py-6 px-7 hover:bg-black/20 border-white/5 transition-all duration-200 ${
-                location.pathname === "/property" ? "bg-black/20 border-2" : ""
+                location.pathname === "/properties"
+                  ? "bg-black/20 border-2"
+                  : ""
               }`}
             >
               properties

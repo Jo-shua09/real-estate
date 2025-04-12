@@ -1,6 +1,7 @@
 import React from "react";
 import HeroImage from "/src/assets/Images/Home/Hero.png";
 import { ArrowForward } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -16,12 +17,18 @@ const Hero = () => {
           </p>
 
           <div className="flex items-center flex-wrap md:flex-nowrap justify-between gap-5 md:w-1/3 w-full">
-            <button className="w-full text-2xl text-nowrap h-[5rem] md:h-[4.5rem] px-7 bg-black/20 border-white/5 hover:scale-95 rounded-xl border-2 flex items-center justify-center capitalize font-semibold">
-              learn more
-            </button>
-            <button className="w-full text-2xl text-nowrap h-[5rem] hover:bg-purple-900 md:h-[4.5rem] px-7 bg-purple-600 rounded-xl hover:scale-95 flex items-center justify-center capitalize font-semibold">
-              browse properties
-            </button>
+            <Link
+              to="/about"
+              className="w-full text-nowrap h-[5rem] md:h-[4.5rem] px-7 bg-black/20 border-white/5 hover:scale-95 rounded-xl border-2 flex items-center justify-center capitalize font-semibold"
+            >
+              <button className=" text-2xl capitalize">learn more</button>
+            </Link>
+            <Link
+              to="/properties"
+              className="w-full text-2xl text-nowrap h-[5rem] hover:bg-purple-900 md:h-[4.5rem] px-7 bg-purple-600 rounded-xl hover:scale-95 flex items-center justify-center capitalize font-semibold"
+            >
+              <button className="text-2xl capitalize">browse properties</button>
+            </Link>
           </div>
 
           <div className="flex items-center justify-between text-center md:text-left gap-5 flex-wrap md:flex-nowrap w-full">
