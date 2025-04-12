@@ -1,11 +1,11 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
 import { useState } from "react";
 import { ArrowBack, ArrowForward } from "@mui/icons-material";
 import SectionIntro from "./SectionIntro";
 import { Button2 } from "./general/Button";
 import "swiper/css";
 import "swiper/css/navigation";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 
 const SwiperSlideLayout = ({
   items = [],

@@ -1,7 +1,7 @@
 import SectionIntro from "../../../Components/SectionIntro";
 import { useEffect, useState } from "react";
 import { Add, Remove } from "@mui/icons-material";
-import mockData from "../../../assets/mock_data.json"; // Add this import
+import mockData from "../../../assets/mock_data.json";
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
