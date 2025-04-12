@@ -10,9 +10,22 @@ const Navbar = () => {
     setOpen(!open);
   };
 
+  // Close mobile menu when route changes
   useEffect(() => {
-    location.pathname;
-  }, [!open]);
+    setOpen(false);
+  }, [location.pathname]);
+
+  // Close mobile menu when scrolling
+  useEffect(() => {
+    const handleScroll = () => {
+      if (open) {
+        setOpen(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [open]);
 
   return (
     <div className="w-full h-full section-page border-b border-white/5 relative">
