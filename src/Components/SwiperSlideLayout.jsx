@@ -86,7 +86,7 @@ const SwiperSlideLayout = ({
               <ArrowForward
                 id={navNextId}
                 className={`md:!text-6xl !text-7xl border-2 border-white/5 cursor-pointer flex items-center rounded-full p-3 ${
-                  currentSlide === items.slice(0, 30).length - 1
+                  currentSlide === items.slice(0, 30)
                     ? "opacity-50 cursor-not-allowed"
                     : "bg-black/30"
                 }`}
