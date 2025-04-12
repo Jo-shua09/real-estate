@@ -46,7 +46,7 @@ const AboutHero = () => {
         </div>
       </div>
 
-      <div className="md:flex-1 w-full mt-5 md:m-0 bg-hero bg-center bg-no-repeat bg-cover md:rounded-none !rounded-xl border-2 border-white/5">
+      <div className="md:flex-1 w-full mt-5 md:m-0 bg-hero bg-no-repeat md:rounded-none !rounded-xl border-2 border-white/5">
         <div className="w-full h-[40rem] md:rounded-none rounded-xl">
           <img
             src={AboutImage}
