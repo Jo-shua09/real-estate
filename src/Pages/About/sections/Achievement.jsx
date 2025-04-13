@@ -11,7 +11,35 @@ const Achievement = () => {
           hideButton={true}
         />
       </div>
-      <div className=""></div>
+
+      <div className="w-full grid md:grid-cols-3 grid-cols-1 gap-10 justify-between">
+        <div className="w-full border-[.5rem] border-white/5 hover:shadow-[1px_1px_6px_rgba(0,0,0.2)] hover:-translate-y-5 transition-all duration-200 cursor-pointer p-10 rounded-xl">
+          <h3 className="text-2xl font-semibold pb-5">
+            3+ Years of Excellence
+          </h3>
+          <p className="text-xl font-medium text-white/70 normal-case">
+            With over 3 years in the industry, we've amassed a wealth of
+            knowledge and experience.
+          </p>
+        </div>
+        <div className="w-full border-[.5rem] border-white/5 hover:shadow-[1px_1px_6px_rgba(0,0,0.2)] hover:-translate-y-5 transition-all duration-200 cursor-pointer p-10 rounded-xl">
+          <h3 className="text-2xl font-semibold pb-5">happy clients </h3>
+          <p className="text-xl font-medium text-white/70 normal-case">
+            Our greatest achievement is the satisfaction of our clients. Their
+            success stories fuel our passion for what we do.
+          </p>
+        </div>
+
+        <div className="w-full border-[.5rem] border-white/5 hover:shadow-[1px_1px_6px_rgba(0,0,0.2)] hover:-translate-y-5 transition-all duration-200 cursor-pointer p-10 rounded-xl">
+          <h3 className="text-2xl font-semibold pb-5">
+            industrial recognition
+          </h3>
+          <p className="text-xl font-medium text-white/70 normal-case">
+            We've earned the respect of our peers and industry leaders, with
+            accolades and awards that reflect our commitment to excellence.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

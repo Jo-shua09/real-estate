@@ -18,7 +18,7 @@ const Values = () => {
           platform that transcended the ordinary.
         </p>
       </div>
-      <div className="w-full md:flex-[2] flex-col border-2 p-10 border-white/5 rounded-xl shadow-[1px_1px_6px_rgba(0,0,0.2)]">
+      <div className="w-full md:flex-[2] flex-col border-[.5rem] p-10 border-white/5 rounded-xl">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-10 relative">
           <div className="flex flex-col gap-y-5 md:border-r border-white/5 md:border-b-0 border-b pb-5">
             <div className="flex gap-x-3 items-center">
