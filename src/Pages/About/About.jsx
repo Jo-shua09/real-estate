@@ -2,6 +2,7 @@ import React from "react";
 import AboutHero from "./sections/AboutHero";
 import Values from "./sections/Values";
 import Achievement from "./sections/Achievement";
+import Navigate from "./sections/Navigate";
 
 const About = () => {
   return (
@@ -9,6 +10,7 @@ const About = () => {
       <AboutHero />
       <Values />
       <Achievement />
+      <Navigate />
     </div>
   );
 };

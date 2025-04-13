@@ -22,6 +22,7 @@ const Achievement = () => {
             knowledge and experience.
           </p>
         </div>
+
         <div className="w-full border-[.5rem] border-white/5 hover:shadow-[1px_1px_6px_rgba(0,0,0.2)] hover:-translate-y-5 transition-all duration-200 cursor-pointer p-10 rounded-xl">
           <h3 className="text-2xl font-semibold pb-5">happy clients </h3>
           <p className="text-xl font-medium text-white/70 normal-case">
