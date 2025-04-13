@@ -38,7 +38,7 @@ const Navbar = () => {
               className="object-cover md:w-10 md:h-10 w-14 h-14"
             />
             <span className="md:text-3xl text-[2.5rem] font-bold">
-              Estatein
+              estantien
             </span>
           </Link>
         </div>
@@ -126,7 +126,7 @@ const Navbar = () => {
                 className="object-cover md:w-10 md:h-10 w-14 h-14"
               />
               <span className="md:text-3xl text-[2.5rem] font-bold">
-                Estatein
+                estantien
               </span>
             </Link>
           </div>

@@ -203,9 +203,9 @@ const generateComments = () => {
 const faqData = [
   {
     id: 1,
-    question: "What sets Estatein apart from other real estate agencies?",
+    question: "What sets estantien apart from other real estate agencies?",
     answer:
-      "Estatein distinguishes itself through our personalized approach, extensive market expertise, and commitment to transparency. We offer innovative virtual tours, 24/7 customer support, and a carefully curated portfolio of premium properties.",
+      "estantien distinguishes itself through our personalized approach, extensive market expertise, and commitment to transparency. We offer innovative virtual tours, 24/7 customer support, and a carefully curated portfolio of premium properties.",
   },
   {
     id: 2,

@@ -5,11 +5,11 @@ const Navigate = () => {
     <div className="w-full section h-full flex flex-col gap-y-10">
       <SectionIntro
         title="navigation the estantien experience"
-        description="At Estatein, we've designed a straightforward process to help you find and purchase your dream property with ease. Here's a step-by-step guide to how it all works."
+        description="At estantien, we've designed a straightforward process to help you find and purchase your dream property with ease. Here's a step-by-step guide to how it all works."
         hideButton={true}
       />
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 items-center w-full gap-10 ">
-        <div className="w-full h-fit border-l rounded-bl-xl border-purple-600">
+        <div className="w-full h-fit border-l hover:border transition-all duration-200 cursor-pointer hover:rounded-xl rounded-bl-xl border-purple-600">
           <h4 className="py-5 px-4 text-2xl font-semibold">step 01</h4>
           <div className="border-2 border-white/5 rounded-xl rounded-tl-none p-10 flex flex-col gap-y-5">
             <h2 className="text-2xl font-semibold normal-case">
@@ -23,7 +23,7 @@ const Navigate = () => {
           </div>
         </div>
 
-        <div className="w-full h-fit border-l rounded-bl-xl border-purple-600">
+        <div className="w-full h-fit border-l hover:border transition-all duration-200 cursor-pointer hover:rounded-xl rounded-bl-xl border-purple-600">
           <h4 className="py-5 px-4 text-2xl font-semibold">step 02</h4>
           <div className="border-2 border-white/5 rounded-xl rounded-tl-none p-10 flex flex-col gap-y-5">
             <h2 className="text-2xl font-semibold normal-case">
@@ -37,7 +37,7 @@ const Navigate = () => {
           </div>
         </div>
 
-        <div className="w-full h-fit border-l rounded-bl-xl border-purple-600">
+        <div className="w-full h-fit border-l hover:border transition-all duration-200 cursor-pointer hover:rounded-xl rounded-bl-xl border-purple-600">
           <h4 className="py-5 px-4 text-2xl font-semibold">step 03</h4>
           <div className="border-2 border-white/5 rounded-xl rounded-tl-none p-10 flex flex-col gap-y-5">
             <h2 className="text-2xl font-semibold normal-case">
@@ -51,7 +51,7 @@ const Navigate = () => {
           </div>
         </div>
 
-        <div className="w-full h-fit border-l rounded-bl-xl border-purple-600">
+        <div className="w-full h-fit border-l hover:border transition-all duration-200 cursor-pointer hover:rounded-xl rounded-bl-xl border-purple-600">
           <h4 className="py-5 px-4 text-2xl font-semibold">step 04</h4>
           <div className="border-2 border-white/5 rounded-xl rounded-tl-none p-10 flex flex-col gap-y-5">
             <h2 className="text-2xl font-semibold normal-case">
@@ -65,7 +65,7 @@ const Navigate = () => {
           </div>
         </div>
 
-        <div className="w-full h-fit border-l rounded-bl-xl border-purple-600">
+        <div className="w-full h-fit border-l hover:border transition-all duration-200 cursor-pointer hover:rounded-xl rounded-bl-xl border-purple-600">
           <h4 className="py-5 px-4 text-2xl font-semibold">step 05</h4>
           <div className="border-2 border-white/5 rounded-xl rounded-tl-none p-10 flex flex-col gap-y-5">
             <h2 className="text-2xl font-semibold normal-case">
@@ -79,7 +79,7 @@ const Navigate = () => {
           </div>
         </div>
 
-        <div className="w-full h-fit border-l rounded-bl-xl border-purple-600">
+        <div className="w-full h-fit border-l hover:border transition-all duration-200 cursor-pointer hover:rounded-xl rounded-bl-xl border-purple-600">
           <h4 className="py-5 px-4 text-2xl font-semibold">step 06</h4>
           <div className="border-2 border-white/5 rounded-xl rounded-tl-none p-10 flex flex-col gap-y-5">
             <h2 className="text-2xl font-semibold normal-case">
@@ -92,6 +92,25 @@ const Navigate = () => {
             </p>
           </div>
         </div>
+
+        {/* {[...Array(10)].map((_, index) => (
+          <div
+            key={index}
+            className="w-full h-fit border-l rounded-bl-xl border-purple-600"
+          >
+            <h4 className="py-5 px-4 text-2xl font-semibold">step 06</h4>
+            <div className="border-2 border-white/5 rounded-xl rounded-tl-none p-10 flex flex-col gap-y-5">
+              <h2 className="text-2xl font-semibold normal-case">
+                Getting the Best Deal
+              </h2>
+              <p className="text-xl font-medium normal-case text-white/70">
+                We'll help you negotiate the best terms and prepare your offer.
+                Our goal is to secure the property at the right price and on
+                favorable terms.
+              </p>
+            </div>
+          </div>
+        ))} */}
       </div>
     </div>
   );

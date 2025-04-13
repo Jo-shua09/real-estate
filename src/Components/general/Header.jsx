@@ -15,7 +15,7 @@ const Header = () => {
     >
       <div className="text-center flex items-center justify-center py-3 px-7 bg-header bg-center bg-no-repeat bg-cover">
         <p className="text-2xl w-full normal-case text-white/70">
-          ✨Discover Your Dream Property with Estatein{" "}
+          ✨Discover Your Dream Property with estantien{" "}
           <span className="underline hover:no-underline cursor-pointer font-semibold text-white/85">
             learn more
           </span>

@@ -20,7 +20,7 @@ const FAQ = () => {
       <SectionIntro
         title="frequently asked questions"
         name="view all FAQ's"
-        description="Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way."
+        description="Find answers to common questions about estantien's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way."
       />
 
       <div className="w-full grid lg:grid-cols-2 grid-cols-1 gap-5 mt-16 items-center justify-between">

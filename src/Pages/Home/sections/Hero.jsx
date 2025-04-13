@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="relative md:flex-1 w-full h-full place-content-center px-9">
         <div className="flex items-start gap-y-10 flex-col py-20">
           <h1 className="text-5xl font-semibold normal-case leading-[3.5rem]">
-            Discover Your Dream <br /> Property with Estatein
+            Discover Your Dream <br /> Property with estantien
           </h1>
           <p className="text-2xl text-white/70 normal-case">
             Your journey to finding the perfect property begins here. Explore

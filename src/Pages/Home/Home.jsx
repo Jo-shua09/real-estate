@@ -7,13 +7,13 @@ import FAQ from "./sections/FAQ";
 
 const Home = () => {
   return (
-    <div className="">
+    <>
       <Hero />
       <HeroBanner />
       <Featured />
       <Testimonials />
       <FAQ />
-    </div>
+    </>
   );
 };
 

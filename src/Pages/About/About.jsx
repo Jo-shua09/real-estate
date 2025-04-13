@@ -3,15 +3,17 @@ import AboutHero from "./sections/AboutHero";
 import Values from "./sections/Values";
 import Achievement from "./sections/Achievement";
 import Navigate from "./sections/Navigate";
+import Team from "./sections/Team";
 
 const About = () => {
   return (
-    <div>
+    <>
       <AboutHero />
       <Values />
       <Achievement />
       <Navigate />
-    </div>
+      <Team />
+    </>
   );
 };
 
