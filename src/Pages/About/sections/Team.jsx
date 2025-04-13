@@ -15,7 +15,7 @@ const Team = () => {
       />
 
       <div className="w-full grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 justify-between gap-10 items-center">
-        <div className="w-full border-2 border-white/5 rounded-xl p-7 hover:scale-95 cursor-pointer">
+        <div className="w-full border-2 border-white/5 rounded-xl p-7">
           <div className="w-full h-full relative">
             <img
               src={team1}
@@ -43,7 +43,7 @@ const Team = () => {
           </div>
         </div>
 
-        <div className="w-full border-2 border-white/5 rounded-xl p-7 hover:scale-95 cursor-pointer">
+        <div className="w-full border-2 border-white/5 rounded-xl p-7">
           <div className="w-full h-full relative">
             <img
               src={team2}
@@ -71,7 +71,7 @@ const Team = () => {
           </div>
         </div>
 
-        <div className="w-full border-2 border-white/5 rounded-xl p-7 hover:scale-95 cursor-pointer">
+        <div className="w-full border-2 border-white/5 rounded-xl p-7">
           <div className="w-full h-full relative">
             <img
               src={team3}
@@ -99,7 +99,7 @@ const Team = () => {
           </div>
         </div>
 
-        <div className="w-full border-2 border-white/5 rounded-xl p-7 hover:scale-95 cursor-pointer">
+        <div className="w-full border-2 border-white/5 rounded-xl p-7">
           <div className="w-full h-full relative">
             <img
               src={team4}
