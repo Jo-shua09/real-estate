@@ -17,6 +17,7 @@ const SwiperSlideLayout = ({
   navPrevId,
   navNextId,
   breakpoints,
+  hideButton,
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -31,6 +32,7 @@ const SwiperSlideLayout = ({
         description={description}
         name={buttonText}
         linkPath={linkPath}
+        hideButton={hideButton}
       />
 
       <div className="mt-16">

@@ -4,6 +4,7 @@ import Values from "./sections/Values";
 import Achievement from "./sections/Achievement";
 import Navigate from "./sections/Navigate";
 import Team from "./sections/Team";
+import Clients from "./sections/Clients";
 
 const About = () => {
   return (
@@ -13,6 +14,7 @@ const About = () => {
       <Achievement />
       <Navigate />
       <Team />
+      <Clients />
     </>
   );
 };
