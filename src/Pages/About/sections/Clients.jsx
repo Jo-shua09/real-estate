@@ -21,14 +21,14 @@ const Clients = () => {
         breakpoints={{
           400: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
+          1024: { slidesPerView: 2 },
         }}
         useWFit={true}
         navPrevId="prev-button3"
         navNextId="next-button3"
         renderSlide={(client) => (
           <div className="w-full h-full flex items-center">
-            <div className="w-full border-[.5rem] border-white/5 rounded-xl p-7">
+            <div className="w-full h-full border-[.5rem] border-white/5 rounded-xl p-7">
               <div className="flex justify-between items-center">
                 <div className="flex flex-col gap-y-2">
                   <h5 className="text-xl text-white/70 font-medium">
@@ -60,7 +60,7 @@ const Clients = () => {
                 </div>
               </div>
               <div className="w-full p-7 rounded-xl border-2 border-white/5">
-                <h3 className="text-xl text-white/70">what they said</h3>
+                <h3 className="text-xl text-white/70 pb-5">what they said</h3>
                 <p className="text-2xl font-medium normal-case">
                   {client.testimonial}
                 </p>
