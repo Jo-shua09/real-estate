@@ -19,6 +19,7 @@ const SwiperSlideLayout = ({
   breakpoints,
   hideButton,
   useWFit,
+  disableAt = 2,
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -98,7 +99,7 @@ const SwiperSlideLayout = ({
                 <ArrowForward
                   id={navNextId}
                   className={`md:!text-6xl !text-7xl border-2 border-white/5 cursor-pointer flex items-center rounded-full p-3 ${
-                    currentSlide === items.slice(0, 10).length - 3
+                    currentSlide === items.slice(0, 10).length - disableAt
                       ? "opacity-50 cursor-not-allowed"
                       : "bg-black/30"
                   }`}

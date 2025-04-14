@@ -16,6 +16,7 @@ const Clients = () => {
         items={clients}
         title=" our value clients"
         hideButton={true}
+        disableAt={2}
         description="At Estatein, we have had the privilege of working with a diverse range of clients across various industries. Here are some of the clients we've had the pleasure of serving"
         breakpoints={{
           400: { slidesPerView: 1 },
@@ -26,8 +27,8 @@ const Clients = () => {
         navPrevId="prev-button3"
         navNextId="next-button3"
         renderSlide={(client) => (
-          <div className="w-full h-full flex items-center">
-            <div className="w-full h-full border-[.5rem] border-white/5 rounded-xl p-7">
+          <div className="w-full h-full flex place-items-center place-content-center items-center justify-center">
+            <div className="w-full h-fit border-[.5rem] border-white/5 rounded-xl p-7">
               <div className="flex justify-between items-center">
                 <div className="flex flex-col gap-y-2">
                   <h5 className="text-xl text-white/70 font-medium">

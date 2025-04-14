@@ -26,6 +26,7 @@ const Testimonials = () => {
       linkPath=""
       navPrevId="prev-button2"
       navNextId="next-button2"
+      disableAt={4}
       breakpoints={{
         400: { slidesPerView: 1 },
         768: { slidesPerView: 3 },

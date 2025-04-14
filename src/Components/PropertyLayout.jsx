@@ -19,6 +19,7 @@ const PropertyLayout = () => {
       linkPath="/properties"
       navPrevId="prev-button"
       navNextId="next-button"
+      disableAt={3}
       renderSlide={(property) => <PropertyCard property={property} />}
     />
   );
