@@ -20,12 +20,17 @@ const SwiperSlideLayout = ({
   hideButton,
   useWFit,
   disableAt = 2,
+  sliceRange={[0, 10]}
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const handleSlideChange = (swiper) => {
     setCurrentSlide(swiper.activeIndex);
   };
+
+  const slicedItems = sliceRange
+    ? items.slice(sliceRange[0], sliceRange[1])
+    : items;
 
   return (
     <div className="w-full section h-full">
@@ -54,7 +59,7 @@ const SwiperSlideLayout = ({
             }
           }
         >
-          {items.slice(0, 10).map((item) => (
+          {slicedItems.map((item) => (
             <SwiperSlide key={item.uniqueId || item.property_id}>
               {renderSlide(item)}
             </SwiperSlide>
