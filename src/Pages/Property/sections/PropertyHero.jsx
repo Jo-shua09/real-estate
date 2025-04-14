@@ -18,7 +18,7 @@ const PropertyHero = () => {
     propertySize: "property size",
     buildYear: "build year",
   });
-  const [activeDropdown, setActiveDropdown] = useState(null);
+  // const [activeDropdown, setActiveDropdown] = useState(null);
   const [filterOptions, setFilterOptions] = useState({
     location: [],
     propertyType: [],
@@ -53,45 +53,53 @@ const PropertyHero = () => {
     });
   }, []);
 
-  const handleDropdownClick = (dropdown) => {
-    setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
-  };
+  // const handleDropdownClick = (dropdown) => {
+  //   setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
+  // };
 
   const handleOptionSelect = (category, option) => {
     setFilters((prev) => ({
       ...prev,
       [category]: option,
     }));
-    setActiveDropdown(null);
+    // setActiveDropdown(null);
   };
 
   const FilterDropdown = ({ category, icon }) => (
     <div className="rounded-xl flex items-center bg-black/30 px-3">
       {icon}
       <div className="relative flex-1">
-        <div
-          className="text-xl uppercase cursor-pointer font-medium  rounded-2xl py-4 px-4 gap-x-4 flex items-center justify-between"
-          onClick={() => handleDropdownClick(category)}
+        <select
+          className="w-full md:h-[4.5rem] h-[5rem] text-xl uppercase cursor-pointer font-medium py-4 px-4 bg-transparent appearance-none !focus:outline-none"
+          value={filters[category]}
+          onChange={(e) => handleOptionSelect(category, e.target.value)}
+          style={{
+            WebkitAppearance: "none",
+            MozAppearance: "none",
+          }}
         >
-          {filters[category]}{" "}
-          <KeyboardArrowDown
-            sx={{ fontSize: "3rem" }}
-            className="bg-white/5 rounded-full p-2"
-          />
-        </div>
-        {activeDropdown === category && (
-          <div className="absolute md:top-full mt-2 w-full bg-white/5 backdrop-blur-lg rounded-xl shadow-lg z-20">
-            {filterOptions[category].map((option) => (
-              <select
-                key={option}
-                className="text-xl uppercase cursor-pointer font-Rubik font-medium px-4 py-3 hover:bg-black"
-                onClick={() => handleOptionSelect(category, option)}
-              >
-                {option}
-              </select>
-            ))}
-          </div>
-        )}
+          <option
+            value={filters[category]}
+            disabled
+            className="bg-zinc-900 text-white"
+          >
+            {filters[category]}
+          </option>
+          {filterOptions[category].map((option) => (
+            <option
+              key={option}
+              value={option}
+              className="text-xl uppercase bg-zinc-900 text-white hover:bg-zinc-800"
+              style={{ padding: "0.75rem" }}
+            >
+              {option}
+            </option>
+          ))}
+        </select>
+        <KeyboardArrowDown
+          sx={{ fontSize: "2.3rem" }}
+          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/5 rounded-full p-1 pointer-events-none"
+        />
       </div>
     </div>
   );
