@@ -27,8 +27,8 @@ const Clients = () => {
         navPrevId="prev-button3"
         navNextId="next-button3"
         renderSlide={(client) => (
-          <div className="w-full h-full flex place-items-center place-content-center items-center justify-center">
-            <div className="w-full h-fit border-[.5rem] border-white/5 rounded-xl p-7">
+          <div className="w-full h-full">
+            <div className="w-full lg:h-[32rem] md:h-[35rem] h-full border-[.5rem] border-white/5 rounded-xl p-7">
               <div className="flex justify-between items-center">
                 <div className="flex flex-col gap-y-2">
                   <h5 className="text-xl text-white/70 font-medium">
@@ -66,7 +66,7 @@ const Clients = () => {
                 </div>
               </div>
 
-              <div className="w-full p-7 rounded-xl border-2 border-white/5">
+              <div className="w-full p-7 rounded-xl border-2 mb-5 border-white/5">
                 <h3 className="text-xl text-white/70 pb-5">what they said</h3>
                 <p className="text-2xl font-medium normal-case">
                   {client.testimonial}
