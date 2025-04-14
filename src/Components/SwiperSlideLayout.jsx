@@ -89,7 +89,7 @@ const SwiperSlideLayout = ({
                 />
               </div>
 
-              <div className="md:hidden w-full border text-nowrap flex md:text-xl justify-center text-[1.35rem] normal-case font-semibold">
+              <div className="md:hidden w-full text-nowrap flex md:text-xl justify-center text-[1.35rem] normal-case font-semibold">
                 {String(currentSlide + 1).padStart(2, "0")} of{" "}
                 {items.slice(0, 10).length}
               </div>
