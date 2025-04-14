@@ -103,7 +103,7 @@ const SearchResult = () => {
                   </p>
                 </div>
                 <div onClick={() => handlePropertyClick(result)}>
-                  <Button name="view result details" />
+                  <Button name="view property details" />
                 </div>
               </div>
             </div>
