@@ -63,8 +63,7 @@ const SwiperSlideLayout = ({
         <div className="border-t-2 border-white/5 mt-10">
           <div className="mt-2 flex justify-between w-full items-center">
             <div className="md:flex hidden text-xl normal-case font-semibold">
-              {String(currentSlide + 1).padStart(2, "0")} of{" "}
-              {items.slice(0, 30).length}
+              {String(currentSlide + 1).padStart(2, "0")} of {items.length}
             </div>
 
             {!hideButton && (
@@ -90,15 +89,14 @@ const SwiperSlideLayout = ({
               </div>
 
               <div className="md:hidden w-full  text-nowrap flex md:text-xl justify-center text-[1.35rem] normal-case font-semibold">
-                {String(currentSlide + 1).padStart(2, "0")} of{" "}
-                {items.slice(0, 30).length}
+                {String(currentSlide + 1).padStart(2, "0")} of {items.length}
               </div>
 
               <div className="w-full md:w-full  place-content-end flex">
                 <ArrowForward
                   id={navNextId}
                   className={`md:!text-6xl !text-7xl border-2 border-white/5 cursor-pointer flex items-center rounded-full p-3 ${
-                    currentSlide === items.length - 1
+                    currentSlide === items.length - 77
                       ? "opacity-50 cursor-not-allowed"
                       : "bg-black/30"
                   }`}
