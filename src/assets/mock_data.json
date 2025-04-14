@@ -5314,7 +5314,7 @@
     }
   ],
 
-  "valued-clients": [
+  "clients": [
     {
       "name": "ABC Corporation",
       "since": "2019",

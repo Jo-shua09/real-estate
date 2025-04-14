@@ -5,14 +5,10 @@ import mockData from "../assets/mock_data.json";
 
 const PropertyLayout = () => {
   const [properties, setProperties] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setProperties(mockData.properties || []);
-    setIsLoading(false);
   }, []);
-
-  if (isLoading) return <div>Loading contents</div>;
 
   return (
     <SwiperSlideLayout

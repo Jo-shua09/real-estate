@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import SwiperSlideLayout from "../../../Components/SwiperSlideLayout";
 import { Star } from "@mui/icons-material";
-import mockData from "../../../assets/mock_data.json"; // Add this import
+import mockData from "../../../assets/mock_data.json";
 
 const Testimonials = () => {
   const [testimonials, setTestimonials] = useState([]);
