@@ -27,7 +27,7 @@ const Clients = () => {
         navPrevId="prev-button3"
         navNextId="next-button3"
         renderSlide={(client) => (
-          <div className="w-full h-full">
+          <div className="w-full h-full flex items-center">
             <div className="w-full border-[.5rem] border-white/5 rounded-xl p-7">
               <div className="flex justify-between items-center">
                 <div className="flex flex-col gap-y-2">
