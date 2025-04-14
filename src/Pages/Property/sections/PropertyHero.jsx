@@ -1,12 +1,11 @@
 import {
   LocationOnRounded,
   Search,
-  Home,
-  AttachMoney,
-  Straighten,
   Event,
   KeyboardArrowDown,
   Payment,
+  Widgets,
+  RealEstateAgent,
 } from "@mui/icons-material";
 import { useState, useEffect } from "react";
 import mockData from "../../../assets/mock_data.json";
@@ -67,11 +66,11 @@ const PropertyHero = () => {
   };
 
   const FilterDropdown = ({ category, icon }) => (
-    <div className="rounded-xl flex items-center bg-black/30 px-2">
+    <div className="rounded-xl flex items-center bg-black/30 px-3">
       {icon}
       <div className="relative flex-1">
         <div
-          className="text-xl uppercase cursor-pointer font-Rubik font-medium  rounded-2xl py-4 px-4 gap-x-4 flex items-center justify-between"
+          className="text-xl uppercase cursor-pointer font-medium  rounded-2xl py-4 px-4 gap-x-4 flex items-center justify-between"
           onClick={() => handleDropdownClick(category)}
         >
           {filters[category]}{" "}
@@ -81,15 +80,15 @@ const PropertyHero = () => {
           />
         </div>
         {activeDropdown === category && (
-          <div className="absolute top-full mt-2 w-full bg-white/5 backdrop-blur-lg rounded-xl shadow-lg z-20">
+          <div className="absolute md:top-full mt-2 w-full bg-white/5 backdrop-blur-lg rounded-xl shadow-lg z-20">
             {filterOptions[category].map((option) => (
-              <div
+              <select
                 key={option}
                 className="text-xl uppercase cursor-pointer font-Rubik font-medium px-4 py-3 hover:bg-black"
                 onClick={() => handleOptionSelect(category, option)}
               >
                 {option}
-              </div>
+              </select>
             ))}
           </div>
         )}
@@ -110,7 +109,7 @@ const PropertyHero = () => {
       </div>
 
       <div className="flex m-auto justify-center flex-col items-center">
-        <div className="w-[90%] rounded-t-xl border-[.5rem] relative border-white/5 flex border-b-0">
+        <div className="md:w-[90%] w-full md:rounded-t-xl md:rounded-none rounded-xl border-[.5rem] relative border-white/5 flex mb-10 md:m-0 md:border-b-0">
           <input
             type="search"
             placeholder="Search for a property"
@@ -122,7 +121,7 @@ const PropertyHero = () => {
           </button>
         </div>
 
-        <div className="w-full p-3 rounded-xl bg-white/5 grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-10">
+        <div className="w-full md:p-3 p-5 rounded-xl bg-white/5 grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-x-10 gap-y-5">
           <FilterDropdown
             category="location"
             icon={
@@ -132,7 +131,7 @@ const PropertyHero = () => {
           <FilterDropdown
             category="propertyType"
             icon={
-              <Home className="!text-4xl pr-2 border-r-2 border-white/10" />
+              <RealEstateAgent className="!text-4xl pr-2 border-r-2 border-white/10" />
             }
           />
           <FilterDropdown
@@ -144,7 +143,7 @@ const PropertyHero = () => {
           <FilterDropdown
             category="propertySize"
             icon={
-              <Straighten className="!text-4xl pr-2 border-r-2 border-white/10" />
+              <Widgets className="!text-4xl pr-2 border-r-2 border-white/10" />
             }
           />
           <FilterDropdown
