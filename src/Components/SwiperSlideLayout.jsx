@@ -53,7 +53,7 @@ const SwiperSlideLayout = ({
             }
           }
         >
-          {items.slice(0, 30).map((item) => (
+          {items.slice(0, 10).map((item) => (
             <SwiperSlide key={item.uniqueId || item.property_id}>
               {renderSlide(item)}
             </SwiperSlide>
@@ -64,7 +64,7 @@ const SwiperSlideLayout = ({
           <div className="mt-2 flex justify-between w-full items-center">
             <div className="md:flex hidden text-xl normal-case font-semibold">
               {String(currentSlide + 1).padStart(2, "0")} of{" "}
-              {items.slice(0, 30).length}
+              {items.slice(0, 10).length}
             </div>
 
             {!hideButton && (
@@ -89,16 +89,16 @@ const SwiperSlideLayout = ({
                 />
               </div>
 
-              <div className="md:hidden w-full  text-nowrap flex md:text-xl justify-center text-[1.35rem] normal-case font-semibold">
+              <div className="md:hidden w-full border text-nowrap flex md:text-xl justify-center text-[1.35rem] normal-case font-semibold">
                 {String(currentSlide + 1).padStart(2, "0")} of{" "}
-                {items.slice(0, 30).length}
+                {items.slice(0, 10).length}
               </div>
 
               <div className="w-full md:w-full  place-content-end flex">
                 <ArrowForward
                   id={navNextId}
                   className={`md:!text-6xl !text-7xl border-2 border-white/5 cursor-pointer flex items-center rounded-full p-3 ${
-                    currentSlide === items.slice(0, 30)
+                    currentSlide === items.slice(0, 10).length - 3
                       ? "opacity-50 cursor-not-allowed"
                       : "bg-black/30"
                   }`}
