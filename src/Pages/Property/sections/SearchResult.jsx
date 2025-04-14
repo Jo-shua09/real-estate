@@ -40,6 +40,7 @@ const SearchResult = () => {
           1024: { slidesPerView: 3 },
         }}
         useWFit={true}
+        sliceRange={[]}
         navPrevId="prev-button3"
         navNextId="next-button3"
         renderSlide={(result) => (
