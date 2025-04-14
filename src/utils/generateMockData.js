@@ -199,57 +199,6 @@ const generateComments = () => {
 };
 
 // === Function to Generate 100 Fake Property Listings ===
-// Add this FAQ data array after your existing constants
-const faqData = [
-  {
-    id: 1,
-    question: "What sets estantien apart from other real estate agencies?",
-    answer:
-      "estantien distinguishes itself through our personalized approach, extensive market expertise, and commitment to transparency. We offer innovative virtual tours, 24/7 customer support, and a carefully curated portfolio of premium properties.",
-  },
-  {
-    id: 2,
-    question: "How do I schedule a property viewing?",
-    answer:
-      "Scheduling a viewing is easy! Simply select your desired property, click the 'Schedule Viewing' button, and choose your preferred date and time. Our team will confirm your appointment within 24 hours.",
-  },
-  {
-    id: 3,
-    question: "What documents do I need to rent a property?",
-    answer:
-      "Required documents typically include proof of income (pay stubs or tax returns), employment verification, photo ID, rental history, and references. Additional documents may be required based on specific property requirements.",
-  },
-  {
-    id: 4,
-    question: "How long does the buying process typically take?",
-    answer:
-      "The buying process usually takes 30-60 days from offer acceptance to closing. This timeline can vary based on factors such as financing, property conditions, and negotiation terms.",
-  },
-  {
-    id: 5,
-    question: "Do you handle property management services?",
-    answer:
-      "Yes, we offer comprehensive property management services including tenant screening, maintenance coordination, rent collection, and regular property inspections.",
-  },
-  {
-    id: 6,
-    question: "What are the typical down payment requirements?",
-    answer:
-      "Down payment requirements vary by property and loan type, typically ranging from 3.5% to 20% of the purchase price. We can help connect you with financial advisors to explore your options.",
-  },
-  {
-    id: 7,
-    question: "How do you determine property values?",
-    answer:
-      "We use a comprehensive approach including comparative market analysis, property condition assessment, location evaluation, and current market trends to determine accurate property values.",
-  },
-  {
-    id: 8,
-    question: "What areas do you serve?",
-    answer:
-      "We serve major metropolitan areas and surrounding suburbs, with a focus on luxury and premium properties in prime locations. Contact us to learn about specific areas in your region.",
-  },
-];
 
 // In your generateMockData function, add the FAQ data
 const generateMockData = () => {
@@ -292,7 +241,6 @@ const generateMockData = () => {
 
   return {
     properties,
-    faqs: faqData,
   };
 };
 

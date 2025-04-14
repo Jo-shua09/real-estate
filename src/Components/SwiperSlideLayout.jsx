@@ -18,6 +18,7 @@ const SwiperSlideLayout = ({
   navNextId,
   breakpoints,
   hideButton,
+  useWFit,
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -66,33 +67,43 @@ const SwiperSlideLayout = ({
               {items.slice(0, 30).length}
             </div>
 
-            <div className="md:hidden flex">
-              <Button2 name={buttonText} linkPath={linkPath} />
-            </div>
+            {!hideButton && (
+              <div className="md:hidden flex">
+                <Button2 name={buttonText} linkPath={linkPath} />
+              </div>
+            )}
 
-            <div className="flex items-center gap-x-5">
-              <ArrowBack
-                id={navPrevId}
-                className={`md:!text-6xl !text-7xl border-2 border-white/5 cursor-pointer flex items-center rounded-full p-3 ${
-                  currentSlide === 0
-                    ? "opacity-50 cursor-not-allowed"
-                    : "bg-black/30"
-                }`}
-              />
+            <div
+              className={`flex items-center gap-x-5 justify-between ${
+                useWFit ? "md:w-fit w-full" : "md:w-fit w-fit"
+              }`}
+            >
+              <div className="md:w-fit w-full">
+                <ArrowBack
+                  id={navPrevId}
+                  className={`md:!text-6xl !text-7xl border-2 border-white/5 cursor-pointer flex items-center rounded-full p-3 ${
+                    currentSlide === 0
+                      ? "opacity-50 cursor-not-allowed"
+                      : "bg-black/30"
+                  }`}
+                />
+              </div>
 
-              <div className="md:hidden flex md:text-xl text-[1.35rem] normal-case font-semibold">
+              <div className="md:hidden w-full  text-nowrap flex md:text-xl justify-center text-[1.35rem] normal-case font-semibold">
                 {String(currentSlide + 1).padStart(2, "0")} of{" "}
                 {items.slice(0, 30).length}
               </div>
 
-              <ArrowForward
-                id={navNextId}
-                className={`md:!text-6xl !text-7xl border-2 border-white/5 cursor-pointer flex items-center rounded-full p-3 ${
-                  currentSlide === items.slice(0, 30)
-                    ? "opacity-50 cursor-not-allowed"
-                    : "bg-black/30"
-                }`}
-              />
+              <div className="w-full md:w-full  place-content-end flex">
+                <ArrowForward
+                  id={navNextId}
+                  className={`md:!text-6xl !text-7xl border-2 border-white/5 cursor-pointer flex items-center rounded-full p-3 ${
+                    currentSlide === items.slice(0, 30)
+                      ? "opacity-50 cursor-not-allowed"
+                      : "bg-black/30"
+                  }`}
+                />
+              </div>
             </div>
           </div>
         </div>
