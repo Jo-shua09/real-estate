@@ -1,28 +1,100 @@
-import { LocationOnRounded, Search } from "@mui/icons-material";
-import { useState } from "react";
+import {
+  LocationOnRounded,
+  Search,
+  Home,
+  AttachMoney,
+  Straighten,
+  Event,
+  KeyboardArrowDown,
+} from "@mui/icons-material";
+import { useState, useEffect } from "react";
+import mockData from "../../../assets/mock_data.json";
 
 const PropertyHero = () => {
-  const [currentPage, setCurrentPage] = useState(1);
-  const [selectedFilter, setSelectedFilter] = useState("all-items");
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const filterOptions = [
-    "all-items",
-    ...new Set(ListOfProducts.map((product) => product.type)),
-  ];
-  const handleDropdownClick = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
-
-  const handleOptionSelect = (option) => {
-    setSelectedFilter(option);
-    setIsDropdownOpen(false);
-    setCurrentPage(1);
-  };
-
-  const filteredProducts = ListOfProducts.filter((product) => {
-    if (selectedFilter === "all-items") return true;
-    return product.type === selectedFilter;
+  const [filters, setFilters] = useState({
+    location: "location",
+    propertyType: "property type",
+    priceRange: "pricing ranges",
+    propertySize: "property sizes",
+    buildYear: "build year",
   });
+  const [activeDropdown, setActiveDropdown] = useState(null);
+  const [filterOptions, setFilterOptions] = useState({
+    location: [],
+    propertyType: [],
+    priceRange: [],
+    propertySize: [],
+    buildYear: [],
+  });
+
+  useEffect(() => {
+    // Extract unique values from properties
+    const locations = [
+      ...new Set(mockData.properties.map((p) => p.location || "Unknown")),
+    ];
+    const types = [...new Set(mockData.properties.map((p) => p.property_type))];
+    const prices = ["0-300k", "300k-600k", "600k-900k", "900k+"];
+    const sizes = [
+      "<3000 sqft",
+      "3000-4000 sqft",
+      "4000-5000 sqft",
+      "5000+ sqft",
+    ];
+    const years = [
+      ...new Set(mockData.properties.map((p) => p.year_built)),
+    ].sort();
+
+    setFilterOptions({
+      location: locations,
+      propertyType: types,
+      priceRange: prices,
+      propertySize: sizes,
+      buildYear: years,
+    });
+  }, []);
+
+  const handleDropdownClick = (dropdown) => {
+    setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
+  };
+
+  const handleOptionSelect = (category, option) => {
+    setFilters((prev) => ({
+      ...prev,
+      [category]: option,
+    }));
+    setActiveDropdown(null);
+  };
+
+  const FilterDropdown = ({ category, icon }) => (
+    <div className="rounded-xl flex items-center bg-black/30 px-2">
+      {icon}
+      <div className="relative flex-1">
+        <div
+          className="text-xl uppercase cursor-pointer font-Rubik font-medium  rounded-2xl py-4 px-4 gap-x-4 flex items-center justify-between"
+          onClick={() => handleDropdownClick(category)}
+        >
+          {filters[category]}{" "}
+          <KeyboardArrowDown
+            sx={{ fontSize: "3rem" }}
+            className="bg-white/5 rounded-full p-2"
+          />
+        </div>
+        {activeDropdown === category && (
+          <div className="absolute top-full mt-2 w-full bg-black/30 rounded-2xl shadow-lg z-20">
+            {filterOptions[category].map((option) => (
+              <div
+                key={option}
+                className="text-xl uppercase cursor-pointer font-Rubik font-medium px-4 py-3"
+                onClick={() => handleOptionSelect(category, option)}
+              >
+                {option}
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
 
   return (
     <div className="w-full h-full section-page bg-gradient-to-br from-white/5 to-black">
@@ -35,8 +107,9 @@ const PropertyHero = () => {
           categories to suit every dreamer, your journey
         </p>
       </div>
+
       <div className="flex m-auto justify-center flex-col items-center">
-        <div className="w-[90%] rounded-t-xl border-[.5rem] relative border-white/5 flex">
+        <div className="w-[90%] rounded-t-xl border-[.5rem] relative border-white/5 flex border-b-0">
           <input
             type="search"
             placeholder="Search for a property"
@@ -48,31 +121,37 @@ const PropertyHero = () => {
           </button>
         </div>
 
-        <div className="w-full p-4 rounded-xl bg-white/5 grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-10">
-          <div className="rounded-xl flex items-center bg-black/30 p-2">
-            <LocationOnRounded className="!text-4xl pr-2 border-r-2 border-white/10" />
-            <div className="relative">
-              <div
-                className="text-2xl uppercase cursor-pointer font-Rubik font-medium bg-white rounded-2xl py-4 px-7 gap-x-14 flex items-center justify-between"
-                onClick={handleDropdownClick}
-              >
-                {selectedFilter} <KeyboardArrowDown sx={{ fontSize: "2rem" }} />
-              </div>
-              {isDropdownOpen && (
-                <div className="absolute top-full mt-2 w-full bg-white rounded-2xl shadow-lg z-20">
-                  {filterOptions.map((option) => (
-                    <div
-                      key={option}
-                      className="text-2xl uppercase cursor-pointer font-Rubik font-medium px-7 py-4 hover:bg-gray-100"
-                      onClick={() => handleOptionSelect(option)}
-                    >
-                      {option}
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          </div>
+        <div className="w-full p-3 rounded-xl bg-white/5 grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-10">
+          <FilterDropdown
+            category="location"
+            icon={
+              <LocationOnRounded className="!text-4xl pr-2 border-r-2 border-white/10" />
+            }
+          />
+          <FilterDropdown
+            category="propertyType"
+            icon={
+              <Home className="!text-4xl pr-2 border-r-2 border-white/10" />
+            }
+          />
+          <FilterDropdown
+            category="priceRange"
+            icon={
+              <AttachMoney className="!text-4xl pr-2 border-r-2 border-white/10" />
+            }
+          />
+          <FilterDropdown
+            category="propertySize"
+            icon={
+              <Straighten className="!text-4xl pr-2 border-r-2 border-white/10" />
+            }
+          />
+          <FilterDropdown
+            category="buildYear"
+            icon={
+              <Event className="!text-4xl pr-2 border-r-2 border-white/10" />
+            }
+          />
         </div>
       </div>
     </div>
