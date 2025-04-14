@@ -6,6 +6,7 @@ import {
   Straighten,
   Event,
   KeyboardArrowDown,
+  Payment,
 } from "@mui/icons-material";
 import { useState, useEffect } from "react";
 import mockData from "../../../assets/mock_data.json";
@@ -14,8 +15,8 @@ const PropertyHero = () => {
   const [filters, setFilters] = useState({
     location: "location",
     propertyType: "property type",
-    priceRange: "pricing ranges",
-    propertySize: "property sizes",
+    priceRange: "pricing range",
+    propertySize: "property size",
     buildYear: "build year",
   });
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -80,11 +81,11 @@ const PropertyHero = () => {
           />
         </div>
         {activeDropdown === category && (
-          <div className="absolute top-full mt-2 w-full bg-black/30 rounded-2xl shadow-lg z-20">
+          <div className="absolute top-full mt-2 w-full bg-white/5 backdrop-blur-lg rounded-xl shadow-lg z-20">
             {filterOptions[category].map((option) => (
               <div
                 key={option}
-                className="text-xl uppercase cursor-pointer font-Rubik font-medium px-4 py-3"
+                className="text-xl uppercase cursor-pointer font-Rubik font-medium px-4 py-3 hover:bg-black"
                 onClick={() => handleOptionSelect(category, option)}
               >
                 {option}
@@ -137,7 +138,7 @@ const PropertyHero = () => {
           <FilterDropdown
             category="priceRange"
             icon={
-              <AttachMoney className="!text-4xl pr-2 border-r-2 border-white/10" />
+              <Payment className="!text-4xl pr-2 border-r-2 border-white/10" />
             }
           />
           <FilterDropdown
