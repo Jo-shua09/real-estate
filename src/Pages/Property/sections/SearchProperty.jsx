@@ -65,7 +65,7 @@ const SearchProperty = () => {
       {icon}
       <div className="relative flex-1">
         <select
-          className="w-full md:h-[4.5rem] h-[5rem] text-xl uppercase cursor-pointer font-medium py-4 px-4 bg-transparent appearance-none !focus:outline-none"
+          className="w-full md:h-[4.5rem] h-[5rem] text-xl capitalize cursor-pointer font-medium py-4 px-4 bg-transparent appearance-none !focus:outline-none"
           value={filters[category]}
           onChange={(e) => handleOptionSelect(category, e.target.value)}
           style={{
@@ -84,7 +84,7 @@ const SearchProperty = () => {
             <option
               key={option}
               value={option}
-              className="text-xl uppercase bg-zinc-900 text-white hover:bg-zinc-800"
+              className="text-xl capitalize bg-zinc-900 text-white hover:bg-zinc-800"
               style={{ padding: "0.75rem" }}
             >
               {option}

@@ -175,8 +175,9 @@ const commentTexts = [
 ];
 
 // === Function to Generate Fake Comments ===
+// In the generateComments function, update the maximum number of comments
 const generateComments = () => {
-  const numberOfComments = getRandomNumber(2, 5); // Random 2–5 comments
+  const numberOfComments = getRandomNumber(2, 3); // Changed max from 5 to 3 comments
   const comments = [];
 
   for (let i = 0; i < numberOfComments; i++) {
@@ -187,7 +188,7 @@ const generateComments = () => {
       avatar: `${getRandomItem(
         avatarImages
       )}?auto=format&fit=crop&w=150&h=150&q=80`,
-      rating: getRandomNumber(3, 5), // Star rating between 3 and 5
+      rating: getRandomNumber(3, 5),
       comment: getRandomItem(commentTexts),
       date: new Date(
         Date.now() - getRandomNumber(1, 30) * 24 * 60 * 60 * 1000
@@ -221,6 +222,7 @@ const generateMockData = () => {
       features: feature,
       amenities: amenity,
       property_type: propertyType,
+      location: getRandomItem(locations), // Fixed: changed 'location' to 'locations'
       size_sqft: getRandomNumber(2000, 5000),
       year_built: getRandomNumber(1900, 2020),
       description: `Welcome to ${propertyName}, an exceptional ${propertyType} that exemplifies luxury living at its finest. This stunning property features a ${feature} and includes ${amenity} for your convenience. With its sophisticated design and attention to detail, this home offers the perfect blend of comfort and elegance.`,
@@ -235,7 +237,7 @@ const generateMockData = () => {
       floor_plan_image: `${getRandomItem(
         floorPlanImages
       )}?auto=format&fit=crop&w=800&h=600&q=80`,
-      comments: generateComments(), // Add the list of comments
+      comments: generateComments(),
     });
   }
 
