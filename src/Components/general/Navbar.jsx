@@ -32,25 +32,15 @@ const Navbar = () => {
       <div className="flex items-center justify-between w-full md:flex-nowrap flex-wrap gap-y-5">
         <div className="md:w-full w-fit">
           <Link to="/" className="flex items-center gap-x-2">
-            <img
-              src="/Logo.svg"
-              alt="Logo image"
-              className="object-cover md:w-10 md:h-10 w-14 h-14"
-            />
-            <span className="md:text-3xl text-[2.5rem] font-bold">
-              estantien
-            </span>
+            <img src="/Logo.svg" alt="Logo image" className="object-cover md:w-10 md:h-10 w-14 h-14" />
+            <span className="md:text-3xl text-[2.5rem] font-bold">estantien</span>
           </Link>
         </div>
 
         <div className="w-full md:block hidden">
           <ul className="flex items-center justify-between place-content-center text-2xl font-medium">
             <Link to="/">
-              <li
-                className={`list-none rounded-lg py-4 px-7 hover:bg-black/20 border-white/5 ${
-                  location.pathname === "/" ? "bg-black/20 border-2" : ""
-                }`}
-              >
+              <li className={`list-none rounded-lg py-4 px-7 hover:bg-black/20 border-white/5 ${location.pathname === "/" ? "bg-black/20 border-2" : ""}`}>
                 home
               </li>
             </Link>
@@ -66,9 +56,7 @@ const Navbar = () => {
             <Link to="/properties">
               <li
                 className={`list-none rounded-lg py-4 px-7 hover:bg-black/20 border-white/5 transition-all duration-200 ${
-                  location.pathname === "/properties"
-                    ? "bg-black/20 border-2"
-                    : ""
+                  location.pathname === "/properties" ? "bg-black/20 border-2" : ""
                 }`}
               >
                 properties
@@ -77,9 +65,7 @@ const Navbar = () => {
             <Link to="/services">
               <li
                 className={`list-none rounded-lg py-4 px-7 hover:bg-black/20 border-white/5 transition-all duration-200 ${
-                  location.pathname === "/services"
-                    ? "bg-black/20 border-2"
-                    : ""
+                  location.pathname === "/services" ? "bg-black/20 border-2" : ""
                 }`}
               >
                 services
@@ -102,47 +88,29 @@ const Navbar = () => {
 
         {/* MOBILE MENU HANDLER */}
         <div className="md:hidden w-fit">
-          <Menu
-            onClick={handleMenu}
-            className="transition-all duration-200 delay-200 !text-6xl cursor-pointer"
-          />
+          <Menu onClick={handleMenu} className="transition-all duration-200 delay-200 !text-6xl cursor-pointer" />
         </div>
       </div>
 
       {/* MOBILE MENU */}
       <div
-        className={`md:hidden absolute top-0 left-0 px-5 ease-in-out w-full !h-screen bg-white/5 shadow-[1px_1px_5px_rgba(0,0,0,0.5)] backdrop-blur-2xl backdrop-brightness-90 z-[999999] ${
-          open
-            ? "translate-x-0"
-            : "translate-x-full transition-all duration-200"
+        className={`overflow-hidden md:hidden absolute top-0 left-0 px-5 ease-in-out w-full !h-screen bg-white/5 shadow-[1px_1px_5px_rgba(0,0,0,0.5)] backdrop-blur-2xl backdrop-brightness-90 z-[999999] ${
+          open ? "translate-x-0" : "translate-x-full transition-all duration-200"
         }`}
       >
         <div className="flex items-center justify-between w-full py-5">
           <div className="md:w-full w-fit">
             <Link to="/" className="flex items-center gap-x-2">
-              <img
-                src="/Logo.svg"
-                alt="Logo image"
-                className="object-cover md:w-10 md:h-10 w-14 h-14"
-              />
-              <span className="md:text-3xl text-[2.5rem] font-bold">
-                estantien
-              </span>
+              <img src="/Logo.svg" alt="Logo image" className="object-cover md:w-10 md:h-10 w-14 h-14" />
+              <span className="md:text-3xl text-[2.5rem] font-bold">estantien</span>
             </Link>
           </div>
-          <Close
-            onClick={handleMenu}
-            className="transition-all duration-200 delay-200 !text-6xl cursor-pointer"
-          />
+          <Close onClick={handleMenu} className="transition-all duration-200 delay-200 !text-6xl cursor-pointer" />
         </div>
 
         <ul className="flex flex-col gap-y-5 w-full h-full mt-10 text-3xl rounded-xl font-semibold">
           <Link to="/">
-            <li
-              className={`list-none rounded-xl py-6 px-7 hover:bg-black/20 border-white/5 ${
-                location.pathname === "/" ? "bg-black/20 border-2" : ""
-              }`}
-            >
+            <li className={`list-none rounded-xl py-6 px-7 hover:bg-black/20 border-white/5 ${location.pathname === "/" ? "bg-black/20 border-2" : ""}`}>
               home
             </li>
           </Link>
@@ -158,9 +126,7 @@ const Navbar = () => {
           <Link to="/properties">
             <li
               className={`list-none rounded-xl py-6 px-7 hover:bg-black/20 border-white/5 transition-all duration-200 ${
-                location.pathname === "/properties"
-                  ? "bg-black/20 border-2"
-                  : ""
+                location.pathname === "/properties" ? "bg-black/20 border-2" : ""
               }`}
             >
               properties

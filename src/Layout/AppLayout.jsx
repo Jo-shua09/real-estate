@@ -7,7 +7,7 @@ import Banner from "../Components/general/Banner";
 
 const AppLayout = () => {
   return (
-    <div className="max-w-[180rem] w-full m-auto">
+    <div className="max-w-[180rem] w-full m-auto overflow-hidden">
       <Header />
       <Navbar />
       <div className="max-w-[150rem] w-full m-auto">
