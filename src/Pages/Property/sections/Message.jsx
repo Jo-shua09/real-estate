@@ -22,22 +22,13 @@ const Message = () => {
 
   useEffect(() => {
     // Extract unique values from properties
-    const locations = [
-      ...new Set(mockData.properties.map((p) => p.location || "Unknown")),
-    ];
+    const locations = [...new Set(mockData.properties.map((p) => p.location || "Unknown"))];
     const types = [...new Set(mockData.properties.map((p) => p.property_type))];
     const prices = ["0-300k", "300k-600k", "600k-900k", "900k+"];
-    const sizes = [
-      "<3000 sqft",
-      "3000-4000 sqft",
-      "4000-5000 sqft",
-      "5000+ sqft",
-    ];
+    const sizes = ["<3000 sqft", "3000-4000 sqft", "4000-5000 sqft", "5000+ sqft"];
     const bathrooms = ["1", "2", "3", "4", "5", "6"];
     const bedrooms = ["1", "2", "3", "4", "5", "6"];
-    const years = [
-      ...new Set(mockData.properties.map((p) => p.year_built)),
-    ].sort();
+    const years = [...new Set(mockData.properties.map((p) => p.year_built))].sort();
 
     setOptions({
       location: locations,
@@ -64,7 +55,7 @@ const Message = () => {
         description="Ready to take the first step toward your dream property? Fill out the form below, and our real estate wizards will work their magic to find your perfect match. Don't wait; let's embark on this exciting journey together."
         hideButton={true}
       />
-      
+
       <div className="w-full border-2 border-white/5 rounded-xl p-7 md:p-10 mt-10">
         <form className="w-full flex flex-col gap-y-10">
           <div className="w-full grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-5 gap-y-10">
@@ -128,9 +119,7 @@ const Message = () => {
                   name="location"
                   className="text-xl border-2 capitalize cursor-pointer border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
                   value={selectedOptions.location}
-                  onChange={(e) =>
-                    handleOptionSelect("location", e.target.value)
-                  }
+                  onChange={(e) => handleOptionSelect("location", e.target.value)}
                   style={{
                     WebkitAppearance: "none",
                     MozAppearance: "none",
@@ -140,12 +129,7 @@ const Message = () => {
                     Select Location
                   </option>
                   {options.location.map((option) => (
-                    <option
-                      key={option}
-                      value={option}
-                      className="text-xl capitalize bg-zinc-900 text-white hover:bg-zinc-800"
-                      style={{ padding: "0.75rem" }}
-                    >
+                    <option key={option} value={option} className="text-xl capitalize bg-zinc-900 text-white hover:bg-zinc-800" style={{ padding: "0.75rem" }}>
                       {option}
                     </option>
                   ))}
@@ -167,9 +151,7 @@ const Message = () => {
                   name="propertytype"
                   className="text-xl border-2 cursor-pointer capitalize border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
                   value={selectedOptions.propertyType}
-                  onChange={(e) =>
-                    handleOptionSelect("propertyType", e.target.value)
-                  }
+                  onChange={(e) => handleOptionSelect("propertyType", e.target.value)}
                   style={{
                     WebkitAppearance: "none",
                     MozAppearance: "none",
@@ -179,12 +161,7 @@ const Message = () => {
                     Select property type
                   </option>
                   {options.propertyType.map((option) => (
-                    <option
-                      key={option}
-                      value={option}
-                      className="text-xl capitalize bg-zinc-900 text-white hover:bg-zinc-800"
-                      style={{ padding: "0.75rem" }}
-                    >
+                    <option key={option} value={option} className="text-xl capitalize bg-zinc-900 text-white hover:bg-zinc-800" style={{ padding: "0.75rem" }}>
                       {option}
                     </option>
                   ))}
@@ -206,63 +183,17 @@ const Message = () => {
                   name="bathroom"
                   className="text-xl border-2 cursor-pointer capitalize border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
                   value={selectedOptions.bathroom}
-                  onChange={(e) =>
-                    handleOptionSelect("bathroom", e.target.value)
-                  }
+                  onChange={(e) => handleOptionSelect("bathroom", e.target.value)}
                   style={{
                     WebkitAppearance: "none",
                     MozAppearance: "none",
                   }}
                 >
                   <option value="" disabled>
-                    Select property type
+                    select number of bathrooms
                   </option>
                   {options.bathroom.map((option) => (
-                    <option
-                      key={option}
-                      value={option}
-                      className="text-xl capitalize bg-zinc-900 text-white hover:bg-zinc-800"
-                      style={{ padding: "0.75rem" }}
-                    >
-                      {option}
-                    </option>
-                  ))}
-                </select>
-                <KeyboardArrowDown
-                  sx={{ fontSize: "2.3rem" }}
-                  className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/5 rounded-full p-1 pointer-events-none"
-                />
-              </div>
-            </div>
-
-            <div className="flex flex-col gap-y-3 items-start">
-              <label htmlFor="bedrooms" className="text-xl font-semibold">
-                No. of bedrooms
-              </label>
-              <div className="relative w-full">
-                <select
-                  id="bedroom"
-                  name="bedroom"
-                  className="text-xl border-2 cursor-pointer capitalize border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
-                  value={selectedOptions.bedroom}
-                  onChange={(e) =>
-                    handleOptionSelect("bedroom", e.target.value)
-                  }
-                  style={{
-                    WebkitAppearance: "none",
-                    MozAppearance: "none",
-                  }}
-                >
-                  <option value="" disabled>
-                    Select property type
-                  </option>
-                  {options.bedroom.map((option) => (
-                    <option
-                      key={option}
-                      value={option}
-                      className="text-xl capitalize bg-zinc-900 text-white hover:bg-zinc-800"
-                      style={{ padding: "0.75rem" }}
-                    >
+                    <option key={option} value={option} className="text-xl capitalize bg-zinc-900 text-white hover:bg-zinc-800" style={{ padding: "0.75rem" }}>
                       {option}
                     </option>
                   ))}
