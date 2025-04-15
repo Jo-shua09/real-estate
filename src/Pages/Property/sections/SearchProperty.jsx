@@ -23,6 +23,17 @@ const SearchProperty = () => {
     buildYear: [],
   });
 
+  const isSearchEnabled = () => {
+    return (
+      searchQuery.trim() !== "" ||
+      filters.location !== "location" ||
+      filters.propertyType !== "property type" ||
+      filters.priceRange !== "pricing range" ||
+      filters.propertySize !== "property size" ||
+      filters.buildYear !== "build year"
+    );
+  };
+
   useEffect(() => {
     const locations = [...new Set(mockData.properties.map((p) => p.location || "Unknown"))];
     const types = [...new Set(mockData.properties.map((p) => p.property_type))];
@@ -132,7 +143,10 @@ const SearchProperty = () => {
         />
         <button
           onClick={handleSearch}
-          className="bg-purple-600 py-3 px-5 gap-x-2 flex rounded-xl text-nowrap items-center capitalize text-2xl font-medium hover:scale-95 m-1"
+          disabled={!isSearchEnabled()}
+          className={`py-3 px-5 gap-x-2 flex rounded-xl text-nowrap items-center capitalize text-2xl font-medium hover:scale-95 m-1 ${
+            isSearchEnabled() ? "bg-purple-600" : "bg-gray-600 cursor-not-allowed"
+          }`}
         >
           <Search className="!text-4xl" />
           find property

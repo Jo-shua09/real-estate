@@ -8,14 +8,14 @@ import Clients from "./sections/Clients";
 
 const About = () => {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <AboutHero />
       <Values />
       <Achievement />
       <Navigate />
       <Team />
       <Clients />
-    </>
+    </div>
   );
 };
 
