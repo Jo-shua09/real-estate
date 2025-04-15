@@ -278,15 +278,15 @@ const Message = () => {
             <div className="w-full md:flex-[3] flex flex-col gap-y-3">
               <h4 className="text-xl font-semibold">preferred contact method</h4>
               <div className="flex items-center flex-wrap md:flex-nowrap gap-y-4 gap-x-5">
-                <div className="w-full relative group">
+                <div className="w-full relative">
                   <input
                     type="text"
                     id="contact-number"
                     name="contact-method"
                     placeholder="enter your number"
-                    className="text-xl border-2 capitalize group-focus-within:placeholder:pl-3 placeholder:pl-12 border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
+                    className="text-xl border-2 capitalize pl-14 border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
                   />
-                  <Phone sx={{ fontSize: "2.3rem" }} className="group-focus-within:!hidden absolute left-2 top-1/2 transform -translate-y-1/2 pl-2" />
+                  <Phone sx={{ fontSize: "2.3rem" }} className="absolute left-2 top-1/2 transform -translate-y-1/2 pl-2" />
                   <input
                     type="radio"
                     id="contact-number"
@@ -302,9 +302,9 @@ const Message = () => {
                     id="contact-email"
                     name="contact-method"
                     placeholder="enter your email"
-                    className="text-xl border-2 capitalize group-focus-within:placeholder:pl-3 placeholder:pl-12 border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
+                    className="text-xl border-2 capitalize pl-14 border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
                   />
-                  <Mail sx={{ fontSize: "2.3rem" }} className="group-focus-within:!hidden absolute left-2 top-1/2 transform -translate-y-1/2 pl-2" />
+                  <Mail sx={{ fontSize: "2.3rem" }} className="absolute left-2 top-1/2 transform -translate-y-1/2 pl-2" />
                   <input
                     type="radio"
                     id="contact-email"
