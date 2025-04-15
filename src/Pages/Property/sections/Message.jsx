@@ -241,6 +241,41 @@ const Message = () => {
               </div>
             </div>
           </div>
+
+          <div className="w-full flex items-center justify-between flex-wrap md:flex-nowrap gap-x-5 gap-y-10">
+            <div className="flex flex-col gap-y-3 items-start w-full md:flex-[4]">
+              <label htmlFor="budget" className="text-xl font-semibold">
+                budget
+              </label>
+              <div className="relative w-full">
+                <select
+                  id="budget"
+                  name="budget"
+                  className="text-xl border-2 capitalize cursor-pointer border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
+                  value={selectedOptions.priceRange}
+                  onChange={(e) => handleOptionSelect("priceRange", e.target.value)}
+                  style={{
+                    WebkitAppearance: "none",
+                    MozAppearance: "none",
+                  }}
+                >
+                  <option value="" disabled>
+                    Select price range
+                  </option>
+                  {options.priceRange.map((option) => (
+                    <option key={option} value={option} className="text-xl capitalize bg-zinc-900 text-white hover:bg-zinc-800" style={{ padding: "0.75rem" }}>
+                      {option}
+                    </option>
+                  ))}
+                </select>
+                <KeyboardArrowDown
+                  sx={{ fontSize: "2.3rem" }}
+                  className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/5 rounded-full p-1 pointer-events-none"
+                />
+              </div>
+            </div>
+            <div className="w-full md:flex-[3] flex items-center"></div>
+          </div>
         </form>
       </div>
     </div>
