@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SectionIntro from "../../../Components/SectionIntro";
 import mockData from "../../../assets/mock_data.json";
-import { KeyboardArrowDown } from "@mui/icons-material";
+import { KeyboardArrowDown, Mail, Phone } from "@mui/icons-material";
 
 const Message = () => {
   const [options, setOptions] = useState({
@@ -274,7 +274,73 @@ const Message = () => {
                 />
               </div>
             </div>
-            <div className="w-full md:flex-[3] flex items-center"></div>
+
+            <div className="w-full md:flex-[3] flex flex-col gap-y-3">
+              <h4 className="text-xl font-semibold">preferred contact method</h4>
+              <div className="flex items-center flex-wrap md:flex-nowrap gap-y-4 gap-x-5">
+                <div className="w-full relative group">
+                  <input
+                    type="text"
+                    id="contact-number"
+                    name="contact-method"
+                    placeholder="enter your number"
+                    className="text-xl border-2 capitalize group-focus-within:placeholder:pl-3 placeholder:pl-12 border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
+                  />
+                  <Phone sx={{ fontSize: "2.3rem" }} className="group-focus-within:!hidden absolute left-2 top-1/2 transform -translate-y-1/2 pl-2" />
+                  <input
+                    type="radio"
+                    id="contact-number"
+                    name="contact-method"
+                    className=" cursor-pointer accent-purple-600 absolute right-3 top-1/2 transform -translate-y-1/2 !bg-transparent"
+                  />
+                </div>
+
+                <div className="w-full relative group">
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="contact-method"
+                    placeholder="enter your email"
+                    className="text-xl border-2 capitalize group-focus-within:placeholder:pl-3 placeholder:pl-12 border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
+                  />
+                  <Mail sx={{ fontSize: "2.3rem" }} className="group-focus-within:!hidden absolute left-2 top-1/2 transform -translate-y-1/2 pl-2" />
+                  <input
+                    type="radio"
+                    id="contact-email"
+                    name="contact-method"
+                    value="email"
+                    className=" cursor-pointer accent-purple-600 absolute right-3 top-1/2 transform -translate-y-1/2 !bg-transparent"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-y-3 items-start w-full">
+            <label htmlFor="message" className="text-xl font-semibold">
+              message
+            </label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="enter your message"
+              className="text-xl border-2 capitalize border-white/5 bg-white/5 placeholder:capitalize rounded-xl p-3 w-full h-[13rem] md:h-[15rem]"
+            ></textarea>
+          </div>
+
+          <div className="w-full md:flex-nowrap flex-wrap  gap-y-5 flex items-center justify-center md:justify-between">
+            <div className="flex gap-x-3 items-center">
+              <input type="checkbox" name="accept" id="accept" className="accent-purple-600 !bg-transparent" />
+              <p className="text-xl text-white/70 normal-case">
+                i agree with <span className="border-b-2 border-white/5">terms of use</span> and{" "}
+                <span className="border-b-2 border-white/5">Privacy Policy</span>
+              </p>
+            </div>
+            <input
+              type="submit"
+              value="send your message"
+              className="bg-purple-600 cursor-pointer hover:scale-95 md:w-fit w-full rounded-xl text-2xl font-semibold capitalize flex items-center justify-center py-5 px-7 hover:bg-purple-900>"
+            />
           </div>
         </form>
       </div>
