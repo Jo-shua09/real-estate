@@ -10,6 +10,8 @@ const Message = () => {
     priceRange: [],
     propertySize: [],
     buildYear: [],
+    bathroom: [],
+    bedroom: [],
   });
 
   const [selectedOptions, setSelectedOptions] = useState({
@@ -18,6 +20,8 @@ const Message = () => {
     priceRange: "",
     propertySize: "",
     buildYear: "",
+    bathroom: "",
+    bedroom: "",
   });
 
   useEffect(() => {
@@ -190,9 +194,41 @@ const Message = () => {
                   }}
                 >
                   <option value="" disabled>
-                    select number of bathrooms
+                    select no. of bathrooms
                   </option>
                   {options.bathroom.map((option) => (
+                    <option key={option} value={option} className="text-xl capitalize bg-zinc-900 text-white hover:bg-zinc-800" style={{ padding: "0.75rem" }}>
+                      {option}
+                    </option>
+                  ))}
+                </select>
+                <KeyboardArrowDown
+                  sx={{ fontSize: "2.3rem" }}
+                  className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/5 rounded-full p-1 pointer-events-none"
+                />
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-y-3 items-start">
+              <label htmlFor="bedrooms" className="text-xl font-semibold">
+                No. of bedrooms
+              </label>
+              <div className="relative w-full">
+                <select
+                  id="bedroom"
+                  name="bedroom"
+                  className="text-xl border-2 cursor-pointer capitalize border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
+                  value={selectedOptions.bedroom}
+                  onChange={(e) => handleOptionSelect("bedroom", e.target.value)}
+                  style={{
+                    WebkitAppearance: "none",
+                    MozAppearance: "none",
+                  }}
+                >
+                  <option value="" disabled>
+                    select no. of bedrooms
+                  </option>
+                  {options.bedroom.map((option) => (
                     <option key={option} value={option} className="text-xl capitalize bg-zinc-900 text-white hover:bg-zinc-800" style={{ padding: "0.75rem" }}>
                       {option}
                     </option>
