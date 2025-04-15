@@ -64,64 +64,64 @@ const Message = () => {
         <form className="w-full flex flex-col gap-y-10">
           <div className="w-full grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-5 gap-y-10">
             <div className="flex flex-col gap-y-3 items-start">
-              <label htmlFor="first-name" className="text-xl font-semibold">
+              <label htmlFor="first-name" className="md:text-xl text-[1.4rem]  font-semibold">
                 first name
               </label>
               <input
                 type="text"
                 id="first-name"
                 placeholder="enter first name"
-                className="text-xl border-2 border-white/5 bg-white/5 placeholder:capitalize normal-case rounded-xl pl-3 w-full h-[5rem] md:h-[4.5rem]"
+                className="md:text-xl text-[1.4rem]  border-2 border-white/5 bg-white/5 placeholder:capitalize normal-case rounded-xl pl-3 w-full h-[5rem] md:h-[4.5rem]"
               />
             </div>
 
             <div className="flex flex-col gap-y-3 items-start">
-              <label htmlFor="last-name" className="text-xl font-semibold">
+              <label htmlFor="last-name" className="md:text-xl text-[1.4rem]  font-semibold">
                 last name
               </label>
               <input
                 type="text"
                 id="last-name"
                 placeholder="enter last name"
-                className="text-xl border-2 border-white/5 bg-white/5 placeholder:capitalize normal-case rounded-xl pl-3 w-full h-[5rem] md:h-[4.5rem]"
+                className="md:text-xl text-[1.4rem]  border-2 border-white/5 bg-white/5 placeholder:capitalize normal-case rounded-xl pl-3 w-full h-[5rem] md:h-[4.5rem]"
               />
             </div>
 
             <div className="flex flex-col gap-y-3 items-start">
-              <label htmlFor="email" className="text-xl font-semibold">
+              <label htmlFor="email" className="md:text-xl text-[1.4rem]  font-semibold">
                 email
               </label>
               <input
                 type="email"
                 id="email"
                 placeholder="enter your email"
-                className="text-xl border-2 border-white/5 bg-white/5 placeholder:capitalize normal-case rounded-xl pl-3 w-full h-[5rem] md:h-[4.5rem]"
+                className="md:text-xl text-[1.4rem]  border-2 border-white/5 bg-white/5 placeholder:capitalize normal-case rounded-xl pl-3 w-full h-[5rem] md:h-[4.5rem]"
               />
             </div>
 
             <div className="flex flex-col gap-y-3 items-start">
-              <label htmlFor="phone" className="text-xl font-semibold">
+              <label htmlFor="phone" className="md:text-xl text-[1.4rem]  font-semibold">
                 phone
               </label>
               <input
                 type="tel"
                 id="phone"
                 placeholder="enter phone number"
-                className="text-xl border-2 border-white/5 bg-white/5 placeholder:capitalize normal-case rounded-xl pl-3 w-full h-[5rem] md:h-[4.5rem]"
+                className="md:text-xl text-[1.4rem]  border-2 border-white/5 bg-white/5 placeholder:capitalize normal-case rounded-xl pl-3 w-full h-[5rem] md:h-[4.5rem]"
               />
             </div>
           </div>
 
           <div className="w-full grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-5 gap-y-10">
             <div className="flex flex-col gap-y-3 items-start">
-              <label htmlFor="location" className="text-xl font-semibold">
+              <label htmlFor="location" className="md:text-xl text-[1.4rem]  font-semibold">
                 location
               </label>
               <div className="relative w-full">
                 <select
                   id="location"
                   name="location"
-                  className="text-xl border-2 capitalize cursor-pointer border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
+                  className="md:text-xl text-[1.4rem]  border-2 capitalize cursor-pointer border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
                   value={selectedOptions.location}
                   onChange={(e) => handleOptionSelect("location", e.target.value)}
                   style={{
@@ -133,7 +133,12 @@ const Message = () => {
                     Select Location
                   </option>
                   {options.location.map((option) => (
-                    <option key={option} value={option} className="text-xl capitalize bg-zinc-900 text-white hover:bg-zinc-800" style={{ padding: "0.75rem" }}>
+                    <option
+                      key={option}
+                      value={option}
+                      className="md:text-xl text-[1.4rem]  capitalize bg-zinc-900 text-white hover:bg-zinc-800"
+                      style={{ padding: "0.75rem" }}
+                    >
                       {option}
                     </option>
                   ))}
@@ -146,14 +151,14 @@ const Message = () => {
             </div>
 
             <div className="flex flex-col gap-y-3 items-start">
-              <label htmlFor="property-type" className="text-xl font-semibold">
+              <label htmlFor="property-type" className="md:text-xl text-[1.4rem]  font-semibold">
                 property type
               </label>
               <div className="relative w-full">
                 <select
                   id="type"
                   name="propertytype"
-                  className="text-xl border-2 cursor-pointer capitalize border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
+                  className="md:text-xl text-[1.4rem]  border-2 cursor-pointer capitalize border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
                   value={selectedOptions.propertyType}
                   onChange={(e) => handleOptionSelect("propertyType", e.target.value)}
                   style={{
@@ -165,7 +170,12 @@ const Message = () => {
                     Select property type
                   </option>
                   {options.propertyType.map((option) => (
-                    <option key={option} value={option} className="text-xl capitalize bg-zinc-900 text-white hover:bg-zinc-800" style={{ padding: "0.75rem" }}>
+                    <option
+                      key={option}
+                      value={option}
+                      className="md:text-xl text-[1.4rem]  capitalize bg-zinc-900 text-white hover:bg-zinc-800"
+                      style={{ padding: "0.75rem" }}
+                    >
                       {option}
                     </option>
                   ))}
@@ -178,14 +188,14 @@ const Message = () => {
             </div>
 
             <div className="flex flex-col gap-y-3 items-start">
-              <label htmlFor="bathrooms" className="text-xl font-semibold">
+              <label htmlFor="bathrooms" className="md:text-xl text-[1.4rem]  font-semibold">
                 No. of bathrooms
               </label>
               <div className="relative w-full">
                 <select
                   id="bathroom"
                   name="bathroom"
-                  className="text-xl border-2 cursor-pointer capitalize border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
+                  className="md:text-xl text-[1.4rem]  border-2 cursor-pointer capitalize border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
                   value={selectedOptions.bathroom}
                   onChange={(e) => handleOptionSelect("bathroom", e.target.value)}
                   style={{
@@ -197,7 +207,12 @@ const Message = () => {
                     select no. of bathrooms
                   </option>
                   {options.bathroom.map((option) => (
-                    <option key={option} value={option} className="text-xl capitalize bg-zinc-900 text-white hover:bg-zinc-800" style={{ padding: "0.75rem" }}>
+                    <option
+                      key={option}
+                      value={option}
+                      className="md:text-xl text-[1.4rem]  capitalize bg-zinc-900 text-white hover:bg-zinc-800"
+                      style={{ padding: "0.75rem" }}
+                    >
                       {option}
                     </option>
                   ))}
@@ -210,14 +225,14 @@ const Message = () => {
             </div>
 
             <div className="flex flex-col gap-y-3 items-start">
-              <label htmlFor="bedrooms" className="text-xl font-semibold">
+              <label htmlFor="bedrooms" className="md:text-xl text-[1.4rem]  font-semibold">
                 No. of bedrooms
               </label>
               <div className="relative w-full">
                 <select
                   id="bedroom"
                   name="bedroom"
-                  className="text-xl border-2 cursor-pointer capitalize border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
+                  className="md:text-xl text-[1.4rem]  border-2 cursor-pointer capitalize border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
                   value={selectedOptions.bedroom}
                   onChange={(e) => handleOptionSelect("bedroom", e.target.value)}
                   style={{
@@ -229,7 +244,12 @@ const Message = () => {
                     select no. of bedrooms
                   </option>
                   {options.bedroom.map((option) => (
-                    <option key={option} value={option} className="text-xl capitalize bg-zinc-900 text-white hover:bg-zinc-800" style={{ padding: "0.75rem" }}>
+                    <option
+                      key={option}
+                      value={option}
+                      className="md:text-xl text-[1.4rem]  capitalize bg-zinc-900 text-white hover:bg-zinc-800"
+                      style={{ padding: "0.75rem" }}
+                    >
                       {option}
                     </option>
                   ))}
@@ -244,14 +264,14 @@ const Message = () => {
 
           <div className="w-full flex items-center justify-between flex-wrap md:flex-nowrap gap-x-5 gap-y-10">
             <div className="flex flex-col gap-y-3 items-start w-full md:flex-[4]">
-              <label htmlFor="budget" className="text-xl font-semibold">
+              <label htmlFor="budget" className="md:text-xl text-[1.4rem]  font-semibold">
                 budget
               </label>
               <div className="relative w-full">
                 <select
                   id="budget"
                   name="budget"
-                  className="text-xl border-2 capitalize cursor-pointer border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
+                  className="md:text-xl text-[1.4rem]  border-2 capitalize cursor-pointer border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
                   value={selectedOptions.priceRange}
                   onChange={(e) => handleOptionSelect("priceRange", e.target.value)}
                   style={{
@@ -263,7 +283,12 @@ const Message = () => {
                     Select price range
                   </option>
                   {options.priceRange.map((option) => (
-                    <option key={option} value={option} className="text-xl capitalize bg-zinc-900 text-white hover:bg-zinc-800" style={{ padding: "0.75rem" }}>
+                    <option
+                      key={option}
+                      value={option}
+                      className="md:text-xl text-[1.4rem]  capitalize bg-zinc-900 text-white hover:bg-zinc-800"
+                      style={{ padding: "0.75rem" }}
+                    >
                       {option}
                     </option>
                   ))}
@@ -276,7 +301,7 @@ const Message = () => {
             </div>
 
             <div className="w-full md:flex-[3] flex flex-col gap-y-3">
-              <h4 className="text-xl font-semibold">preferred contact method</h4>
+              <h4 className="md:text-xl text-[1.4rem]  font-semibold">preferred contact method</h4>
               <div className="flex items-center flex-wrap md:flex-nowrap gap-y-4 gap-x-5">
                 <div className="w-full relative">
                   <input
@@ -284,30 +309,32 @@ const Message = () => {
                     id="contact-number"
                     name="contact-method"
                     placeholder="enter your number"
-                    className="text-xl border-2 capitalize pl-14 border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
+                    className="md:text-xl text-[1.4rem]  border-2 capitalize pl-14 border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
+                    onClick={() => (document.getElementById("radio-number").checked = true)}
                   />
                   <Phone sx={{ fontSize: "2.3rem" }} className="absolute left-2 top-1/2 transform -translate-y-1/2 pl-2" />
                   <input
                     type="radio"
-                    id="contact-number"
+                    id="radio-number"
                     name="contact-method"
                     className="accent-purple-600 absolute right-5 top-1/2 transform -translate-y-1/2 bg-transparent appearance-none w-5 h-5 cursor-pointer checked:bg-purple-600 border-2
                     border-purple-400  rounded-full"
                   />
                 </div>
 
-                <div className="w-full relative group">
+                <div className="w-full relative">
                   <input
                     type="email"
                     id="contact-email"
                     name="contact-method"
                     placeholder="enter your email"
-                    className="text-xl border-2 capitalize pl-14 border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
+                    className="md:text-xl text-[1.4rem]  border-2 capitalize pl-14 border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
+                    onClick={() => (document.getElementById("radio-email").checked = true)}
                   />
                   <Mail sx={{ fontSize: "2.3rem" }} className="absolute left-2 top-1/2 transform -translate-y-1/2 pl-2" />
                   <input
                     type="radio"
-                    id="contact-email"
+                    id="radio-email"
                     name="contact-method"
                     value="email"
                     className="accent-purple-600 absolute right-5 top-1/2 transform -translate-y-1/2 bg-transparent appearance-none w-5 h-5 cursor-pointer checked:bg-purple-600 border-2
@@ -319,18 +346,18 @@ const Message = () => {
           </div>
 
           <div className="flex flex-col gap-y-3 items-start w-full">
-            <label htmlFor="message" className="text-xl font-semibold">
+            <label htmlFor="message" className="md:text-xl text-[1.4rem]  font-semibold">
               message
             </label>
             <textarea
               name="message"
               id="message"
               placeholder="enter your message"
-              className="text-xl border-2 capitalize border-white/5 bg-white/5 placeholder:capitalize rounded-xl p-3 w-full h-[13rem] md:h-[15rem]"
+              className="md:text-xl text-[1.4rem]  border-2 capitalize border-white/5 bg-white/5 placeholder:capitalize rounded-xl p-3 w-full h-[13rem] md:h-[15rem]"
             ></textarea>
           </div>
 
-          <div className="w-full md:flex-nowrap flex-wrap  gap-y-10 flex items-center justify-center md:justify-between">
+          <div className="w-full md:flex-nowrap flex-wrap  gap-y-7 flex items-center justify-center md:justify-between">
             <div className="flex gap-x-3 items-center">
               <input
                 type="checkbox"
@@ -340,7 +367,7 @@ const Message = () => {
                  border-white/10 rounded"
               />
 
-              <p className="text-xl text-white/70 normal-case">
+              <p className="md:text-xl text-[1.4rem]  text-white/70 normal-case">
                 i agree with <span className="border-b-2 border-white/5">terms of use</span> and{" "}
                 <span className="border-b-2 border-white/5">Privacy Policy</span>
               </p>
