@@ -94,8 +94,8 @@ const Navbar = () => {
 
       {/* MOBILE MENU */}
       <div
-        className={`!overflow-hidden md:hidden absolute top-0 left-0 px-5 ease-in-out w-full !h-screen bg-white/5 shadow-[1px_1px_5px_rgba(0,0,0,0.5)] backdrop-blur-2xl backdrop-brightness-90 z-[999999] ${
-          open ? "translate-x-0 overflow-hidden" : "translate-x-full overflow-hidden transition-all duration-200"
+        className={`!overflow-hidden transition-all duration-200 md:hidden absolute top-0 left-0 px-5 ease-in-out w-full !h-screen bg-white/5 shadow-[1px_1px_5px_rgba(0,0,0,0.5)] backdrop-blur-2xl backdrop-brightness-90 z-[999999] ${
+          open ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="flex items-center justify-between w-full py-5">

@@ -144,7 +144,7 @@ const SearchProperty = () => {
         <button
           onClick={handleSearch}
           disabled={!isSearchEnabled()}
-          className={`py-3 px-5 gap-x-2 flex rounded-xl text-nowrap items-center capitalize text-2xl font-medium hover:scale-95 m-1 ${
+          className={`py-3 px-5 flex justify-center gap-x-2  rounded-xl w-fit text-nowrap items-center capitalize text-2xl font-medium hover:scale-95 m-1 ${
             isSearchEnabled() ? "bg-purple-600" : "bg-gray-600 cursor-not-allowed"
           }`}
         >
