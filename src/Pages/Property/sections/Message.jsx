@@ -145,7 +145,7 @@ const Message = () => {
                 </select>
                 <KeyboardArrowDown
                   sx={{ fontSize: "2.3rem" }}
-                  className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/5 rounded-full p-1 pointer-events-none"
+                  className="absolute right-5 top-1/2 transform -translate-y-1/2 bg-white/5 rounded-full p-1 pointer-events-none"
                 />
               </div>
             </div>
@@ -182,7 +182,7 @@ const Message = () => {
                 </select>
                 <KeyboardArrowDown
                   sx={{ fontSize: "2.3rem" }}
-                  className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/5 rounded-full p-1 pointer-events-none"
+                  className="absolute right-5 top-1/2 transform -translate-y-1/2 bg-white/5 rounded-full p-1 pointer-events-none"
                 />
               </div>
             </div>
@@ -219,7 +219,7 @@ const Message = () => {
                 </select>
                 <KeyboardArrowDown
                   sx={{ fontSize: "2.3rem" }}
-                  className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/5 rounded-full p-1 pointer-events-none"
+                  className="absolute right-5 top-1/2 transform -translate-y-1/2 bg-white/5 rounded-full p-1 pointer-events-none"
                 />
               </div>
             </div>
@@ -256,7 +256,7 @@ const Message = () => {
                 </select>
                 <KeyboardArrowDown
                   sx={{ fontSize: "2.3rem" }}
-                  className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/5 rounded-full p-1 pointer-events-none"
+                  className="absolute right-5 top-1/2 transform -translate-y-1/2 bg-white/5 rounded-full p-1 pointer-events-none"
                 />
               </div>
             </div>
@@ -295,7 +295,7 @@ const Message = () => {
                 </select>
                 <KeyboardArrowDown
                   sx={{ fontSize: "2.3rem" }}
-                  className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/5 rounded-full p-1 pointer-events-none"
+                  className="absolute right-5 top-1/2 transform -translate-y-1/2 bg-white/5 rounded-full p-1 pointer-events-none"
                 />
               </div>
             </div>
