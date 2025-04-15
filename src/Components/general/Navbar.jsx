@@ -28,7 +28,7 @@ const Navbar = () => {
   }, [open]);
 
   return (
-    <div className="w-full h-full section-page border-b border-white/5">
+    <div className="w-full h-full section-page border-b border-white/5 overflow-hidden">
       <div className="flex items-center justify-between w-full md:flex-nowrap flex-wrap gap-y-5">
         <div className="md:w-full w-fit">
           <Link to="/" className="flex items-center gap-x-2">
