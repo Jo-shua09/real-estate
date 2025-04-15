@@ -8,8 +8,6 @@ const Message = () => {
     location: [],
     propertyType: [],
     priceRange: [],
-    propertySize: [],
-    buildYear: [],
     bathroom: [],
     bedroom: [],
   });
@@ -18,8 +16,6 @@ const Message = () => {
     location: "",
     propertyType: "",
     priceRange: "",
-    propertySize: "",
-    buildYear: "",
     bathroom: "",
     bedroom: "",
   });
@@ -29,17 +25,13 @@ const Message = () => {
     const locations = [...new Set(mockData.properties.map((p) => p.location || "Unknown"))];
     const types = [...new Set(mockData.properties.map((p) => p.property_type))];
     const prices = ["0-300k", "300k-600k", "600k-900k", "900k+"];
-    const sizes = ["<3000 sqft", "3000-4000 sqft", "4000-5000 sqft", "5000+ sqft"];
     const bathrooms = ["1", "2", "3", "4", "5", "6"];
     const bedrooms = ["1", "2", "3", "4", "5", "6"];
-    const years = [...new Set(mockData.properties.map((p) => p.year_built))].sort();
 
     setOptions({
       location: locations,
       propertyType: types,
       priceRange: prices,
-      propertySize: sizes,
-      buildYear: years,
       bathroom: bathrooms,
       bedroom: bedrooms,
     });
