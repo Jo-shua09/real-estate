@@ -291,7 +291,7 @@ const Message = () => {
                     type="radio"
                     id="contact-number"
                     name="contact-method"
-                    className="accent-purple-600 absolute right-3 top-1/2 transform -translate-y-1/2 bg-transparent appearance-none w-5 h-5 cursor-pointer checked:bg-purple-600 border-2
+                    className="accent-purple-600 absolute right-5 top-1/2 transform -translate-y-1/2 bg-transparent appearance-none w-5 h-5 cursor-pointer checked:bg-purple-600 border-2
                     border-purple-400  rounded-full"
                   />
                 </div>
@@ -310,7 +310,7 @@ const Message = () => {
                     id="contact-email"
                     name="contact-method"
                     value="email"
-                    className="accent-purple-600 absolute right-3 top-1/2 transform -translate-y-1/2 bg-transparent appearance-none w-5 h-5 cursor-pointer checked:bg-purple-600 border-2
+                    className="accent-purple-600 absolute right-5 top-1/2 transform -translate-y-1/2 bg-transparent appearance-none w-5 h-5 cursor-pointer checked:bg-purple-600 border-2
                     border-purple-400  rounded-full"
                   />
                 </div>
@@ -330,7 +330,7 @@ const Message = () => {
             ></textarea>
           </div>
 
-          <div className="w-full md:flex-nowrap flex-wrap  gap-y-5 flex items-center justify-center md:justify-between">
+          <div className="w-full md:flex-nowrap flex-wrap  gap-y-10 flex items-center justify-center md:justify-between">
             <div className="flex gap-x-3 items-center">
               <input
                 type="checkbox"
