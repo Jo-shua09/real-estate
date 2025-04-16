@@ -63,7 +63,7 @@ const Message = () => {
                 type="text"
                 id="first-name"
                 placeholder="enter first name"
-                className="md:text-xl text-[1.4rem]  border-2 border-white/5 bg-white/5 placeholder:capitalize normal-case rounded-xl pl-3 w-full h-[5rem] md:h-[4.5rem]"
+                className="md:text-xl text-[1.4rem]  border-2 border-white/5 bg-white/5 placeholder:capitalize focus:border-purple-600 normal-case rounded-xl pl-3 w-full h-[5rem] md:h-[4.5rem]"
               />
             </div>
 
@@ -75,7 +75,7 @@ const Message = () => {
                 type="text"
                 id="last-name"
                 placeholder="enter last name"
-                className="md:text-xl text-[1.4rem]  border-2 border-white/5 bg-white/5 placeholder:capitalize normal-case rounded-xl pl-3 w-full h-[5rem] md:h-[4.5rem]"
+                className="md:text-xl text-[1.4rem]  border-2 border-white/5 bg-white/5 placeholder:capitalize focus:border-purple-600 normal-case rounded-xl pl-3 w-full h-[5rem] md:h-[4.5rem]"
               />
             </div>
 
@@ -87,7 +87,7 @@ const Message = () => {
                 type="email"
                 id="email"
                 placeholder="enter your email"
-                className="md:text-xl text-[1.4rem]  border-2 border-white/5 bg-white/5 placeholder:capitalize normal-case rounded-xl pl-3 w-full h-[5rem] md:h-[4.5rem]"
+                className="md:text-xl text-[1.4rem]  border-2 border-white/5 bg-white/5 placeholder:capitalize focus:border-purple-600 normal-case rounded-xl pl-3 w-full h-[5rem] md:h-[4.5rem]"
               />
             </div>
 
@@ -99,7 +99,7 @@ const Message = () => {
                 type="tel"
                 id="phone"
                 placeholder="enter phone number"
-                className="md:text-xl text-[1.4rem]  border-2 border-white/5 bg-white/5 placeholder:capitalize normal-case rounded-xl pl-3 w-full h-[5rem] md:h-[4.5rem]"
+                className="md:text-xl text-[1.4rem]  border-2 border-white/5 bg-white/5 placeholder:capitalize focus:border-purple-600 normal-case rounded-xl pl-3 w-full h-[5rem] md:h-[4.5rem]"
               />
             </div>
           </div>
@@ -113,7 +113,7 @@ const Message = () => {
                 <select
                   id="location"
                   name="location"
-                  className="md:text-xl text-[1.4rem]  border-2 capitalize cursor-pointer border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
+                  className="md:text-xl text-[1.4rem]  border-2 capitalize cursor-pointer border-white/5 bg-white/5 placeholder:capitalize focus:border-purple-600 rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
                   value={selectedOptions.location}
                   onChange={(e) => handleOptionSelect("location", e.target.value)}
                   style={{
@@ -150,7 +150,7 @@ const Message = () => {
                 <select
                   id="type"
                   name="propertytype"
-                  className="md:text-xl text-[1.4rem]  border-2 cursor-pointer capitalize border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
+                  className="md:text-xl text-[1.4rem]  border-2 cursor-pointer capitalize border-white/5 bg-white/5 placeholder:capitalize focus:border-purple-600 rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
                   value={selectedOptions.propertyType}
                   onChange={(e) => handleOptionSelect("propertyType", e.target.value)}
                   style={{
@@ -187,7 +187,7 @@ const Message = () => {
                 <select
                   id="bathroom"
                   name="bathroom"
-                  className="md:text-xl text-[1.4rem]  border-2 cursor-pointer capitalize border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
+                  className="md:text-xl text-[1.4rem]  border-2 cursor-pointer capitalize border-white/5 bg-white/5 placeholder:capitalize focus:border-purple-600 rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
                   value={selectedOptions.bathroom}
                   onChange={(e) => handleOptionSelect("bathroom", e.target.value)}
                   style={{
@@ -224,7 +224,7 @@ const Message = () => {
                 <select
                   id="bedroom"
                   name="bedroom"
-                  className="md:text-xl text-[1.4rem]  border-2 cursor-pointer capitalize border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
+                  className="md:text-xl text-[1.4rem]  border-2 cursor-pointer capitalize border-white/5 bg-white/5 placeholder:capitalize focus:border-purple-600 rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
                   value={selectedOptions.bedroom}
                   onChange={(e) => handleOptionSelect("bedroom", e.target.value)}
                   style={{
@@ -263,7 +263,7 @@ const Message = () => {
                 <select
                   id="budget"
                   name="budget"
-                  className="md:text-xl text-[1.4rem]  border-2 capitalize cursor-pointer border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
+                  className="md:text-xl text-[1.4rem]  border-2 capitalize cursor-pointer border-white/5 bg-white/5 placeholder:capitalize focus:border-purple-600 rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
                   value={selectedOptions.priceRange}
                   onChange={(e) => handleOptionSelect("priceRange", e.target.value)}
                   style={{
@@ -301,7 +301,7 @@ const Message = () => {
                     id="contact-number"
                     name="contact-method"
                     placeholder="enter your number"
-                    className="md:text-xl text-[1.4rem]  border-2 capitalize pl-14 border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
+                    className="md:text-xl text-[1.4rem]  border-2 capitalize pl-14 border-white/5 bg-white/5 placeholder:capitalize focus:border-purple-600 rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
                     onClick={() => (document.getElementById("radio-number").checked = true)}
                   />
                   <Phone sx={{ fontSize: "2.3rem" }} className="absolute left-2 top-1/2 transform -translate-y-1/2 pl-2" />
@@ -320,7 +320,7 @@ const Message = () => {
                     id="contact-email"
                     name="contact-method"
                     placeholder="enter your email"
-                    className="md:text-xl text-[1.4rem]  border-2 capitalize pl-14 border-white/5 bg-white/5 placeholder:capitalize rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
+                    className="md:text-xl text-[1.4rem]  border-2 capitalize pl-14 border-white/5 bg-white/5 placeholder:capitalize focus:border-purple-600 rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
                     onClick={() => (document.getElementById("radio-email").checked = true)}
                   />
                   <Mail sx={{ fontSize: "2.3rem" }} className="absolute left-2 top-1/2 transform -translate-y-1/2 pl-2" />
@@ -345,7 +345,7 @@ const Message = () => {
               name="message"
               id="message"
               placeholder="enter your message"
-              className="md:text-xl text-[1.4rem]  border-2 capitalize border-white/5 bg-white/5 placeholder:capitalize rounded-xl p-3 w-full h-[13rem] md:h-[15rem]"
+              className="md:text-xl text-[1.4rem]  border-2 capitalize border-white/5 bg-white/5 placeholder:capitalize focus:border-purple-600 rounded-xl p-3 w-full h-[13rem] md:h-[15rem]"
             ></textarea>
           </div>
 

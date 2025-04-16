@@ -1,7 +1,11 @@
-import React from "react";
+import Inquire from "./sections/Inquire";
 
 const PropertyDetails = () => {
-  return <div>PropertyDetails</div>;
+  return (
+    <>
+      <Inquire />
+    </>
+  );
 };
 
 export default PropertyDetails;
