@@ -10,7 +10,7 @@ const SectionIntro = ({ title, description, name, linkPath, hideButton, hide }) 
         <div className="flex items-end justify-between md:gap-x-96 my-5 w-full">
           <div className="flex-[2] flex flex-col gap-y-5">
             <h3 className="sm:text-5xl text-4xl font-semibold !leading-[3.5rem]">{title}</h3>
-            <p className="normal-case text-white/70 text-2xl">{description}</p>
+            <p className="normal-case sm:w-[90%] w-full text-white/70 text-2xl">{description}</p>
           </div>
           {!hideButton && (
             <div className="md:flex hidden">
