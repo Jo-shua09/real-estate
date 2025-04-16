@@ -36,7 +36,6 @@ const Properties = () => {
         <SwiperSlideLayout
           items={results}
           title="discover a world of possibilities"
-          hide={false}
           hideButton={true}
           disableAt={2}
           description="Our portfolio of properties is as diverse as your dreams. Explore the following categories to find the perfect property that resonates with your vision of home"
