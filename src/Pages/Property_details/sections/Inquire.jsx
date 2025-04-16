@@ -4,8 +4,8 @@ import { CheckRounded } from "@mui/icons-material";
 import { useLocation } from "react-router-dom";
 
 const Inquire = () => {
-  const location = useLocation();
-  const [property_name] = location.state || [];
+  const Location = useLocation();
+  const { property_name, location } = Location.state || [];
   return (
     <div className="w-full section">
       <div className="flex items-start justify-between gap-10 w-full md:flex-nowrap flex-wrap">
@@ -78,7 +78,7 @@ const Inquire = () => {
                   id="budget"
                   name="budget"
                   disabled
-                  value={property_name}
+                  value={`${property_name}, ${location}`}
                   className="md:text-xl text-[1.4rem]  border-2 capitalize border-white/5 bg-white/5 placeholder:capitalize focus:border-purple-600 rounded-xl px-3 w-full h-[5rem] md:h-[4.5rem]"
                   style={{
                     WebkitAppearance: "none",
