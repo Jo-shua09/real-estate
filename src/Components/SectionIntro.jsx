@@ -9,7 +9,7 @@ const SectionIntro = ({ title, description, name, linkPath, hideButton, hide }) 
         {!hide && <img src={Abstract} alt="abstract image" className="w-fit h-fit object-cover" />}
         <div className="flex items-end justify-between md:gap-x-96 my-5 w-full">
           <div className="flex-[2] flex flex-col gap-y-5">
-            <h3 className="text-5xl font-semibold">{title}</h3>
+            <h3 className="sm:text-5xl text-4xl font-semibold">{title}</h3>
             <p className="normal-case text-white/70 text-2xl">{description}</p>
           </div>
           {!hideButton && (

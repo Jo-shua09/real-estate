@@ -11,7 +11,7 @@ const Inquire = () => {
       <div className="flex items-start justify-between gap-10 w-full md:flex-nowrap flex-wrap">
         <div className="w-full md:flex-1">
           <SectionIntro
-            title={`inquire about`}
+            title={`inquire about ${property_name}`}
             description="Interested in this property? Fill out the form below, and our real estate experts will get back to you with more details, including scheduling a viewing and answering any questions you may have."
             hideButton={true}
           />
@@ -87,7 +87,7 @@ const Inquire = () => {
                 />
                 <CheckRounded
                   sx={{ fontSize: "2.3rem" }}
-                  className="absolute right-5 top-1/2 transform -translate-y-1/2 bg-white/5 rounded-full p-1 pointer-events-none"
+                  className="absolute right-5 top-1/2 transform -translate-y-1/2 bg-purple-600 rounded-full p-1 pointer-events-none"
                 />
               </div>
             </div>
