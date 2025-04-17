@@ -3,6 +3,7 @@ import { LocationOnRounded, Search, Event, KeyboardArrowDown, Payment, Widgets, 
 import { useState, useEffect } from "react";
 import mockData from "../../../assets/mock_data.json";
 import SearchResult from "./SearchResult";
+import { sanitizeInput } from '../../../utils/security';
 
 const SearchProperty = () => {
   const [filters, setFilters] = useState({
@@ -51,11 +52,14 @@ const SearchProperty = () => {
   }, []);
 
   const handleSearch = () => {
+    // Sanitize search input
+    const sanitizedQuery = sanitizeInput(searchQuery.trim());
     let filteredProperties = [...mockData.properties];
 
-    // Filter by property name if search query exists
-    if (searchQuery.trim()) {
-      filteredProperties = filteredProperties.filter((property) => property.property_name.toLowerCase().includes(searchQuery.toLowerCase()));
+    if (sanitizedQuery) {
+      filteredProperties = filteredProperties.filter((property) => 
+        property.property_name.toLowerCase().includes(sanitizedQuery.toLowerCase())
+      );
     }
 
     // Apply filters
