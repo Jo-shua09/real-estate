@@ -44,7 +44,7 @@ const PricingDetails = () => {
                   </p>
                 </div>
               </div>
-              <div className="w-full flex flex-col gap-y-2 md:border-l-2 md:pl-5 border-t-2 py-5 border-white/5">
+              <div className="w-full flex flex-col gap-y-2 md:border-l-2 md:pl-5 md:border-t-0 border-t-2 py-5 border-white/5">
                 <h4 className="text-xl font-medium text-white/70">legal fees</h4>
                 <div className="flex items-center gap-x-5">
                   <span className="text-3xl font-semibold">$3,000</span>
@@ -65,7 +65,7 @@ const PricingDetails = () => {
                   </p>
                 </div>
               </div>
-              <div className="w-full flex flex-col gap-y-2 md:border-l-2 md:pl-5 border-t-2 py-5 border-white/5">
+              <div className="w-full flex flex-col gap-y-2 md:border-l-2 md:pl-5 md:border-t-0 border-t-2 py-5 border-white/5">
                 <h4 className="text-xl font-medium text-white/70">property insurance</h4>
                 <div className="flex items-center gap-x-5">
                   <span className="text-3xl font-semibold">$1,200</span>
@@ -114,6 +114,55 @@ const PricingDetails = () => {
                   <span className="text-3xl font-semibold">$300</span>
                   <p className="text-xl font-medium text-white/70 normal-case border-2 rounded-xl md:rounded-full md:p-2 p-4 border-white/5 bg-white/5">
                     Monthly fee for common area maintenance and security
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-full border-2 border-white/5 rounded-xl md:p-10 p-7">
+            <div className="flex justify-between w-full items-center mb-10 pb-10 border-b-2 border-white/5">
+              <h3 className="text-3xl font-semibold">total initial costs</h3>
+              <Button2 name="learn more" />
+            </div>
+
+            <div className="flex items-center md:flex-nowrap flex-wrap justify-between gap-10 w-full border-b-2 border-white/5 pb-10">
+              <div className="w-full flex flex-col gap-y-2">
+                <h4 className="text-xl font-medium text-white/70">listing price</h4>
+                <div className="flex items-center gap-x-5">
+                  <span className="text-3xl font-semibold">${price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
+                </div>
+              </div>
+              <div className="w-full flex flex-col gap-y-2 md:border-l-2 md:pl-5 md:border-t-0 border-t-2 py-5 border-white/5">
+                <h4 className="text-xl font-medium text-white/70">additional fees</h4>
+                <div className="flex items-center gap-x-5">
+                  <span className="text-3xl font-semibold">$29,700</span>
+                  <p className="text-xl font-medium text-white/70 normal-case border-2 rounded-xl md:rounded-full md:p-2 p-4 border-white/5 bg-white/5">
+                    Property transfer tax, legal fees, inspection, insurance
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex items-center md:flex-nowrap flex-wrap justify-between gap-10 w-full pt-10">
+              <div className="w-full flex flex-col gap-y-2 pt-5">
+                <h4 className="text-xl font-medium text-white/70">down payment</h4>
+                <div className="flex items-center gap-x-5">
+                  <span className="text-3xl font-semibold">
+                    $
+                    {Math.round(price * 0.2)
+                      .toString()
+                      .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                  </span>
+                  <p className="text-xl font-medium text-white/70 normal-case border-2 rounded-xl md:rounded-full md:p-2 p-4 border-white/5 bg-white/5">20%</p>
+                </div>
+              </div>
+              <div className="w-full flex flex-col gap-y-2 md:border-l-2 md:pl-5 md:border-t-0 border-t-2 py-5 border-white/5">
+                <h4 className="text-xl font-medium text-white/70">mortage amount</h4>
+                <div className="flex items-center gap-x-5">
+                  <span className="text-3xl font-semibold">$1,000,000</span>
+                  <p className="text-xl font-medium text-white/70 normal-case border-2 rounded-xl md:rounded-full md:p-2 p-4 border-white/5 bg-white/5">
+                    If applicable
                   </p>
                 </div>
               </div>
