@@ -28,12 +28,29 @@ const PricingDetails = () => {
         </div>
         <div className="w-full sm:flex-[6] flex flex-col gap-10">
           <div className="w-full border-2 border-white/5 rounded-xl md:p-10 p-7">
-            <div className="flex justify-between w-full items-center my-10 pb-10 border-b-2 border-white/5">
+            <div className="flex justify-between w-full items-center mb-10 pb-10 border-b-2 border-white/5">
               <h3 className="text-3xl font-semibold">additional fees</h3>
               <Button2 name="learn more" />
             </div>
-            <div className="flex items-center justify-between gap-10 w-full">
-              <div className="w-full flex flex-col gap-y-2"></div>
+            <div className="flex items-center justify-between gap-10 w-full border-b-2 border-white/5 pb-10">
+              <div className="w-full flex flex-col gap-y-2">
+                <h4 className="text-xl font-medium text-white/70">property transfer tax</h4>
+                <div className="flex items-center gap-x-5">
+                  <span className="text-3xl font-semibold">$25,000</span>
+                  <p className="text-xl font-medium text-white/70 normal-case border-2 rounded-full p-2 border-white/5 bg-white/5">
+                    Based on the sale price and local regulations
+                  </p>
+                </div>
+              </div>
+              <div className="w-full flex flex-col gap-y-2 border-l-2 pl-5 border-white/5">
+                <h4 className="text-xl font-medium text-white/70">legal fees</h4>
+                <div className="flex items-center gap-x-5">
+                  <span className="text-3xl font-semibold">$3,000</span>
+                  <p className="text-xl font-medium text-white/70 normal-case border-2 rounded-full p-2 border-white/5 bg-white/5">
+                    Approximate cost for legal services, including title transfer
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
