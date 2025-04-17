@@ -25,9 +25,9 @@ const PricingDetails = () => {
           <h3 className="text-xl text-white/70">listing price</h3>
           <p className="text-3xl font-semibold">${price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
         </div>
-      </div>
-      <div className="w-full sm:flex-[5]">
-        <div className="">hello</div>
+        <div className="w-full sm:flex-[6]">
+          <div className="">hello</div>
+        </div>
       </div>
     </div>
   );
