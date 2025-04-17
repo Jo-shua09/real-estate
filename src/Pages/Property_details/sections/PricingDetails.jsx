@@ -1,6 +1,7 @@
 import React from "react";
 import SectionIntro from "../../../Components/SectionIntro";
 import { useLocation } from "react-router-dom";
+import { Button2 } from "../../../Components/general/Button";
 
 const PricingDetails = () => {
   const location = useLocation();
@@ -25,8 +26,16 @@ const PricingDetails = () => {
           <h3 className="text-xl text-white/70">listing price</h3>
           <p className="text-3xl font-semibold">${price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
         </div>
-        <div className="w-full sm:flex-[6]">
-          <div className="">hello</div>
+        <div className="w-full sm:flex-[6] flex flex-col gap-10">
+          <div className="w-full border-2 border-white/5 rounded-xl md:p-10 p-7">
+            <div className="flex justify-between w-full items-center my-10 pb-10 border-b-2 border-white/5">
+              <h3 className="text-3xl font-semibold">additional fees</h3>
+              <Button2 name="learn more" />
+            </div>
+            <div className="flex items-center justify-between gap-10 w-full">
+              <div className="w-full flex flex-col gap-y-2"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
