@@ -6,7 +6,7 @@ const AboutProperty = () => {
   const { property_name, location, price } = Location.state || [];
 
   return (
-    <div className="w-full section-page">
+    <div className="w-full section">
       <h2 className="text-4xl font-semibold py-3">{property_name}</h2>
       <div className="flex items-center justify-between w-full gap-10">
         <div className="flex items-center gap-x-2">
