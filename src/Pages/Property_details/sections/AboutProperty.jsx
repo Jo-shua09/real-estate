@@ -1,4 +1,4 @@
-import { Bathroom, Bed, Bolt, Calculate, Light, LocationOn } from "@mui/icons-material";
+import { Bathroom, Bed, Bolt, Calculate, LocationOn } from "@mui/icons-material";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 
