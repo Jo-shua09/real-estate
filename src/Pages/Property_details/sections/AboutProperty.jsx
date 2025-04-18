@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 
 const AboutProperty = () => {
   const Location = useLocation();
-  const { property_name, location, price, virtual_tour_url, floor_plan_image, image_url } = Location.state || [];
+  const { property_name, location, price, virtual_tour_url, floor_plan_image, image_url, description } = Location.state || [];
 
   const [mainImage, setMainImage] = useState(image_url);
   const [secondaryImages, setSecondaryImages] = useState({
@@ -71,8 +71,16 @@ const AboutProperty = () => {
       </div>
 
       <div className="my-10 md:flex-nowrap sm:flex-wrap w-full flex items-start gap-10 justify-between">
-        <div className="flex-1 w-full"></div>
-        <div className="flex-1 w-full"></div>
+        <div className="flex-1 w-full border-2 flex flex-col gap-10 sm:gap-12 border-white/5 p-10 md:p-5 rounded-xl">
+          <div className="w-full flex flex-col gap-y-3">
+            <h3 className="text-3xl font-semibold">description</h3>
+            <p className="text-white/70 normal-case font-medium text-2xl">{description}</p>
+          </div>
+          <div className="border-t-2 border-white/5 w-full flex items-center justify-between">
+            <div className=""></div>
+          </div>
+        </div>
+        <div className="flex-1 w-full border-2 border-white/5 p-10 md:p-5 rounded-xl"></div>
       </div>
     </div>
   );
