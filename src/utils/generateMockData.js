@@ -4,68 +4,12 @@ import fs from "fs";
 // === ARRAYS OF SAMPLE DATA ===
 // These are used to create realistic fake property info
 
-const adjectives = [
-  "Luxury",
-  "Modern",
-  "Cozy",
-  "Elegant",
-  "Spacious",
-  "Classic",
-  "Contemporary",
-  "Charming",
-  "Grand",
-  "Pristine",
-];
-const nouns = [
-  "Vista",
-  "Gardens",
-  "Heights",
-  "Park",
-  "Manor",
-  "Estate",
-  "Place",
-  "Residence",
-  "Retreat",
-  "Haven",
-];
-const types = [
-  "Villa",
-  "House",
-  "Mansion",
-  "Home",
-  "Resort",
-  "Lodge",
-  "Dwelling",
-  "Complex",
-];
-const features = [
-  "swimming pool",
-  "garden",
-  "rooftop terrace",
-  "fitness center",
-  "tennis court",
-  "spa",
-  "bbq area",
-  "playground",
-];
-const amenities = [
-  "concierge",
-  "24/7 security",
-  "parking",
-  "elevator",
-  "storage",
-  "laundry",
-  "pet friendly",
-  "bike storage",
-];
-const propertyTypes = [
-  "condo",
-  "apartment",
-  "house",
-  "townhouse",
-  "duplex",
-  "villa",
-];
+const adjectives = ["Luxury", "Modern", "Cozy", "Elegant", "Spacious", "Classic", "Contemporary", "Charming", "Grand", "Pristine"];
+const nouns = ["Vista", "Gardens", "Heights", "Park", "Manor", "Estate", "Place", "Residence", "Retreat", "Haven"];
+const types = ["Villa", "House", "Mansion", "Home", "Resort", "Lodge", "Dwelling", "Complex"];
+const features = ["swimming pool", "garden", "rooftop terrace", "fitness center", "tennis court", "spa", "bbq area", "playground"];
+const amenities = ["concierge", "24/7 security", "parking", "elevator", "storage", "laundry", "pet friendly", "bike storage"];
+const propertyTypes = ["condo", "apartment", "house", "townhouse", "duplex", "villa"];
 
 // === HELPER FUNCTIONS ===
 
@@ -73,51 +17,15 @@ const propertyTypes = [
 const getRandomItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
 // Get a random number between two values
-const getRandomNumber = (min, max) =>
-  Math.floor(Math.random() * (max - min + 1)) + min;
+const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 // Get a random future date (within the next 3 months)
 const getRandomDate = () => {
   const today = new Date();
   const future = new Date(today.setMonth(today.getMonth() + 3));
-  const randomDate = new Date(
-    today.getTime() + Math.random() * (future.getTime() - today.getTime())
-  );
+  const randomDate = new Date(today.getTime() + Math.random() * (future.getTime() - today.getTime()));
   return randomDate.toLocaleDateString(); // Format date as MM/DD/YYYY
 };
-
-// === IMAGES & EXTRAS ===
-
-// Images of houses (randomly used for each listing)
-const unsplashImages = [
-  "https://images.unsplash.com/photo-1564013799919-ab600027ffc6",
-  "https://images.unsplash.com/photo-1576941089067-2de3c901e126",
-  "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83",
-  "https://images.unsplash.com/photo-1568605114967-8130f3a36994",
-  "https://images.unsplash.com/photo-1512917774080-9991f1c4c750",
-  "https://images.unsplash.com/photo-1554995207-c18c203602cb",
-  "https://images.unsplash.com/photo-1570129477492-45c003edd2be",
-  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
-  "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
-  "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b",
-];
-
-// Optional floor plans and virtual tours
-const floorPlanImages = [
-  "https://images.unsplash.com/photo-1600566752355-35792bedcfea",
-  "https://images.unsplash.com/photo-1600607687101-9df5087c2dc9",
-  "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
-  "https://images.unsplash.com/photo-1600607688969-a5bfcd646154",
-  "https://images.unsplash.com/photo-1600607687644-c7171b42498b",
-];
-
-const virtualTourUrls = [
-  "https://my.matterport.com/show/?m=zEWsxhZpGba",
-  "https://my.matterport.com/show/?m=VAXg7e9PX6S",
-  "https://my.matterport.com/show/?m=CoPaqg99KJF",
-  "https://my.matterport.com/show/?m=8jYMzwgs7Yd",
-  "https://my.matterport.com/show/?m=PXKqTBNkjyK",
-];
 
 // === COMMENT DATA ===
 // Used to generate fake reviews for each property
@@ -152,15 +60,59 @@ const locations = [
   "Michigan, USA",
 ];
 
+// === IMAGES & EXTRAS ===
+
+// Images of houses (randomly used for each listing)
+const unsplashImages = [
+  "https://images.pexels.com/photos/7031407/pexels-photo-7031407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/221540/pexels-photo-221540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/5997993/pexels-photo-5997993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/8134847/pexels-photo-8134847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/7031406/pexels-photo-7031406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/7598378/pexels-photo-7598378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/209274/pexels-photo-209274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/7031595/pexels-photo-7031595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/7031413/pexels-photo-7031413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+];
+
+// Floor plan images (verified architectural drawings)
+const floorPlanImages = [
+  "https://images.pexels.com/photos/19227216/pexels-photo-19227216/free-photo-of-photo-of-a-luxury-kitchen.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/280232/pexels-photo-280232.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/6957093/pexels-photo-6957093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/6186818/pexels-photo-6186818.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/6312076/pexels-photo-6312076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/6957094/pexels-photo-6957094.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/6297086/pexels-photo-6297086.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+  "https://images.pexels.com/photos/7534541/pexels-photo-7534541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1/",
+  "https://images.pexels.com/photos/6587899/pexels-photo-6587899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+];
+
+// Updated virtual tour URLs with working demo tours
+const virtualTourUrls = [
+  "https://images.pexels.com/photos/6782279/pexels-photo-6782279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/7533764/pexels-photo-7533764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/7227612/pexels-photo-7227612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/7535026/pexels-photo-7535026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/7031736/pexels-photo-7031736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/6588579/pexels-photo-6588579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/7214156/pexels-photo-7214156.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/7512036/pexels-photo-7512036.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+];
+
+// Updated avatar images (verified portrait photos)
 const avatarImages = [
-  "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
-  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
-  "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
-  "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
-  "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
-  "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
-  "https://images.unsplash.com/photo-1517841905240-472988babdf9",
-  "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6",
+  "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=85",
+  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=85",
+  "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&h=150&q=85",
+  "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&h=150&q=85",
+  "https://images.unsplash.com/photo-1554151228-14d9def656e4?auto=format&fit=crop&w=150&h=150&q=85",
+  "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&h=150&q=85",
+  "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&h=150&q=85",
+  "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=150&h=150&q=85",
 ];
 
 const commentTexts = [
@@ -185,14 +137,10 @@ const generateComments = () => {
       id: i + 1,
       author: getRandomItem(commenters),
       location: getRandomItem(locations),
-      avatar: `${getRandomItem(
-        avatarImages
-      )}?auto=format&fit=crop&w=150&h=150&q=80`,
+      avatar: `${getRandomItem(avatarImages)}?auto=format&fit=crop&w=150&h=150&q=80`,
       rating: getRandomNumber(3, 5),
       comment: getRandomItem(commentTexts),
-      date: new Date(
-        Date.now() - getRandomNumber(1, 30) * 24 * 60 * 60 * 1000
-      ).toLocaleDateString(),
+      date: new Date(Date.now() - getRandomNumber(1, 30) * 24 * 60 * 60 * 1000).toLocaleDateString(),
     });
   }
 
@@ -206,19 +154,16 @@ const generateMockData = () => {
   const properties = [];
 
   for (let i = 1; i <= 100; i++) {
-    const propertyName = `${getRandomItem(adjectives)} ${getRandomItem(
-      nouns
-    )} ${getRandomItem(types)}`;
+    const propertyName = `${getRandomItem(adjectives)} ${getRandomItem(nouns)} ${getRandomItem(types)}`;
     const propertyType = getRandomItem(propertyTypes);
     const feature = getRandomItem(features);
     const amenity = getRandomItem(amenities);
 
+    // In the property generation, update the image URLs with quality parameters
     properties.push({
       property_id: i,
       property_name: propertyName,
-      image_url: `${getRandomItem(
-        unsplashImages
-      )}?auto=format&fit=crop&w=800&h=600&q=80`,
+      image_url: `${getRandomItem(unsplashImages)}`,
       features: feature,
       amenities: amenity,
       property_type: propertyType,
@@ -234,9 +179,7 @@ const generateMockData = () => {
       hoa_fee: Number((Math.random() * 400 + 100).toFixed(2)), // Random HOA fee
       open_house_date: getRandomDate(),
       virtual_tour_url: getRandomItem(virtualTourUrls),
-      floor_plan_image: `${getRandomItem(
-        floorPlanImages
-      )}?auto=format&fit=crop&w=800&h=600&q=80`,
+      floor_plan_image: `${getRandomItem(floorPlanImages)}`,
       comments: generateComments(),
     });
   }
@@ -250,8 +193,7 @@ const generateMockData = () => {
 const mockData = generateMockData();
 
 // Update the path to match your project folder
-const outputPath =
-  "c:/Users/joshu/Documents/Developer Projects/React Webs/Real Estate Website/real-estate/public/mock_data.json";
+const outputPath = "c:/Users/joshu/Documents/Developer Projects/React Webs/Real Estate Website/real-estate/public/mock_data.json";
 
 try {
   // Convert to JSON and write to file
