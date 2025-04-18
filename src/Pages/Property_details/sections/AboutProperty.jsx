@@ -42,7 +42,7 @@ const AboutProperty = () => {
         </div>
       </div>
 
-      <div className="w-full p-10 md:p-7 border-2 border-white/5 bg-white/5 my-10 rounded-xl">
+      <div className="w-full p-5 md:p-10 border-2 border-white/5 bg-white/5 my-10 rounded-xl">
         <div className="flex flex-col gap-10 w-full">
           <div className="w-full h-full">
             <img src={mainImage} alt="image of property" className="w-full h-[45rem] object-cover rounded-xl" />
