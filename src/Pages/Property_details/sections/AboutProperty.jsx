@@ -69,6 +69,11 @@ const AboutProperty = () => {
           </div>
         </div>
       </div>
+
+      <div className="my-10 md:flex-nowrap sm:flex-wrap w-full flex items-start gap-10 justify-between">
+        <div className="flex-1 w-full"></div>
+        <div className="flex-1 w-full"></div>
+      </div>
     </div>
   );
 };
