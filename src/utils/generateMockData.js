@@ -150,42 +150,48 @@ const generateComments = () => {
 // === Function to Generate 100 Fake Property Listings ===
 
 // In your generateMockData function, add the FAQ data
+// Get multiple random items from an array
+const getMultipleRandomItems = (arr, count) => {
+  const shuffled = [...arr].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
+};
+
+// In the generateMockData function, update the property generation
 const generateMockData = () => {
   const properties = [];
 
   for (let i = 1; i <= 100; i++) {
     const propertyName = `${getRandomItem(adjectives)} ${getRandomItem(nouns)} ${getRandomItem(types)}`;
     const propertyType = getRandomItem(propertyTypes);
-    const feature = getRandomItem(features);
-    const amenity = getRandomItem(amenities);
+    const selectedFeatures = getMultipleRandomItems(features, 2);
+    const selectedAmenities = getMultipleRandomItems(amenities, 2);
 
-    // In the property generation, update the image URLs with quality parameters
     properties.push({
       property_id: i,
       property_name: propertyName,
-      image_url: `${getRandomItem(unsplashImages)}`,
-      features: feature,
-      amenities: amenity,
+      image_url: getRandomItem(unsplashImages),
+      features: selectedFeatures,
+      amenities: selectedAmenities,
       property_type: propertyType,
-      location: getRandomItem(locations), // Fixed: changed 'location' to 'locations'
+      location: getRandomItem(locations),
       size_sqft: getRandomNumber(2000, 5000),
       year_built: getRandomNumber(1900, 2020),
-      description: `Welcome to ${propertyName}, an exceptional ${propertyType} that exemplifies luxury living at its finest. This stunning property features a ${feature} and includes ${amenity} for your convenience. With its sophisticated design and attention to detail, this home offers the perfect blend of comfort and elegance.`,
+      description: `Welcome to ${propertyName}, an exceptional ${propertyType} that exemplifies luxury living at its finest. This stunning property features ${selectedFeatures.join(' and ')} and includes ${selectedAmenities.join(' and ')} for your convenience. With its sophisticated design and attention to detail, this home offers the perfect blend of comfort and elegance.`,
       price: getRandomNumber(300000, 1000000),
       bedrooms: getRandomNumber(1, 6),
       bathrooms: getRandomNumber(1, 5),
       garage_spaces: getRandomNumber(0, 3),
-      lot_size_acres: Number((Math.random() * 9.9 + 0.1).toFixed(1)), // Lot size between 0.1 and 10 acres
-      hoa_fee: Number((Math.random() * 400 + 100).toFixed(2)), // Random HOA fee
+      lot_size_acres: Number((Math.random() * 9.9 + 0.1).toFixed(1)),
+      hoa_fee: Number((Math.random() * 400 + 100).toFixed(2)),
       open_house_date: getRandomDate(),
       virtual_tour_url: getRandomItem(virtualTourUrls),
-      floor_plan_image: `${getRandomItem(floorPlanImages)}`,
-      comments: generateComments(),
+      floor_plan_image: getRandomItem(floorPlanImages),
+      comments: generateComments()
     });
   }
 
   return {
-    properties,
+    properties
   };
 };
 
