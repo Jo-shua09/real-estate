@@ -163,8 +163,8 @@ const generateMockData = () => {
   for (let i = 1; i <= 100; i++) {
     const propertyName = `${getRandomItem(adjectives)} ${getRandomItem(nouns)} ${getRandomItem(types)}`;
     const propertyType = getRandomItem(propertyTypes);
-    const selectedFeatures = getMultipleRandomItems(features, 2);
-    const selectedAmenities = getMultipleRandomItems(amenities, 2);
+    const selectedFeatures = getMultipleRandomItems(features, 3);
+    const selectedAmenities = getMultipleRandomItems(amenities, 3);
 
     properties.push({
       property_id: i,
@@ -176,7 +176,11 @@ const generateMockData = () => {
       location: getRandomItem(locations),
       size_sqft: getRandomNumber(2000, 5000),
       year_built: getRandomNumber(1900, 2020),
-      description: `Welcome to ${propertyName}, an exceptional ${propertyType} that exemplifies luxury living at its finest. This stunning property features ${selectedFeatures.join(' and ')} and includes ${selectedAmenities.join(' and ')} for your convenience. With its sophisticated design and attention to detail, this home offers the perfect blend of comfort and elegance.`,
+      description: `Welcome to ${propertyName}, an exceptional ${propertyType} that exemplifies luxury living at its finest. This stunning property features ${selectedFeatures.join(
+        " and "
+      )} and includes ${selectedAmenities.join(
+        " and "
+      )} for your convenience. With its sophisticated design and attention to detail, this home offers the perfect blend of comfort and elegance.`,
       price: getRandomNumber(300000, 1000000),
       bedrooms: getRandomNumber(1, 6),
       bathrooms: getRandomNumber(1, 5),
@@ -186,12 +190,12 @@ const generateMockData = () => {
       open_house_date: getRandomDate(),
       virtual_tour_url: getRandomItem(virtualTourUrls),
       floor_plan_image: getRandomItem(floorPlanImages),
-      comments: generateComments()
+      comments: generateComments(),
     });
   }
 
   return {
-    properties
+    properties,
   };
 };
 
