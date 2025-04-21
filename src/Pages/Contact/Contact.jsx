@@ -5,6 +5,7 @@ const Contact = () => {
   return (
     <div className="">
       <ContactHero />
+      <Connect />
     </div>
   );
 };
