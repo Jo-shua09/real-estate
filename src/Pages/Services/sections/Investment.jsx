@@ -43,7 +43,7 @@ const Investment = () => {
             <span className="text-3xl font-semibold">ROI Assessment</span>
           </div>
           <p className="text-white/70 text-2xl font-medium normal-case">
-            Make investment decisions with confidence. Our ROI Assessment services evaluate the potential returns on your investments{" "}
+            Make investment decisions with confidence. Our ROI Assessment services evaluate the potential returns on your investments
           </p>
         </div>
 
@@ -52,22 +52,10 @@ const Investment = () => {
             <div className="border-t-2 border-b-2 border-purple-600 rounded-full p-2">
               <VerticalAlignTopOutlined className="!text-5xl border-t border-b p-2 text-purple-700 border-purple-600 rounded-full" />
             </div>
-            <span className="text-3xl font-semibold">Market Insight</span>
+            <span className="text-3xl font-semibold">Customized Strategies</span>
           </div>
           <p className="text-white/70 text-2xl font-medium normal-case">
-            Stay ahead of market trends with our expert Market Analysis. We provide in-depth insights into real estate market conditions
-          </p>
-        </div>
-
-        <div className="border-2 p-10 rounded-xl  flex flex-col gap-y-7 bg-black/30 border-white/5">
-          <div className="flex items-center gap-x-5">
-            <div className="border-t-2 border-b-2 border-purple-600 rounded-full p-2">
-              <VerticalAlignTopOutlined className="!text-5xl border-t border-b p-2 text-purple-700 border-purple-600 rounded-full" />
-            </div>
-            <span className="text-3xl font-semibold">Market Insight</span>
-          </div>
-          <p className="text-white/70 text-2xl font-medium normal-case">
-            Stay ahead of market trends with our expert Market Analysis. We provide in-depth insights into real estate market conditions
+            Every investor is unique, and so are their goals. We develop Customized Investment Strategies tailored to your specific needs
           </p>
         </div>
       </div>
