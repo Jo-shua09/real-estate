@@ -6,22 +6,22 @@ import mockData from "../../../assets/mock_data.json";
 const Connect = () => {
   const [options, setOptions] = useState({
     inquiry: [],
-    bedroom: [],
+    hear: [],
   });
 
   const [selectedOptions, setSelectedOptions] = useState({
     inquiry: "",
-    bedroom: "",
+    hear: "",
   });
 
   useEffect(() => {
     // Extract unique values from properties
     const inquire = [...new Set(mockData.properties.map((p) => p.property_name || "Unknown"))];
-    const bedrooms = ["Friend", "Facebook", "Twitter", "Instagram"];
+    const heard = ["Friend", "Facebook", "Twitter", "Instagram"];
 
     setOptions({
       inquiry: inquire,
-      bedroom: bedrooms,
+      hear: heard,
     });
   }, []);
 
