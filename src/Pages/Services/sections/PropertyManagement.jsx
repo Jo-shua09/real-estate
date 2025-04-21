@@ -28,10 +28,10 @@ const PropertyManagement = () => {
               <div className="border-t-2 border-b-2 border-purple-600 rounded-full p-2">
                 <VerticalAlignTopOutlined className="!text-5xl border-t border-b p-2  text-purple-700 border-purple-600 rounded-full" />
               </div>
-              <span className="text-3xl font-semibold">strategy marketing</span>
+              <span className="text-3xl font-semibold">Maintenance Ease</span>
             </div>
             <p className="text-white/70 text-2xl font-medium normal-case">
-              Selling a property requires more than just a listing; it demands a strategic marketing.
+              Say goodbye to property maintenance headaches. We handle all aspects of property upkeep.
             </p>
           </div>
 
@@ -40,10 +40,10 @@ const PropertyManagement = () => {
               <div className="border-t-2 border-b-2 border-purple-600 rounded-full p-2">
                 <ControlPointSharp className="!text-5xl border-t border-b p-2  text-purple-700 border-purple-600 rounded-full" />
               </div>
-              <span className="text-3xl font-semibold">negotiation wizardry</span>
+              <span className="text-3xl font-semibold">Financial Peace of Mind</span>
             </div>
             <p className="text-white/70 text-2xl font-medium normal-case">
-              Negotiating the best deal is an art, and our negotiation experts are masters of it.
+              Managing property finances can be complex. Our financial experts take care of rent collection{" "}
             </p>
           </div>
         </div>
@@ -54,16 +54,14 @@ const PropertyManagement = () => {
               <div className="border-t-2 border-b-2 border-purple-600 rounded-full p-2">
                 <VerticalAlignTopOutlined className="!text-5xl border-t border-b p-2  text-purple-700 border-purple-600 rounded-full" />
               </div>
-              <span className="text-3xl font-semibold">closing success</span>
+              <span className="text-3xl font-semibold">Legal Guardian</span>
             </div>
-            <p className="text-white/70 text-2xl font-medium normal-case">
-              A successful sale is not complete until the closing. We guide you through the intricate closing process.
-            </p>
+            <p className="text-white/70 text-2xl font-medium normal-case">Stay compliant with property laws and regulations effortlessly. </p>
           </div>
 
           <div className="border-2 p-10 rounded-xl md:flex-[2.18] w-full h-full flex flex-col gap-y-7 border-white/5 bg-hero bg-white/5">
             <div className="flex items-center justify-between gap-6">
-              <h3 className="md:text-3xl text-4xl font-semibold">Unlock the Value of Your Property Today</h3>
+              <h3 className="md:text-3xl text-4xl font-semibold">Experience Effortless Property Management</h3>
               <button className="py-4  px-7 hover:scale-95 capitalize rounded-xl hidden md:flex items-center font-semibold bg-black/30 text-2xl border-2 border-white/5">
                 learn more
               </button>
@@ -72,8 +70,8 @@ const PropertyManagement = () => {
               learn more
             </button>
             <p className="text-white/70 normal-case font-medium text-2xl">
-              Ready to unlock the true value of your property? Explore our Property Selling Service categories and let us help you achieve the best deal
-              possible for your valuable asset.
+              Ready to experience hassle-free property management? Explore our Property Management Service categories and let us handle the complexities while
+              you enjoy the benefits of property ownership.
             </p>
           </div>
         </div>
