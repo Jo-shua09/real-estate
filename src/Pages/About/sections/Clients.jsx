@@ -31,9 +31,7 @@ const Clients = () => {
             <div className="w-full lg:h-[32rem] md:h-[35rem] h-full border-[.5rem] border-white/5 rounded-xl p-7">
               <div className="flex justify-between items-center">
                 <div className="flex flex-col gap-y-2">
-                  <h5 className="text-xl text-white/70 font-medium">
-                    since {client.since}
-                  </h5>
+                  <h5 className="text-xl text-white/70 font-medium">since {client.since}</h5>
                   <h2 className="text-3xl font-medium">{client.name}</h2>
                 </div>
 
@@ -68,9 +66,7 @@ const Clients = () => {
 
               <div className="w-full p-7 rounded-xl border-2 mb-5 border-white/5">
                 <h3 className="text-xl text-white/70 pb-5">what they said</h3>
-                <p className="text-2xl font-medium normal-case">
-                  {client.testimonial}
-                </p>
+                <p className="text-2xl font-medium normal-case">{client.testimonial}</p>
               </div>
             </div>
           </div>

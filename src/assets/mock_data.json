@@ -4,16 +4,8 @@
       "property_id": 1,
       "property_name": "Charming Manor Resort",
       "image_url": "https://images.pexels.com/photos/7031413/pexels-photo-7031413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "swimming pool",
-        "garden",
-        "rooftop terrace"
-      ],
-      "amenities": [
-        "parking",
-        "bike storage",
-        "elevator"
-      ],
+      "features": ["swimming pool", "garden", "rooftop terrace"],
+      "amenities": ["parking", "bike storage", "elevator"],
       "property_type": "apartment",
       "location": "Illinois, USA",
       "size_sqft": 2355,
@@ -53,16 +45,8 @@
       "property_id": 2,
       "property_name": "Charming Haven Dwelling",
       "image_url": "https://images.pexels.com/photos/7031406/pexels-photo-7031406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "tennis court",
-        "swimming pool",
-        "fitness center"
-      ],
-      "amenities": [
-        "elevator",
-        "storage",
-        "parking"
-      ],
+      "features": ["tennis court", "swimming pool", "fitness center"],
+      "amenities": ["elevator", "storage", "parking"],
       "property_type": "villa",
       "location": "Nevada, USA",
       "size_sqft": 3095,
@@ -111,16 +95,8 @@
       "property_id": 3,
       "property_name": "Charming Retreat Dwelling",
       "image_url": "https://images.pexels.com/photos/7598378/pexels-photo-7598378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "fitness center",
-        "playground",
-        "spa"
-      ],
-      "amenities": [
-        "concierge",
-        "24/7 security",
-        "parking"
-      ],
+      "features": ["fitness center", "playground", "spa"],
+      "amenities": ["concierge", "24/7 security", "parking"],
       "property_type": "house",
       "location": "California, USA",
       "size_sqft": 4845,
@@ -160,16 +136,8 @@
       "property_id": 4,
       "property_name": "Modern Manor Lodge",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "swimming pool",
-        "garden",
-        "rooftop terrace"
-      ],
-      "amenities": [
-        "elevator",
-        "storage",
-        "pet friendly"
-      ],
+      "features": ["swimming pool", "garden", "rooftop terrace"],
+      "amenities": ["elevator", "storage", "pet friendly"],
       "property_type": "apartment",
       "location": "Arizona, USA",
       "size_sqft": 3924,
@@ -218,16 +186,8 @@
       "property_id": 5,
       "property_name": "Cozy Heights Resort",
       "image_url": "https://images.pexels.com/photos/8134847/pexels-photo-8134847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "fitness center",
-        "swimming pool",
-        "tennis court"
-      ],
-      "amenities": [
-        "bike storage",
-        "24/7 security",
-        "concierge"
-      ],
+      "features": ["fitness center", "swimming pool", "tennis court"],
+      "amenities": ["bike storage", "24/7 security", "concierge"],
       "property_type": "villa",
       "location": "Illinois, USA",
       "size_sqft": 3754,
@@ -276,16 +236,8 @@
       "property_id": 6,
       "property_name": "Elegant Retreat Complex",
       "image_url": "https://images.pexels.com/photos/8134847/pexels-photo-8134847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "swimming pool",
-        "tennis court",
-        "rooftop terrace"
-      ],
-      "amenities": [
-        "storage",
-        "pet friendly",
-        "concierge"
-      ],
+      "features": ["swimming pool", "tennis court", "rooftop terrace"],
+      "amenities": ["storage", "pet friendly", "concierge"],
       "property_type": "townhouse",
       "location": "Colorado, USA",
       "size_sqft": 3070,
@@ -334,16 +286,8 @@
       "property_id": 7,
       "property_name": "Contemporary Vista Home",
       "image_url": "https://images.pexels.com/photos/7598378/pexels-photo-7598378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "garden",
-        "rooftop terrace",
-        "tennis court"
-      ],
-      "amenities": [
-        "elevator",
-        "parking",
-        "storage"
-      ],
+      "features": ["garden", "rooftop terrace", "tennis court"],
+      "amenities": ["elevator", "parking", "storage"],
       "property_type": "duplex",
       "location": "Illinois, USA",
       "size_sqft": 2707,
@@ -392,16 +336,8 @@
       "property_id": 8,
       "property_name": "Contemporary Heights Home",
       "image_url": "https://images.pexels.com/photos/7598378/pexels-photo-7598378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "playground",
-        "spa",
-        "swimming pool"
-      ],
-      "amenities": [
-        "concierge",
-        "storage",
-        "bike storage"
-      ],
+      "features": ["playground", "spa", "swimming pool"],
+      "amenities": ["concierge", "storage", "bike storage"],
       "property_type": "villa",
       "location": "California, USA",
       "size_sqft": 2830,
@@ -450,16 +386,8 @@
       "property_id": 9,
       "property_name": "Charming Retreat Villa",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "swimming pool",
-        "garden",
-        "rooftop terrace"
-      ],
-      "amenities": [
-        "24/7 security",
-        "parking",
-        "laundry"
-      ],
+      "features": ["swimming pool", "garden", "rooftop terrace"],
+      "amenities": ["24/7 security", "parking", "laundry"],
       "property_type": "house",
       "location": "Illinois, USA",
       "size_sqft": 2803,
@@ -508,16 +436,8 @@
       "property_id": 10,
       "property_name": "Modern Heights Villa",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "bbq area",
-        "spa",
-        "tennis court"
-      ],
-      "amenities": [
-        "elevator",
-        "parking",
-        "concierge"
-      ],
+      "features": ["bbq area", "spa", "tennis court"],
+      "amenities": ["elevator", "parking", "concierge"],
       "property_type": "townhouse",
       "location": "Michigan, USA",
       "size_sqft": 3277,
@@ -566,16 +486,8 @@
       "property_id": 11,
       "property_name": "Pristine Haven Complex",
       "image_url": "https://images.pexels.com/photos/7031407/pexels-photo-7031407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "playground",
-        "swimming pool",
-        "garden"
-      ],
-      "amenities": [
-        "24/7 security",
-        "pet friendly",
-        "concierge"
-      ],
+      "features": ["playground", "swimming pool", "garden"],
+      "amenities": ["24/7 security", "pet friendly", "concierge"],
       "property_type": "condo",
       "location": "Oregon, USA",
       "size_sqft": 4766,
@@ -615,16 +527,8 @@
       "property_id": 12,
       "property_name": "Contemporary Vista Resort",
       "image_url": "https://images.pexels.com/photos/7031407/pexels-photo-7031407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "bbq area",
-        "swimming pool",
-        "garden"
-      ],
-      "amenities": [
-        "laundry",
-        "bike storage",
-        "24/7 security"
-      ],
+      "features": ["bbq area", "swimming pool", "garden"],
+      "amenities": ["laundry", "bike storage", "24/7 security"],
       "property_type": "duplex",
       "location": "Arizona, USA",
       "size_sqft": 3166,
@@ -673,16 +577,8 @@
       "property_id": 13,
       "property_name": "Elegant Estate Home",
       "image_url": "https://images.pexels.com/photos/209274/pexels-photo-209274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "swimming pool",
-        "garden",
-        "playground"
-      ],
-      "amenities": [
-        "concierge",
-        "pet friendly",
-        "24/7 security"
-      ],
+      "features": ["swimming pool", "garden", "playground"],
+      "amenities": ["concierge", "pet friendly", "24/7 security"],
       "property_type": "duplex",
       "location": "Oregon, USA",
       "size_sqft": 3756,
@@ -722,16 +618,8 @@
       "property_id": 14,
       "property_name": "Spacious Haven Lodge",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "bbq area",
-        "rooftop terrace",
-        "fitness center"
-      ],
-      "amenities": [
-        "bike storage",
-        "pet friendly",
-        "laundry"
-      ],
+      "features": ["bbq area", "rooftop terrace", "fitness center"],
+      "amenities": ["bike storage", "pet friendly", "laundry"],
       "property_type": "duplex",
       "location": "Washington, USA",
       "size_sqft": 2881,
@@ -771,16 +659,8 @@
       "property_id": 15,
       "property_name": "Spacious Retreat Mansion",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "rooftop terrace",
-        "fitness center",
-        "bbq area"
-      ],
-      "amenities": [
-        "24/7 security",
-        "elevator",
-        "bike storage"
-      ],
+      "features": ["rooftop terrace", "fitness center", "bbq area"],
+      "amenities": ["24/7 security", "elevator", "bike storage"],
       "property_type": "duplex",
       "location": "Texas, USA",
       "size_sqft": 2330,
@@ -820,16 +700,8 @@
       "property_id": 16,
       "property_name": "Modern Haven Villa",
       "image_url": "https://images.pexels.com/photos/7031407/pexels-photo-7031407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "garden",
-        "swimming pool",
-        "playground"
-      ],
-      "amenities": [
-        "parking",
-        "concierge",
-        "pet friendly"
-      ],
+      "features": ["garden", "swimming pool", "playground"],
+      "amenities": ["parking", "concierge", "pet friendly"],
       "property_type": "townhouse",
       "location": "Illinois, USA",
       "size_sqft": 4647,
@@ -869,16 +741,8 @@
       "property_id": 17,
       "property_name": "Elegant Haven Complex",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "bbq area",
-        "swimming pool",
-        "fitness center"
-      ],
-      "amenities": [
-        "concierge",
-        "pet friendly",
-        "elevator"
-      ],
+      "features": ["bbq area", "swimming pool", "fitness center"],
+      "amenities": ["concierge", "pet friendly", "elevator"],
       "property_type": "townhouse",
       "location": "Nevada, USA",
       "size_sqft": 2935,
@@ -927,16 +791,8 @@
       "property_id": 18,
       "property_name": "Classic Manor Mansion",
       "image_url": "https://images.pexels.com/photos/8134847/pexels-photo-8134847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "spa",
-        "fitness center",
-        "rooftop terrace"
-      ],
-      "amenities": [
-        "bike storage",
-        "concierge",
-        "24/7 security"
-      ],
+      "features": ["spa", "fitness center", "rooftop terrace"],
+      "amenities": ["bike storage", "concierge", "24/7 security"],
       "property_type": "duplex",
       "location": "Texas, USA",
       "size_sqft": 3310,
@@ -985,16 +841,8 @@
       "property_id": 19,
       "property_name": "Luxury Haven House",
       "image_url": "https://images.pexels.com/photos/221540/pexels-photo-221540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "playground",
-        "garden",
-        "bbq area"
-      ],
-      "amenities": [
-        "concierge",
-        "laundry",
-        "24/7 security"
-      ],
+      "features": ["playground", "garden", "bbq area"],
+      "amenities": ["concierge", "laundry", "24/7 security"],
       "property_type": "villa",
       "location": "Colorado, USA",
       "size_sqft": 3383,
@@ -1034,16 +882,8 @@
       "property_id": 20,
       "property_name": "Elegant Heights Resort",
       "image_url": "https://images.pexels.com/photos/7598378/pexels-photo-7598378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "garden",
-        "tennis court",
-        "fitness center"
-      ],
-      "amenities": [
-        "parking",
-        "24/7 security",
-        "pet friendly"
-      ],
+      "features": ["garden", "tennis court", "fitness center"],
+      "amenities": ["parking", "24/7 security", "pet friendly"],
       "property_type": "house",
       "location": "New York, USA",
       "size_sqft": 4071,
@@ -1083,16 +923,8 @@
       "property_id": 21,
       "property_name": "Cozy Residence Home",
       "image_url": "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "playground",
-        "swimming pool",
-        "tennis court"
-      ],
-      "amenities": [
-        "laundry",
-        "storage",
-        "bike storage"
-      ],
+      "features": ["playground", "swimming pool", "tennis court"],
+      "amenities": ["laundry", "storage", "bike storage"],
       "property_type": "duplex",
       "location": "Colorado, USA",
       "size_sqft": 3723,
@@ -1132,16 +964,8 @@
       "property_id": 22,
       "property_name": "Cozy Manor Home",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "fitness center",
-        "spa",
-        "swimming pool"
-      ],
-      "amenities": [
-        "pet friendly",
-        "concierge",
-        "bike storage"
-      ],
+      "features": ["fitness center", "spa", "swimming pool"],
+      "amenities": ["pet friendly", "concierge", "bike storage"],
       "property_type": "condo",
       "location": "Texas, USA",
       "size_sqft": 5000,
@@ -1190,16 +1014,8 @@
       "property_id": 23,
       "property_name": "Grand Vista House",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "bbq area",
-        "tennis court",
-        "spa"
-      ],
-      "amenities": [
-        "parking",
-        "storage",
-        "24/7 security"
-      ],
+      "features": ["bbq area", "tennis court", "spa"],
+      "amenities": ["parking", "storage", "24/7 security"],
       "property_type": "townhouse",
       "location": "Florida, USA",
       "size_sqft": 4590,
@@ -1248,16 +1064,8 @@
       "property_id": 24,
       "property_name": "Charming Residence Mansion",
       "image_url": "https://images.pexels.com/photos/7031595/pexels-photo-7031595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "playground",
-        "swimming pool",
-        "fitness center"
-      ],
-      "amenities": [
-        "storage",
-        "pet friendly",
-        "bike storage"
-      ],
+      "features": ["playground", "swimming pool", "fitness center"],
+      "amenities": ["storage", "pet friendly", "bike storage"],
       "property_type": "duplex",
       "location": "Illinois, USA",
       "size_sqft": 2727,
@@ -1297,16 +1105,8 @@
       "property_id": 25,
       "property_name": "Cozy Residence Mansion",
       "image_url": "https://images.pexels.com/photos/5997993/pexels-photo-5997993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "swimming pool",
-        "playground",
-        "spa"
-      ],
-      "amenities": [
-        "elevator",
-        "pet friendly",
-        "laundry"
-      ],
+      "features": ["swimming pool", "playground", "spa"],
+      "amenities": ["elevator", "pet friendly", "laundry"],
       "property_type": "house",
       "location": "Texas, USA",
       "size_sqft": 3375,
@@ -1346,16 +1146,8 @@
       "property_id": 26,
       "property_name": "Classic Estate Resort",
       "image_url": "https://images.pexels.com/photos/7031413/pexels-photo-7031413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "spa",
-        "swimming pool",
-        "garden"
-      ],
-      "amenities": [
-        "parking",
-        "pet friendly",
-        "24/7 security"
-      ],
+      "features": ["spa", "swimming pool", "garden"],
+      "amenities": ["parking", "pet friendly", "24/7 security"],
       "property_type": "house",
       "location": "Florida, USA",
       "size_sqft": 2303,
@@ -1395,16 +1187,8 @@
       "property_id": 27,
       "property_name": "Elegant Haven Dwelling",
       "image_url": "https://images.pexels.com/photos/7598378/pexels-photo-7598378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "spa",
-        "swimming pool",
-        "bbq area"
-      ],
-      "amenities": [
-        "bike storage",
-        "concierge",
-        "pet friendly"
-      ],
+      "features": ["spa", "swimming pool", "bbq area"],
+      "amenities": ["bike storage", "concierge", "pet friendly"],
       "property_type": "house",
       "location": "New York, USA",
       "size_sqft": 3918,
@@ -1453,16 +1237,8 @@
       "property_id": 28,
       "property_name": "Grand Gardens Home",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "swimming pool",
-        "fitness center",
-        "bbq area"
-      ],
-      "amenities": [
-        "concierge",
-        "elevator",
-        "24/7 security"
-      ],
+      "features": ["swimming pool", "fitness center", "bbq area"],
+      "amenities": ["concierge", "elevator", "24/7 security"],
       "property_type": "apartment",
       "location": "Texas, USA",
       "size_sqft": 2266,
@@ -1511,16 +1287,8 @@
       "property_id": 29,
       "property_name": "Spacious Vista Dwelling",
       "image_url": "https://images.pexels.com/photos/5997993/pexels-photo-5997993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "fitness center",
-        "playground",
-        "spa"
-      ],
-      "amenities": [
-        "parking",
-        "storage",
-        "pet friendly"
-      ],
+      "features": ["fitness center", "playground", "spa"],
+      "amenities": ["parking", "storage", "pet friendly"],
       "property_type": "villa",
       "location": "Massachusetts, USA",
       "size_sqft": 2330,
@@ -1569,16 +1337,8 @@
       "property_id": 30,
       "property_name": "Pristine Estate Dwelling",
       "image_url": "https://images.pexels.com/photos/7031595/pexels-photo-7031595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "spa",
-        "swimming pool",
-        "tennis court"
-      ],
-      "amenities": [
-        "bike storage",
-        "concierge",
-        "24/7 security"
-      ],
+      "features": ["spa", "swimming pool", "tennis court"],
+      "amenities": ["bike storage", "concierge", "24/7 security"],
       "property_type": "townhouse",
       "location": "Michigan, USA",
       "size_sqft": 3143,
@@ -1618,16 +1378,8 @@
       "property_id": 31,
       "property_name": "Pristine Residence House",
       "image_url": "https://images.pexels.com/photos/8134847/pexels-photo-8134847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "swimming pool",
-        "fitness center",
-        "garden"
-      ],
-      "amenities": [
-        "parking",
-        "24/7 security",
-        "laundry"
-      ],
+      "features": ["swimming pool", "fitness center", "garden"],
+      "amenities": ["parking", "24/7 security", "laundry"],
       "property_type": "townhouse",
       "location": "Massachusetts, USA",
       "size_sqft": 4664,
@@ -1667,16 +1419,8 @@
       "property_id": 32,
       "property_name": "Pristine Estate Home",
       "image_url": "https://images.pexels.com/photos/5997993/pexels-photo-5997993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "fitness center",
-        "playground",
-        "garden"
-      ],
-      "amenities": [
-        "elevator",
-        "bike storage",
-        "parking"
-      ],
+      "features": ["fitness center", "playground", "garden"],
+      "amenities": ["elevator", "bike storage", "parking"],
       "property_type": "house",
       "location": "Arizona, USA",
       "size_sqft": 2623,
@@ -1716,16 +1460,8 @@
       "property_id": 33,
       "property_name": "Cozy Park Lodge",
       "image_url": "https://images.pexels.com/photos/5997993/pexels-photo-5997993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "swimming pool",
-        "bbq area",
-        "garden"
-      ],
-      "amenities": [
-        "concierge",
-        "pet friendly",
-        "24/7 security"
-      ],
+      "features": ["swimming pool", "bbq area", "garden"],
+      "amenities": ["concierge", "pet friendly", "24/7 security"],
       "property_type": "duplex",
       "location": "New York, USA",
       "size_sqft": 2453,
@@ -1774,16 +1510,8 @@
       "property_id": 34,
       "property_name": "Charming Estate Resort",
       "image_url": "https://images.pexels.com/photos/7031413/pexels-photo-7031413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "fitness center",
-        "playground",
-        "rooftop terrace"
-      ],
-      "amenities": [
-        "concierge",
-        "elevator",
-        "24/7 security"
-      ],
+      "features": ["fitness center", "playground", "rooftop terrace"],
+      "amenities": ["concierge", "elevator", "24/7 security"],
       "property_type": "house",
       "location": "Colorado, USA",
       "size_sqft": 3095,
@@ -1832,16 +1560,8 @@
       "property_id": 35,
       "property_name": "Pristine Place Villa",
       "image_url": "https://images.pexels.com/photos/7031407/pexels-photo-7031407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "garden",
-        "swimming pool",
-        "spa"
-      ],
-      "amenities": [
-        "bike storage",
-        "elevator",
-        "24/7 security"
-      ],
+      "features": ["garden", "swimming pool", "spa"],
+      "amenities": ["bike storage", "elevator", "24/7 security"],
       "property_type": "townhouse",
       "location": "Arizona, USA",
       "size_sqft": 3755,
@@ -1890,16 +1610,8 @@
       "property_id": 36,
       "property_name": "Cozy Heights Dwelling",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "fitness center",
-        "rooftop terrace",
-        "spa"
-      ],
-      "amenities": [
-        "bike storage",
-        "storage",
-        "elevator"
-      ],
+      "features": ["fitness center", "rooftop terrace", "spa"],
+      "amenities": ["bike storage", "storage", "elevator"],
       "property_type": "duplex",
       "location": "California, USA",
       "size_sqft": 4370,
@@ -1948,16 +1660,8 @@
       "property_id": 37,
       "property_name": "Elegant Vista Home",
       "image_url": "https://images.pexels.com/photos/7031413/pexels-photo-7031413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "spa",
-        "playground",
-        "rooftop terrace"
-      ],
-      "amenities": [
-        "laundry",
-        "24/7 security",
-        "elevator"
-      ],
+      "features": ["spa", "playground", "rooftop terrace"],
+      "amenities": ["laundry", "24/7 security", "elevator"],
       "property_type": "duplex",
       "location": "California, USA",
       "size_sqft": 2189,
@@ -2006,16 +1710,8 @@
       "property_id": 38,
       "property_name": "Modern Estate Resort",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "fitness center",
-        "garden",
-        "swimming pool"
-      ],
-      "amenities": [
-        "elevator",
-        "pet friendly",
-        "storage"
-      ],
+      "features": ["fitness center", "garden", "swimming pool"],
+      "amenities": ["elevator", "pet friendly", "storage"],
       "property_type": "villa",
       "location": "California, USA",
       "size_sqft": 3719,
@@ -2055,16 +1751,8 @@
       "property_id": 39,
       "property_name": "Charming Gardens Dwelling",
       "image_url": "https://images.pexels.com/photos/8134847/pexels-photo-8134847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "garden",
-        "fitness center",
-        "tennis court"
-      ],
-      "amenities": [
-        "pet friendly",
-        "concierge",
-        "24/7 security"
-      ],
+      "features": ["garden", "fitness center", "tennis court"],
+      "amenities": ["pet friendly", "concierge", "24/7 security"],
       "property_type": "house",
       "location": "Massachusetts, USA",
       "size_sqft": 4892,
@@ -2104,16 +1792,8 @@
       "property_id": 40,
       "property_name": "Cozy Manor Lodge",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "tennis court",
-        "fitness center",
-        "spa"
-      ],
-      "amenities": [
-        "pet friendly",
-        "parking",
-        "storage"
-      ],
+      "features": ["tennis court", "fitness center", "spa"],
+      "amenities": ["pet friendly", "parking", "storage"],
       "property_type": "condo",
       "location": "Arizona, USA",
       "size_sqft": 3459,
@@ -2153,16 +1833,8 @@
       "property_id": 41,
       "property_name": "Luxury Place Dwelling",
       "image_url": "https://images.pexels.com/photos/8134847/pexels-photo-8134847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "rooftop terrace",
-        "garden",
-        "tennis court"
-      ],
-      "amenities": [
-        "storage",
-        "concierge",
-        "laundry"
-      ],
+      "features": ["rooftop terrace", "garden", "tennis court"],
+      "amenities": ["storage", "concierge", "laundry"],
       "property_type": "apartment",
       "location": "Oregon, USA",
       "size_sqft": 2107,
@@ -2211,16 +1883,8 @@
       "property_id": 42,
       "property_name": "Charming Park Resort",
       "image_url": "https://images.pexels.com/photos/7031413/pexels-photo-7031413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "tennis court",
-        "swimming pool",
-        "playground"
-      ],
-      "amenities": [
-        "storage",
-        "concierge",
-        "bike storage"
-      ],
+      "features": ["tennis court", "swimming pool", "playground"],
+      "amenities": ["storage", "concierge", "bike storage"],
       "property_type": "duplex",
       "location": "Massachusetts, USA",
       "size_sqft": 4011,
@@ -2269,16 +1933,8 @@
       "property_id": 43,
       "property_name": "Spacious Place Resort",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "playground",
-        "bbq area",
-        "tennis court"
-      ],
-      "amenities": [
-        "pet friendly",
-        "elevator",
-        "bike storage"
-      ],
+      "features": ["playground", "bbq area", "tennis court"],
+      "amenities": ["pet friendly", "elevator", "bike storage"],
       "property_type": "condo",
       "location": "Illinois, USA",
       "size_sqft": 3168,
@@ -2327,16 +1983,8 @@
       "property_id": 44,
       "property_name": "Grand Retreat Lodge",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "fitness center",
-        "garden",
-        "spa"
-      ],
-      "amenities": [
-        "bike storage",
-        "concierge",
-        "laundry"
-      ],
+      "features": ["fitness center", "garden", "spa"],
+      "amenities": ["bike storage", "concierge", "laundry"],
       "property_type": "condo",
       "location": "Arizona, USA",
       "size_sqft": 4724,
@@ -2376,16 +2024,8 @@
       "property_id": 45,
       "property_name": "Pristine Haven Villa",
       "image_url": "https://images.pexels.com/photos/221540/pexels-photo-221540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "swimming pool",
-        "rooftop terrace",
-        "spa"
-      ],
-      "amenities": [
-        "concierge",
-        "24/7 security",
-        "bike storage"
-      ],
+      "features": ["swimming pool", "rooftop terrace", "spa"],
+      "amenities": ["concierge", "24/7 security", "bike storage"],
       "property_type": "house",
       "location": "Texas, USA",
       "size_sqft": 3314,
@@ -2434,16 +2074,8 @@
       "property_id": 46,
       "property_name": "Pristine Estate Dwelling",
       "image_url": "https://images.pexels.com/photos/5997993/pexels-photo-5997993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "rooftop terrace",
-        "garden",
-        "spa"
-      ],
-      "amenities": [
-        "parking",
-        "bike storage",
-        "concierge"
-      ],
+      "features": ["rooftop terrace", "garden", "spa"],
+      "amenities": ["parking", "bike storage", "concierge"],
       "property_type": "townhouse",
       "location": "Michigan, USA",
       "size_sqft": 2974,
@@ -2483,16 +2115,8 @@
       "property_id": 47,
       "property_name": "Classic Place Mansion",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "playground",
-        "swimming pool",
-        "fitness center"
-      ],
-      "amenities": [
-        "concierge",
-        "24/7 security",
-        "parking"
-      ],
+      "features": ["playground", "swimming pool", "fitness center"],
+      "amenities": ["concierge", "24/7 security", "parking"],
       "property_type": "townhouse",
       "location": "Massachusetts, USA",
       "size_sqft": 3859,
@@ -2532,16 +2156,8 @@
       "property_id": 48,
       "property_name": "Modern Manor Dwelling",
       "image_url": "https://images.pexels.com/photos/5997993/pexels-photo-5997993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "rooftop terrace",
-        "garden",
-        "swimming pool"
-      ],
-      "amenities": [
-        "concierge",
-        "bike storage",
-        "elevator"
-      ],
+      "features": ["rooftop terrace", "garden", "swimming pool"],
+      "amenities": ["concierge", "bike storage", "elevator"],
       "property_type": "house",
       "location": "Illinois, USA",
       "size_sqft": 2547,
@@ -2590,16 +2206,8 @@
       "property_id": 49,
       "property_name": "Contemporary Gardens Dwelling",
       "image_url": "https://images.pexels.com/photos/221540/pexels-photo-221540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "bbq area",
-        "playground",
-        "garden"
-      ],
-      "amenities": [
-        "bike storage",
-        "parking",
-        "concierge"
-      ],
+      "features": ["bbq area", "playground", "garden"],
+      "amenities": ["bike storage", "parking", "concierge"],
       "property_type": "duplex",
       "location": "Florida, USA",
       "size_sqft": 3900,
@@ -2648,16 +2256,8 @@
       "property_id": 50,
       "property_name": "Grand Gardens Home",
       "image_url": "https://images.pexels.com/photos/8134847/pexels-photo-8134847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "tennis court",
-        "fitness center",
-        "bbq area"
-      ],
-      "amenities": [
-        "parking",
-        "pet friendly",
-        "storage"
-      ],
+      "features": ["tennis court", "fitness center", "bbq area"],
+      "amenities": ["parking", "pet friendly", "storage"],
       "property_type": "apartment",
       "location": "Texas, USA",
       "size_sqft": 3604,
@@ -2697,16 +2297,8 @@
       "property_id": 51,
       "property_name": "Modern Park Resort",
       "image_url": "https://images.pexels.com/photos/8134847/pexels-photo-8134847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "playground",
-        "tennis court",
-        "bbq area"
-      ],
-      "amenities": [
-        "pet friendly",
-        "elevator",
-        "parking"
-      ],
+      "features": ["playground", "tennis court", "bbq area"],
+      "amenities": ["pet friendly", "elevator", "parking"],
       "property_type": "house",
       "location": "Arizona, USA",
       "size_sqft": 3789,
@@ -2746,16 +2338,8 @@
       "property_id": 52,
       "property_name": "Charming Residence Resort",
       "image_url": "https://images.pexels.com/photos/7031407/pexels-photo-7031407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "playground",
-        "tennis court",
-        "fitness center"
-      ],
-      "amenities": [
-        "elevator",
-        "parking",
-        "storage"
-      ],
+      "features": ["playground", "tennis court", "fitness center"],
+      "amenities": ["elevator", "parking", "storage"],
       "property_type": "townhouse",
       "location": "Nevada, USA",
       "size_sqft": 3027,
@@ -2804,16 +2388,8 @@
       "property_id": 53,
       "property_name": "Elegant Place Dwelling",
       "image_url": "https://images.pexels.com/photos/7031413/pexels-photo-7031413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "rooftop terrace",
-        "bbq area",
-        "garden"
-      ],
-      "amenities": [
-        "concierge",
-        "bike storage",
-        "laundry"
-      ],
+      "features": ["rooftop terrace", "bbq area", "garden"],
+      "amenities": ["concierge", "bike storage", "laundry"],
       "property_type": "house",
       "location": "Texas, USA",
       "size_sqft": 3750,
@@ -2853,16 +2429,8 @@
       "property_id": 54,
       "property_name": "Charming Retreat Complex",
       "image_url": "https://images.pexels.com/photos/221540/pexels-photo-221540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "playground",
-        "swimming pool",
-        "garden"
-      ],
-      "amenities": [
-        "laundry",
-        "bike storage",
-        "elevator"
-      ],
+      "features": ["playground", "swimming pool", "garden"],
+      "amenities": ["laundry", "bike storage", "elevator"],
       "property_type": "house",
       "location": "Arizona, USA",
       "size_sqft": 4706,
@@ -2911,16 +2479,8 @@
       "property_id": 55,
       "property_name": "Contemporary Haven Villa",
       "image_url": "https://images.pexels.com/photos/209274/pexels-photo-209274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "swimming pool",
-        "playground",
-        "fitness center"
-      ],
-      "amenities": [
-        "parking",
-        "laundry",
-        "pet friendly"
-      ],
+      "features": ["swimming pool", "playground", "fitness center"],
+      "amenities": ["parking", "laundry", "pet friendly"],
       "property_type": "villa",
       "location": "Arizona, USA",
       "size_sqft": 2180,
@@ -2960,16 +2520,8 @@
       "property_id": 56,
       "property_name": "Grand Estate Lodge",
       "image_url": "https://images.pexels.com/photos/7598378/pexels-photo-7598378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "rooftop terrace",
-        "swimming pool",
-        "playground"
-      ],
-      "amenities": [
-        "elevator",
-        "concierge",
-        "storage"
-      ],
+      "features": ["rooftop terrace", "swimming pool", "playground"],
+      "amenities": ["elevator", "concierge", "storage"],
       "property_type": "duplex",
       "location": "Arizona, USA",
       "size_sqft": 4179,
@@ -3009,16 +2561,8 @@
       "property_id": 57,
       "property_name": "Contemporary Park House",
       "image_url": "https://images.pexels.com/photos/7598378/pexels-photo-7598378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "playground",
-        "swimming pool",
-        "garden"
-      ],
-      "amenities": [
-        "pet friendly",
-        "24/7 security",
-        "laundry"
-      ],
+      "features": ["playground", "swimming pool", "garden"],
+      "amenities": ["pet friendly", "24/7 security", "laundry"],
       "property_type": "condo",
       "location": "Illinois, USA",
       "size_sqft": 3017,
@@ -3067,16 +2611,8 @@
       "property_id": 58,
       "property_name": "Contemporary Place Home",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "garden",
-        "rooftop terrace",
-        "playground"
-      ],
-      "amenities": [
-        "concierge",
-        "24/7 security",
-        "parking"
-      ],
+      "features": ["garden", "rooftop terrace", "playground"],
+      "amenities": ["concierge", "24/7 security", "parking"],
       "property_type": "townhouse",
       "location": "Florida, USA",
       "size_sqft": 2949,
@@ -3125,16 +2661,8 @@
       "property_id": 59,
       "property_name": "Spacious Retreat House",
       "image_url": "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "swimming pool",
-        "playground",
-        "spa"
-      ],
-      "amenities": [
-        "concierge",
-        "pet friendly",
-        "24/7 security"
-      ],
+      "features": ["swimming pool", "playground", "spa"],
+      "amenities": ["concierge", "pet friendly", "24/7 security"],
       "property_type": "house",
       "location": "Florida, USA",
       "size_sqft": 3156,
@@ -3174,16 +2702,8 @@
       "property_id": 60,
       "property_name": "Classic Estate Mansion",
       "image_url": "https://images.pexels.com/photos/221540/pexels-photo-221540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "playground",
-        "fitness center",
-        "bbq area"
-      ],
-      "amenities": [
-        "concierge",
-        "24/7 security",
-        "parking"
-      ],
+      "features": ["playground", "fitness center", "bbq area"],
+      "amenities": ["concierge", "24/7 security", "parking"],
       "property_type": "house",
       "location": "Texas, USA",
       "size_sqft": 3874,
@@ -3223,16 +2743,8 @@
       "property_id": 61,
       "property_name": "Luxury Haven Villa",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "swimming pool",
-        "bbq area",
-        "rooftop terrace"
-      ],
-      "amenities": [
-        "storage",
-        "concierge",
-        "bike storage"
-      ],
+      "features": ["swimming pool", "bbq area", "rooftop terrace"],
+      "amenities": ["storage", "concierge", "bike storage"],
       "property_type": "apartment",
       "location": "Texas, USA",
       "size_sqft": 2834,
@@ -3281,16 +2793,8 @@
       "property_id": 62,
       "property_name": "Cozy Place Villa",
       "image_url": "https://images.pexels.com/photos/8134847/pexels-photo-8134847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "swimming pool",
-        "garden",
-        "playground"
-      ],
-      "amenities": [
-        "storage",
-        "bike storage",
-        "laundry"
-      ],
+      "features": ["swimming pool", "garden", "playground"],
+      "amenities": ["storage", "bike storage", "laundry"],
       "property_type": "villa",
       "location": "Illinois, USA",
       "size_sqft": 3970,
@@ -3339,16 +2843,8 @@
       "property_id": 63,
       "property_name": "Grand Estate Villa",
       "image_url": "https://images.pexels.com/photos/7031406/pexels-photo-7031406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "bbq area",
-        "garden",
-        "rooftop terrace"
-      ],
-      "amenities": [
-        "elevator",
-        "laundry",
-        "bike storage"
-      ],
+      "features": ["bbq area", "garden", "rooftop terrace"],
+      "amenities": ["elevator", "laundry", "bike storage"],
       "property_type": "villa",
       "location": "Florida, USA",
       "size_sqft": 3003,
@@ -3388,16 +2884,8 @@
       "property_id": 64,
       "property_name": "Elegant Haven Complex",
       "image_url": "https://images.pexels.com/photos/7031413/pexels-photo-7031413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "rooftop terrace",
-        "garden",
-        "fitness center"
-      ],
-      "amenities": [
-        "pet friendly",
-        "storage",
-        "concierge"
-      ],
+      "features": ["rooftop terrace", "garden", "fitness center"],
+      "amenities": ["pet friendly", "storage", "concierge"],
       "property_type": "duplex",
       "location": "Michigan, USA",
       "size_sqft": 4608,
@@ -3437,16 +2925,8 @@
       "property_id": 65,
       "property_name": "Contemporary Vista Villa",
       "image_url": "https://images.pexels.com/photos/7031407/pexels-photo-7031407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "tennis court",
-        "bbq area",
-        "fitness center"
-      ],
-      "amenities": [
-        "storage",
-        "elevator",
-        "bike storage"
-      ],
+      "features": ["tennis court", "bbq area", "fitness center"],
+      "amenities": ["storage", "elevator", "bike storage"],
       "property_type": "duplex",
       "location": "Nevada, USA",
       "size_sqft": 4720,
@@ -3495,16 +2975,8 @@
       "property_id": 66,
       "property_name": "Contemporary Heights Resort",
       "image_url": "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "garden",
-        "swimming pool",
-        "spa"
-      ],
-      "amenities": [
-        "bike storage",
-        "elevator",
-        "laundry"
-      ],
+      "features": ["garden", "swimming pool", "spa"],
+      "amenities": ["bike storage", "elevator", "laundry"],
       "property_type": "condo",
       "location": "Arizona, USA",
       "size_sqft": 3939,
@@ -3544,16 +3016,8 @@
       "property_id": 67,
       "property_name": "Modern Estate Resort",
       "image_url": "https://images.pexels.com/photos/5997993/pexels-photo-5997993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "tennis court",
-        "swimming pool",
-        "bbq area"
-      ],
-      "amenities": [
-        "laundry",
-        "elevator",
-        "24/7 security"
-      ],
+      "features": ["tennis court", "swimming pool", "bbq area"],
+      "amenities": ["laundry", "elevator", "24/7 security"],
       "property_type": "house",
       "location": "New York, USA",
       "size_sqft": 4244,
@@ -3602,16 +3066,8 @@
       "property_id": 68,
       "property_name": "Modern Haven Complex",
       "image_url": "https://images.pexels.com/photos/7031595/pexels-photo-7031595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "rooftop terrace",
-        "tennis court",
-        "garden"
-      ],
-      "amenities": [
-        "bike storage",
-        "pet friendly",
-        "laundry"
-      ],
+      "features": ["rooftop terrace", "tennis court", "garden"],
+      "amenities": ["bike storage", "pet friendly", "laundry"],
       "property_type": "apartment",
       "location": "Massachusetts, USA",
       "size_sqft": 4166,
@@ -3651,16 +3107,8 @@
       "property_id": 69,
       "property_name": "Spacious Park House",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "playground",
-        "swimming pool",
-        "rooftop terrace"
-      ],
-      "amenities": [
-        "bike storage",
-        "24/7 security",
-        "elevator"
-      ],
+      "features": ["playground", "swimming pool", "rooftop terrace"],
+      "amenities": ["bike storage", "24/7 security", "elevator"],
       "property_type": "apartment",
       "location": "Nevada, USA",
       "size_sqft": 4493,
@@ -3700,16 +3148,8 @@
       "property_id": 70,
       "property_name": "Charming Place Complex",
       "image_url": "https://images.pexels.com/photos/221540/pexels-photo-221540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "playground",
-        "swimming pool",
-        "garden"
-      ],
-      "amenities": [
-        "concierge",
-        "bike storage",
-        "parking"
-      ],
+      "features": ["playground", "swimming pool", "garden"],
+      "amenities": ["concierge", "bike storage", "parking"],
       "property_type": "townhouse",
       "location": "Massachusetts, USA",
       "size_sqft": 3143,
@@ -3758,16 +3198,8 @@
       "property_id": 71,
       "property_name": "Contemporary Heights Villa",
       "image_url": "https://images.pexels.com/photos/209274/pexels-photo-209274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "spa",
-        "playground",
-        "bbq area"
-      ],
-      "amenities": [
-        "24/7 security",
-        "bike storage",
-        "storage"
-      ],
+      "features": ["spa", "playground", "bbq area"],
+      "amenities": ["24/7 security", "bike storage", "storage"],
       "property_type": "house",
       "location": "Nevada, USA",
       "size_sqft": 4215,
@@ -3816,16 +3248,8 @@
       "property_id": 72,
       "property_name": "Contemporary Retreat Home",
       "image_url": "https://images.pexels.com/photos/8134847/pexels-photo-8134847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "playground",
-        "fitness center",
-        "swimming pool"
-      ],
-      "amenities": [
-        "elevator",
-        "parking",
-        "laundry"
-      ],
+      "features": ["playground", "fitness center", "swimming pool"],
+      "amenities": ["elevator", "parking", "laundry"],
       "property_type": "villa",
       "location": "California, USA",
       "size_sqft": 2675,
@@ -3874,16 +3298,8 @@
       "property_id": 73,
       "property_name": "Luxury Vista Complex",
       "image_url": "https://images.pexels.com/photos/5997993/pexels-photo-5997993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "garden",
-        "rooftop terrace",
-        "playground"
-      ],
-      "amenities": [
-        "laundry",
-        "pet friendly",
-        "elevator"
-      ],
+      "features": ["garden", "rooftop terrace", "playground"],
+      "amenities": ["laundry", "pet friendly", "elevator"],
       "property_type": "apartment",
       "location": "Texas, USA",
       "size_sqft": 4810,
@@ -3923,16 +3339,8 @@
       "property_id": 74,
       "property_name": "Pristine Gardens Dwelling",
       "image_url": "https://images.pexels.com/photos/7031413/pexels-photo-7031413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "fitness center",
-        "playground",
-        "spa"
-      ],
-      "amenities": [
-        "24/7 security",
-        "bike storage",
-        "storage"
-      ],
+      "features": ["fitness center", "playground", "spa"],
+      "amenities": ["24/7 security", "bike storage", "storage"],
       "property_type": "villa",
       "location": "Oregon, USA",
       "size_sqft": 2936,
@@ -3972,16 +3380,8 @@
       "property_id": 75,
       "property_name": "Modern Estate Villa",
       "image_url": "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "swimming pool",
-        "garden",
-        "bbq area"
-      ],
-      "amenities": [
-        "concierge",
-        "elevator",
-        "bike storage"
-      ],
+      "features": ["swimming pool", "garden", "bbq area"],
+      "amenities": ["concierge", "elevator", "bike storage"],
       "property_type": "townhouse",
       "location": "California, USA",
       "size_sqft": 2900,
@@ -4021,16 +3421,8 @@
       "property_id": 76,
       "property_name": "Charming Vista Villa",
       "image_url": "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "swimming pool",
-        "garden",
-        "playground"
-      ],
-      "amenities": [
-        "storage",
-        "laundry",
-        "24/7 security"
-      ],
+      "features": ["swimming pool", "garden", "playground"],
+      "amenities": ["storage", "laundry", "24/7 security"],
       "property_type": "house",
       "location": "Washington, USA",
       "size_sqft": 4190,
@@ -4070,16 +3462,8 @@
       "property_id": 77,
       "property_name": "Luxury Vista Resort",
       "image_url": "https://images.pexels.com/photos/7031413/pexels-photo-7031413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "garden",
-        "bbq area",
-        "fitness center"
-      ],
-      "amenities": [
-        "24/7 security",
-        "elevator",
-        "parking"
-      ],
+      "features": ["garden", "bbq area", "fitness center"],
+      "amenities": ["24/7 security", "elevator", "parking"],
       "property_type": "duplex",
       "location": "Michigan, USA",
       "size_sqft": 2942,
@@ -4128,16 +3512,8 @@
       "property_id": 78,
       "property_name": "Elegant Gardens Resort",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "bbq area",
-        "fitness center",
-        "swimming pool"
-      ],
-      "amenities": [
-        "concierge",
-        "elevator",
-        "bike storage"
-      ],
+      "features": ["bbq area", "fitness center", "swimming pool"],
+      "amenities": ["concierge", "elevator", "bike storage"],
       "property_type": "villa",
       "location": "California, USA",
       "size_sqft": 4480,
@@ -4177,16 +3553,8 @@
       "property_id": 79,
       "property_name": "Pristine Place Lodge",
       "image_url": "https://images.pexels.com/photos/5997993/pexels-photo-5997993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "rooftop terrace",
-        "playground",
-        "garden"
-      ],
-      "amenities": [
-        "concierge",
-        "elevator",
-        "24/7 security"
-      ],
+      "features": ["rooftop terrace", "playground", "garden"],
+      "amenities": ["concierge", "elevator", "24/7 security"],
       "property_type": "house",
       "location": "Texas, USA",
       "size_sqft": 4342,
@@ -4226,16 +3594,8 @@
       "property_id": 80,
       "property_name": "Contemporary Haven Resort",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "spa",
-        "rooftop terrace",
-        "fitness center"
-      ],
-      "amenities": [
-        "parking",
-        "elevator",
-        "storage"
-      ],
+      "features": ["spa", "rooftop terrace", "fitness center"],
+      "amenities": ["parking", "elevator", "storage"],
       "property_type": "condo",
       "location": "Massachusetts, USA",
       "size_sqft": 4474,
@@ -4275,16 +3635,8 @@
       "property_id": 81,
       "property_name": "Elegant Haven Home",
       "image_url": "https://images.pexels.com/photos/7031407/pexels-photo-7031407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "garden",
-        "fitness center",
-        "rooftop terrace"
-      ],
-      "amenities": [
-        "laundry",
-        "parking",
-        "concierge"
-      ],
+      "features": ["garden", "fitness center", "rooftop terrace"],
+      "amenities": ["laundry", "parking", "concierge"],
       "property_type": "condo",
       "location": "Oregon, USA",
       "size_sqft": 4783,
@@ -4333,16 +3685,8 @@
       "property_id": 82,
       "property_name": "Modern Haven Mansion",
       "image_url": "https://images.pexels.com/photos/209274/pexels-photo-209274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "tennis court",
-        "playground",
-        "swimming pool"
-      ],
-      "amenities": [
-        "bike storage",
-        "elevator",
-        "concierge"
-      ],
+      "features": ["tennis court", "playground", "swimming pool"],
+      "amenities": ["bike storage", "elevator", "concierge"],
       "property_type": "house",
       "location": "California, USA",
       "size_sqft": 4223,
@@ -4391,16 +3735,8 @@
       "property_id": 83,
       "property_name": "Classic Place Resort",
       "image_url": "https://images.pexels.com/photos/7598378/pexels-photo-7598378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "fitness center",
-        "garden",
-        "rooftop terrace"
-      ],
-      "amenities": [
-        "parking",
-        "elevator",
-        "pet friendly"
-      ],
+      "features": ["fitness center", "garden", "rooftop terrace"],
+      "amenities": ["parking", "elevator", "pet friendly"],
       "property_type": "townhouse",
       "location": "Massachusetts, USA",
       "size_sqft": 4840,
@@ -4440,16 +3776,8 @@
       "property_id": 84,
       "property_name": "Pristine Estate Home",
       "image_url": "https://images.pexels.com/photos/8134847/pexels-photo-8134847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "fitness center",
-        "rooftop terrace",
-        "garden"
-      ],
-      "amenities": [
-        "storage",
-        "pet friendly",
-        "elevator"
-      ],
+      "features": ["fitness center", "rooftop terrace", "garden"],
+      "amenities": ["storage", "pet friendly", "elevator"],
       "property_type": "townhouse",
       "location": "Colorado, USA",
       "size_sqft": 2442,
@@ -4489,16 +3817,8 @@
       "property_id": 85,
       "property_name": "Luxury Place Home",
       "image_url": "https://images.pexels.com/photos/7031595/pexels-photo-7031595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "bbq area",
-        "garden",
-        "playground"
-      ],
-      "amenities": [
-        "24/7 security",
-        "concierge",
-        "laundry"
-      ],
+      "features": ["bbq area", "garden", "playground"],
+      "amenities": ["24/7 security", "concierge", "laundry"],
       "property_type": "duplex",
       "location": "Oregon, USA",
       "size_sqft": 2657,
@@ -4538,16 +3858,8 @@
       "property_id": 86,
       "property_name": "Classic Residence Lodge",
       "image_url": "https://images.pexels.com/photos/209274/pexels-photo-209274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "fitness center",
-        "swimming pool",
-        "garden"
-      ],
-      "amenities": [
-        "pet friendly",
-        "elevator",
-        "24/7 security"
-      ],
+      "features": ["fitness center", "swimming pool", "garden"],
+      "amenities": ["pet friendly", "elevator", "24/7 security"],
       "property_type": "house",
       "location": "Illinois, USA",
       "size_sqft": 2549,
@@ -4596,16 +3908,8 @@
       "property_id": 87,
       "property_name": "Classic Heights Home",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "tennis court",
-        "fitness center",
-        "playground"
-      ],
-      "amenities": [
-        "bike storage",
-        "laundry",
-        "elevator"
-      ],
+      "features": ["tennis court", "fitness center", "playground"],
+      "amenities": ["bike storage", "laundry", "elevator"],
       "property_type": "condo",
       "location": "Texas, USA",
       "size_sqft": 2638,
@@ -4645,16 +3949,8 @@
       "property_id": 88,
       "property_name": "Charming Vista Home",
       "image_url": "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "bbq area",
-        "playground",
-        "swimming pool"
-      ],
-      "amenities": [
-        "elevator",
-        "laundry",
-        "24/7 security"
-      ],
+      "features": ["bbq area", "playground", "swimming pool"],
+      "amenities": ["elevator", "laundry", "24/7 security"],
       "property_type": "condo",
       "location": "Texas, USA",
       "size_sqft": 2005,
@@ -4694,16 +3990,8 @@
       "property_id": 89,
       "property_name": "Modern Place Resort",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "fitness center",
-        "rooftop terrace",
-        "playground"
-      ],
-      "amenities": [
-        "24/7 security",
-        "bike storage",
-        "laundry"
-      ],
+      "features": ["fitness center", "rooftop terrace", "playground"],
+      "amenities": ["24/7 security", "bike storage", "laundry"],
       "property_type": "apartment",
       "location": "Florida, USA",
       "size_sqft": 2906,
@@ -4743,16 +4031,8 @@
       "property_id": 90,
       "property_name": "Modern Haven Home",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "rooftop terrace",
-        "swimming pool",
-        "garden"
-      ],
-      "amenities": [
-        "24/7 security",
-        "laundry",
-        "parking"
-      ],
+      "features": ["rooftop terrace", "swimming pool", "garden"],
+      "amenities": ["24/7 security", "laundry", "parking"],
       "property_type": "townhouse",
       "location": "Florida, USA",
       "size_sqft": 3656,
@@ -4792,16 +4072,8 @@
       "property_id": 91,
       "property_name": "Pristine Gardens Home",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "playground",
-        "tennis court",
-        "fitness center"
-      ],
-      "amenities": [
-        "laundry",
-        "bike storage",
-        "concierge"
-      ],
+      "features": ["playground", "tennis court", "fitness center"],
+      "amenities": ["laundry", "bike storage", "concierge"],
       "property_type": "apartment",
       "location": "New York, USA",
       "size_sqft": 2689,
@@ -4850,16 +4122,8 @@
       "property_id": 92,
       "property_name": "Spacious Park House",
       "image_url": "https://images.pexels.com/photos/7031406/pexels-photo-7031406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "garden",
-        "fitness center",
-        "playground"
-      ],
-      "amenities": [
-        "laundry",
-        "elevator",
-        "concierge"
-      ],
+      "features": ["garden", "fitness center", "playground"],
+      "amenities": ["laundry", "elevator", "concierge"],
       "property_type": "condo",
       "location": "Washington, USA",
       "size_sqft": 4537,
@@ -4908,16 +4172,8 @@
       "property_id": 93,
       "property_name": "Luxury Vista Lodge",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "garden",
-        "spa",
-        "swimming pool"
-      ],
-      "amenities": [
-        "storage",
-        "parking",
-        "concierge"
-      ],
+      "features": ["garden", "spa", "swimming pool"],
+      "amenities": ["storage", "parking", "concierge"],
       "property_type": "house",
       "location": "California, USA",
       "size_sqft": 4087,
@@ -4957,16 +4213,8 @@
       "property_id": 94,
       "property_name": "Grand Vista Home",
       "image_url": "https://images.pexels.com/photos/5997993/pexels-photo-5997993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "rooftop terrace",
-        "garden",
-        "bbq area"
-      ],
-      "amenities": [
-        "elevator",
-        "concierge",
-        "laundry"
-      ],
+      "features": ["rooftop terrace", "garden", "bbq area"],
+      "amenities": ["elevator", "concierge", "laundry"],
       "property_type": "townhouse",
       "location": "Texas, USA",
       "size_sqft": 3176,
@@ -5006,16 +4254,8 @@
       "property_id": 95,
       "property_name": "Grand Estate Home",
       "image_url": "https://images.pexels.com/photos/5997993/pexels-photo-5997993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "garden",
-        "spa",
-        "swimming pool"
-      ],
-      "amenities": [
-        "pet friendly",
-        "elevator",
-        "parking"
-      ],
+      "features": ["garden", "spa", "swimming pool"],
+      "amenities": ["pet friendly", "elevator", "parking"],
       "property_type": "condo",
       "location": "Massachusetts, USA",
       "size_sqft": 4022,
@@ -5064,16 +4304,8 @@
       "property_id": 96,
       "property_name": "Charming Place Villa",
       "image_url": "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "swimming pool",
-        "spa",
-        "rooftop terrace"
-      ],
-      "amenities": [
-        "bike storage",
-        "24/7 security",
-        "concierge"
-      ],
+      "features": ["swimming pool", "spa", "rooftop terrace"],
+      "amenities": ["bike storage", "24/7 security", "concierge"],
       "property_type": "condo",
       "location": "Colorado, USA",
       "size_sqft": 2797,
@@ -5122,16 +4354,8 @@
       "property_id": 97,
       "property_name": "Grand Haven Lodge",
       "image_url": "https://images.pexels.com/photos/7031595/pexels-photo-7031595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "swimming pool",
-        "playground",
-        "garden"
-      ],
-      "amenities": [
-        "24/7 security",
-        "elevator",
-        "concierge"
-      ],
+      "features": ["swimming pool", "playground", "garden"],
+      "amenities": ["24/7 security", "elevator", "concierge"],
       "property_type": "house",
       "location": "New York, USA",
       "size_sqft": 3647,
@@ -5180,16 +4404,8 @@
       "property_id": 98,
       "property_name": "Grand Haven Lodge",
       "image_url": "https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "playground",
-        "spa",
-        "rooftop terrace"
-      ],
-      "amenities": [
-        "bike storage",
-        "24/7 security",
-        "storage"
-      ],
+      "features": ["playground", "spa", "rooftop terrace"],
+      "amenities": ["bike storage", "24/7 security", "storage"],
       "property_type": "apartment",
       "location": "Arizona, USA",
       "size_sqft": 4609,
@@ -5229,16 +4445,8 @@
       "property_id": 99,
       "property_name": "Grand Estate Lodge",
       "image_url": "https://images.pexels.com/photos/7031413/pexels-photo-7031413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "tennis court",
-        "bbq area",
-        "playground"
-      ],
-      "amenities": [
-        "laundry",
-        "storage",
-        "elevator"
-      ],
+      "features": ["tennis court", "bbq area", "playground"],
+      "amenities": ["laundry", "storage", "elevator"],
       "property_type": "villa",
       "location": "Texas, USA",
       "size_sqft": 2750,
@@ -5278,16 +4486,8 @@
       "property_id": 100,
       "property_name": "Elegant Estate House",
       "image_url": "https://images.pexels.com/photos/209274/pexels-photo-209274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "features": [
-        "spa",
-        "playground",
-        "tennis court"
-      ],
-      "amenities": [
-        "storage",
-        "bike storage",
-        "24/7 security"
-      ],
+      "features": ["spa", "playground", "tennis court"],
+      "amenities": ["storage", "bike storage", "24/7 security"],
       "property_type": "apartment",
       "location": "Michigan, USA",
       "size_sqft": 3636,
@@ -5322,6 +4522,132 @@
           "date": "4/17/2025"
         }
       ]
+    }
+  ],
+
+  "faqs": [
+    {
+      "id": 1,
+      "question": "What sets Estatein apart from other real estate agencies?",
+      "answer": "Estatein distinguishes itself through our personalized approach, extensive market expertise, and commitment to transparency. We offer innovative virtual tours, 24/7 customer support, and a carefully curated portfolio of premium properties."
+    },
+    {
+      "id": 2,
+      "question": "How do I schedule a property viewing?",
+      "answer": "Scheduling a viewing is easy! Simply select your desired property, click the 'Schedule Viewing' button, and choose your preferred date and time. Our team will confirm your appointment within 24 hours."
+    },
+    {
+      "id": 3,
+      "question": "What documents do I need to rent a property?",
+      "answer": "Required documents typically include proof of income (pay stubs or tax returns), employment verification, photo ID, rental history, and references. Additional documents may be required based on specific property requirements."
+    },
+    {
+      "id": 4,
+      "question": "How long does the buying process typically take?",
+      "answer": "The buying process usually takes 30-60 days from offer acceptance to closing. This timeline can vary based on factors such as financing, property conditions, and negotiation terms."
+    },
+    {
+      "id": 5,
+      "question": "Do you handle property management services?",
+      "answer": "Yes, we offer comprehensive property management services including tenant screening, maintenance coordination, rent collection, and regular property inspections."
+    },
+    {
+      "id": 6,
+      "question": "What are the typical down payment requirements?",
+      "answer": "Down payment requirements vary by property and loan type, typically ranging from 3.5% to 20% of the purchase price. We can help connect you with financial advisors to explore your options."
+    },
+    {
+      "id": 7,
+      "question": "How do you determine property values?",
+      "answer": "We use a comprehensive approach including comparative market analysis, property condition assessment, location evaluation, and current market trends to determine accurate property values."
+    },
+    {
+      "id": 8,
+      "question": "What areas do you serve?",
+      "answer": "We serve major metropolitan areas and surrounding suburbs, with a focus on luxury and premium properties in prime locations. Contact us to learn about specific areas in your region."
+    }
+  ],
+
+  "clients": [
+    {
+      "name": "ABC Corporation",
+      "since": "2019",
+      "domain": "Commercial Real Estate",
+      "category": "Luxury Home Development",
+      "testimonial": "Estotein’s expertise was impressive. They took the time to understand our unique needs and delivered solutions that exceeded expectations. Their team maintained constant communication and provided excellent service from start to finish.",
+      "website": "#"
+    },
+    {
+      "name": "GreenTech Enterprises",
+      "since": "2018",
+      "domain": "Commercial Real Estate",
+      "category": "Retail Space",
+      "testimonial": "They are a trusted partner in our growth. With their keen eye for strategic property acquisition and commitment to quality, we’ve been able to expand into new markets with confidence.",
+      "website": "#"
+    },
+    {
+      "name": "Skyline Builders",
+      "since": "2020",
+      "domain": "Residential Projects",
+      "category": "High-Rise Apartments",
+      "testimonial": "Their market insights were crucial for our developments. Estotein helped us identify high-potential neighborhoods and worked closely with our internal teams to ensure smooth execution.",
+      "website": "#"
+    },
+    {
+      "name": "UrbanNest Ltd.",
+      "since": "2017",
+      "domain": "Smart Housing",
+      "category": "Eco-friendly Homes",
+      "testimonial": "Their sustainable property solutions align perfectly with our brand. We were particularly impressed with their knowledge of eco-friendly materials and modern design principles.",
+      "website": "#"
+    },
+    {
+      "name": "Horizon Estates",
+      "since": "2021",
+      "domain": "Luxury Real Estate",
+      "category": "Beachfront Villas",
+      "testimonial": "Estotein helped us connect with high-profile clients with ease. Their reputation and network in the industry have opened doors for collaborations we wouldn’t have achieved on our own.",
+      "website": "#"
+    },
+    {
+      "name": "Vertex Partners",
+      "since": "2016",
+      "domain": "Real Estate Investments",
+      "category": "Mixed-Use Properties",
+      "testimonial": "Their portfolio is well curated and diverse, offering us a range of high-yield investment opportunities. We’ve never felt more confident in our real estate decisions.",
+      "website": "#"
+    },
+    {
+      "name": "MetroSpace Inc.",
+      "since": "2015",
+      "domain": "Urban Development",
+      "category": "Commercial Skyscrapers",
+      "testimonial": "Their data-driven process is exceptional. Estotein provided comprehensive reports and analytics that empowered us to make well-informed choices on every project.",
+      "website": "#"
+    },
+    {
+      "name": "NextGen Realty",
+      "since": "2022",
+      "domain": "Tech-Driven Realty",
+      "category": "Smart Apartments",
+      "testimonial": "We highly recommend Estotein for their smart location picks and negotiation expertise. They’ve helped us secure prime locations at competitive prices.",
+      "website": "#"
+    },
+    {
+      "name": "GoldenBrick Group",
+      "since": "2020",
+      "domain": "Luxury Construction",
+      "category": "Private Estates",
+      "testimonial": "A professional team with deep industry knowledge. They consistently delivered on time, and their attention to detail ensured that no aspect of the deal was overlooked.",
+      "website": "#"
+    },
+    {
+      "name": "CitiCore Projects",
+      "since": "2018",
+      "domain": "Corporate Real Estate",
+      "category": "Office Parks",
+      "testimonial": "They made our project seamless and cost-effective. From site evaluation to final contract signing, their end-to-end support was exactly what we needed to scale efficiently.",
+      "website": "#"
     }
   ]
 }

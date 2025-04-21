@@ -34,7 +34,7 @@ const SearchResult = ({ properties = [] }) => {
 
   return (
     <div className="w-full h-full">
-      {properties.length < 3 ? (
+      {properties.length < 4 ? (
         // Single property view
         <div className="flex flex-col mt-10 gap-y-5 justify-center items-center">
           <h3 className="text-3xl font-semibold"> your search results</h3>
