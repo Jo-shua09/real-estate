@@ -1,6 +1,7 @@
 import SectionIntro from "../../../Components/SectionIntro";
 import { KeyboardArrowDown } from "@mui/icons-material";
 import React, { useEffect, useState } from "react";
+import mockData from "../../../assets/mock_data.json";
 
 const Connect = () => {
   const [options, setOptions] = useState({
@@ -15,8 +16,8 @@ const Connect = () => {
 
   useEffect(() => {
     // Extract unique values from properties
-    const inquire = ["", "2", "3", "4", "5", "6"];
-    const bedrooms = ["1", "2", "3", "4", "5", "6"];
+    const inquire = [...new Set(mockData.properties.map((p) => p.property_name || "Unknown"))];
+    const bedrooms = ["Friend", "Facebook", "Twitter", "Instagram"];
 
     setOptions({
       inquiry: inquire,
