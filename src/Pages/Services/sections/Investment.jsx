@@ -3,7 +3,7 @@ import SectionIntro from "../../../Components/SectionIntro";
 
 const Investment = () => {
   return (
-    <div className="w-full h-full section flex justify-between gap-7">
+    <div className="w-full h-full section flex justify-between gap-x-16 gap-y-7">
       <div className="flex flex-col gap-7 w-full flex-1">
         <SectionIntro
           hideButton={true}
