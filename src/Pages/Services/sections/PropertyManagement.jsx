@@ -1,5 +1,6 @@
 import { ControlPointSharp, VerticalAlignTopOutlined } from "@mui/icons-material";
 import React from "react";
+import SectionIntro from "../../../Components/SectionIntro";
 
 const PropertyManagement = () => {
   return (
