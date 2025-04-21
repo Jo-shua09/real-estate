@@ -2,7 +2,7 @@ import React from "react";
 import SectionIntro from "../../../Components/SectionIntro";
 import { ControlPointSharp, VerticalAlignTopOutlined } from "@mui/icons-material";
 
-const PropertyValue = ({ title, description,icon_one }) => {
+const PropertyValue = ({ title, description }) => {
   return (
     <div className="w-full h-full section">
       <SectionIntro hideButton={true} title={title} description={description} />
@@ -12,7 +12,7 @@ const PropertyValue = ({ title, description,icon_one }) => {
           <div className="border-2 p-10 rounded-xl  flex flex-col gap-y-7 border-white/5">
             <div className="flex items-center gap-x-5">
               <div className="border-t-2 border-b-2 border-purple-600 rounded-full p-2">
-                <{icon_one} className="!text-5xl border-t border-b p-2  text-purple-700 border-purple-600 rounded-full" />
+                <VerticalAlignTopOutlined className="!text-5xl border-t border-b p-2  text-purple-700 border-purple-600 rounded-full" />
               </div>
               <span className="text-3xl font-semibold">valuation mastery</span>
             </div>
