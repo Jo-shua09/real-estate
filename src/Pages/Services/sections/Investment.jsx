@@ -1,5 +1,6 @@
 import React from "react";
 import SectionIntro from "../../../Components/SectionIntro";
+import { VerticalAlignTopOutlined } from "@mui/icons-material";
 
 const Investment = () => {
   return (
@@ -21,7 +22,55 @@ const Investment = () => {
           </button>
         </div>
       </div>
-      <div className="w-full flex-[2] bg-white/5 p-5 rounded-xl"></div>
+      <div className="w-full flex-[2] grid sm:grid-cols-2 grid-cols-1 bg-white/5 p-3 md:gap-2 gap-5 rounded-xl">
+        <div className="border-2 p-10 rounded-xl  flex flex-col gap-y-7 bg-black/30 border-white/5">
+          <div className="flex items-center gap-x-5">
+            <div className="border-t-2 border-b-2 border-purple-600 rounded-full p-2">
+              <VerticalAlignTopOutlined className="!text-5xl border-t border-b p-2 text-purple-700 border-purple-600 rounded-full" />
+            </div>
+            <span className="text-3xl font-semibold">Market Insight</span>
+          </div>
+          <p className="text-white/70 text-2xl font-medium normal-case">
+            Stay ahead of market trends with our expert Market Analysis. We provide in-depth insights into real estate market conditions
+          </p>
+        </div>
+
+        <div className="border-2 p-10 rounded-xl  flex flex-col gap-y-7 bg-black/30 border-white/5">
+          <div className="flex items-center gap-x-5">
+            <div className="border-t-2 border-b-2 border-purple-600 rounded-full p-2">
+              <VerticalAlignTopOutlined className="!text-5xl border-t border-b p-2 text-purple-700 border-purple-600 rounded-full" />
+            </div>
+            <span className="text-3xl font-semibold">ROI Assessment</span>
+          </div>
+          <p className="text-white/70 text-2xl font-medium normal-case">
+            Make investment decisions with confidence. Our ROI Assessment services evaluate the potential returns on your investments{" "}
+          </p>
+        </div>
+
+        <div className="border-2 p-10 rounded-xl  flex flex-col gap-y-7 bg-black/30 border-white/5">
+          <div className="flex items-center gap-x-5">
+            <div className="border-t-2 border-b-2 border-purple-600 rounded-full p-2">
+              <VerticalAlignTopOutlined className="!text-5xl border-t border-b p-2 text-purple-700 border-purple-600 rounded-full" />
+            </div>
+            <span className="text-3xl font-semibold">Market Insight</span>
+          </div>
+          <p className="text-white/70 text-2xl font-medium normal-case">
+            Stay ahead of market trends with our expert Market Analysis. We provide in-depth insights into real estate market conditions
+          </p>
+        </div>
+
+        <div className="border-2 p-10 rounded-xl  flex flex-col gap-y-7 bg-black/30 border-white/5">
+          <div className="flex items-center gap-x-5">
+            <div className="border-t-2 border-b-2 border-purple-600 rounded-full p-2">
+              <VerticalAlignTopOutlined className="!text-5xl border-t border-b p-2 text-purple-700 border-purple-600 rounded-full" />
+            </div>
+            <span className="text-3xl font-semibold">Market Insight</span>
+          </div>
+          <p className="text-white/70 text-2xl font-medium normal-case">
+            Stay ahead of market trends with our expert Market Analysis. We provide in-depth insights into real estate market conditions
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
