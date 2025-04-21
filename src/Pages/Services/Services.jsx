@@ -7,7 +7,11 @@ import Investment from "./sections/Investment";
 const Services = () => {
   return (
     <div className="overflow-x-hidden">
-      <Servicehero />
+      <Servicehero
+        description="  Welcome to Estatien, where your real estate aspirations meet expert guidance. Explore our comprehensive range of services, each designed to cater to
+          your unique needs and dreams."
+        title="Elevate Your Real Estate Experience"
+      />
       <PropertyValue />
       <PropertyManagement />
       <Investment />
