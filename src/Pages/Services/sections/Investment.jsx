@@ -4,8 +4,8 @@ import { VerticalAlignTopOutlined } from "@mui/icons-material";
 
 const Investment = () => {
   return (
-    <div className="w-full h-full section flex justify-between gap-x-16 gap-y-7">
-      <div className="flex flex-col gap-7 w-full flex-1">
+    <div className="w-full h-full section flex flex-wrap md:flex-nowrap justify-between gap-x-16 gap-y-7">
+      <div className="flex flex-col gap-7 w-full md:flex-1">
         <SectionIntro
           hideButton={true}
           title="Smart Investments, Informed Decisions"
@@ -23,7 +23,7 @@ const Investment = () => {
         </div>
       </div>
 
-      <div className="w-full flex-[2] grid sm:grid-cols-2 grid-cols-1 bg-white/5 p-3 md:gap-2 gap-5 rounded-xl">
+      <div className="w-full md:flex-[2] grid sm:grid-cols-2 grid-cols-1 bg-white/5 p-3 md:gap-2 gap-5 rounded-xl">
         <div className="border-2 p-10 rounded-xl  flex flex-col gap-y-7 bg-black/30 border-white/5">
           <div className="flex items-center gap-x-5">
             <div className="border-t-2 border-b-2 border-purple-600 rounded-full p-2">
