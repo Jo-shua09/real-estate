@@ -1,23 +1,18 @@
 import React from "react";
 import SectionIntro from "../../../Components/SectionIntro";
 import { ControlPointSharp, VerticalAlignTopOutlined } from "@mui/icons-material";
-import { Button2 } from "../../../Components/general/Button";
-import { Button } from "@mui/material";
 
-const PropertyValue = () => {
+const PropertyValue = ({ title, description,icon_one }) => {
   return (
     <div className="w-full h-full section">
-      <SectionIntro
-        hideButton={true}
-        title="unlock property value"
-        description="Selling your property should be a rewarding experience, and at Estatein, we make sure it is. Our Property Selling Service is designed to maximize the value of your property, ensuring you get the best deal possible. Explore the categories below to see how we can help you at every step of your selling journey"
-      />
+      <SectionIntro hideButton={true} title={title} description={description} />
+
       <div className="w-full flex items-center flex-col gap-5 mt-16">
         <div className="w-full grid lg:grid-cols-3 md:grid-cols-2  grid-cols-1 gap-5">
           <div className="border-2 p-10 rounded-xl  flex flex-col gap-y-7 border-white/5">
             <div className="flex items-center gap-x-5">
               <div className="border-t-2 border-b-2 border-purple-600 rounded-full p-2">
-                <VerticalAlignTopOutlined className="!text-5xl border-t border-b p-2  text-purple-700 border-purple-600 rounded-full" />
+                <{icon_one} className="!text-5xl border-t border-b p-2  text-purple-700 border-purple-600 rounded-full" />
               </div>
               <span className="text-3xl font-semibold">valuation mastery</span>
             </div>
