@@ -2,11 +2,14 @@ import React from "react";
 import SectionIntro from "../../../Components/SectionIntro";
 import { ControlPointSharp, VerticalAlignTopOutlined } from "@mui/icons-material";
 
-const PropertyValue = ({ title, description }) => {
+const PropertyValue = () => {
   return (
     <div className="w-full h-full section">
-      <SectionIntro hideButton={true} title={title} description={description} />
-
+      <SectionIntro
+        hideButton={true}
+        title="unlock property value"
+        description="Selling your property should be a rewarding experience, and at Estatein, we make sure it is. Our Property Selling Service is designed to maximize the value of your property, ensuring you get the best deal possible. Explore the categories below to see how we can help you at every step of your selling journey"
+      />
       <div className="w-full flex items-center flex-col gap-5 mt-16">
         <div className="w-full grid lg:grid-cols-3 md:grid-cols-2  grid-cols-1 gap-5">
           <div className="border-2 p-10 rounded-xl  flex flex-col gap-y-7 border-white/5">
