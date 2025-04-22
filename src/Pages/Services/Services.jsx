@@ -1,6 +1,6 @@
 import React from "react";
 import Servicehero from "./sections/Servicehero";
-import PropertyValue from "./sections/propertyValue";
+import PropertyValue from "./sections/PropertyValue";
 import PropertyManagement from "./sections/PropertyManagement";
 import Investment from "./sections/Investment";
 
