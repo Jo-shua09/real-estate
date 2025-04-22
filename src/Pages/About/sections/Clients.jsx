@@ -17,7 +17,7 @@ const Clients = () => {
         title=" our value clients"
         hideButton={true}
         disableAt={2}
-        description="At Estatein, we have had the privilege of working with a diverse range of clients across various industries. Here are some of the clients we've had the pleasure of serving"
+        description="At Estantien, we have had the privilege of working with a diverse range of clients across various industries. Here are some of the clients we've had the pleasure of serving"
         breakpoints={{
           400: { slidesPerView: 1 },
           768: { slidesPerView: 2 },

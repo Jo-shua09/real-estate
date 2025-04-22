@@ -8,7 +8,7 @@ const PropertyManagement = () => {
       <SectionIntro
         hideButton={true}
         title="Effortless Property Management"
-        description="Owning a property should be a pleasure, not a hassle. Estatein's Property Management Service takes the stress out of property ownership, offering comprehensive solutions tailored to your needs. Explore the categories below to see how we can make property management effortless for you"
+        description="Owning a property should be a pleasure, not a hassle. Estantien's Property Management Service takes the stress out of property ownership, offering comprehensive solutions tailored to your needs. Explore the categories below to see how we can make property management effortless for you"
       />
       <div className="w-full flex items-center flex-col gap-5 mt-16">
         <div className="w-full grid lg:grid-cols-3 md:grid-cols-2  grid-cols-1 gap-5">

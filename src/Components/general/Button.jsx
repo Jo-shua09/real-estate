@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Button = ({ name, linkPath }) => {
   return (
     <Link to={linkPath}>
-      <button className="bg-purple-600 hover:scale-95 rounded-xl text-2xl font-semibold capitalize flex items-center justify-center py-5 px-7 hover:bg-purple-900>">
+      <button className="bg-purple-600 hover:scale-95 rounded-xl text-2xl font-semibold capitalize flex items-center justify-center py-5 px-7 hover:bg-purple-900">
         {name}
       </button>
     </Link>

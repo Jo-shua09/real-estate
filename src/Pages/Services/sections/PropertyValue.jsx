@@ -8,7 +8,7 @@ const PropertyValue = () => {
       <SectionIntro
         hideButton={true}
         title="unlock property value"
-        description="Selling your property should be a rewarding experience, and at Estatein, we make sure it is. Our Property Selling Service is designed to maximize the value of your property, ensuring you get the best deal possible. Explore the categories below to see how we can help you at every step of your selling journey"
+        description="Selling your property should be a rewarding experience, and at Estantien, we make sure it is. Our Property Selling Service is designed to maximize the value of your property, ensuring you get the best deal possible. Explore the categories below to see how we can help you at every step of your selling journey"
       />
       <div className="w-full flex items-center flex-col gap-5 mt-16">
         <div className="w-full grid lg:grid-cols-3 md:grid-cols-2  grid-cols-1 gap-5">

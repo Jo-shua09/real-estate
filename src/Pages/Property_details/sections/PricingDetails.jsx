@@ -11,7 +11,7 @@ const PricingDetails = () => {
     <div className="w-full section">
       <SectionIntro
         title="comprehensive pricing details"
-        description="At Estatein, transparency is key. We want you to have a clear understanding of all costs associated with your property investment. Below, we break down the pricing for Seaside Serenity Villa to help you make an informed decision"
+        description="At Estantien, transparency is key. We want you to have a clear understanding of all costs associated with your property investment. Below, we break down the pricing for Seaside Serenity Villa to help you make an informed decision"
         hideButton={true}
       />
       <div className="w-full border-2 bg-white/5 border-white/5 my-16 p-5 rounded-xl flex items-center gap-x-5 ">

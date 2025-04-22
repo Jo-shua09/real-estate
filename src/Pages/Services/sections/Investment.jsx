@@ -9,7 +9,7 @@ const Investment = () => {
         <SectionIntro
           hideButton={true}
           title="Smart Investments, Informed Decisions"
-          description="Building a real estate portfolio requires a strategic approach. Estatein's Investment Advisory Service empowers you to make smart investments and informed decisions."
+          description="Building a real estate portfolio requires a strategic approach. Estantien's Investment Advisory Service empowers you to make smart investments and informed decisions."
         />
 
         <div className="bg-hero p-10 rounded-xl bg-white/5 flex flex-col gap-y-6">
