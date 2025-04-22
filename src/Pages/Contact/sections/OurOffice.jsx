@@ -21,7 +21,14 @@ const OurOffice = () => {
           </button>
         </div>
         <div className="flex flex-wrap md:flex-nowrap items-center justify-between gap-10 w-full">
-          <div className="md:flex-1 w-full rounded-xl border-2 border-white/5"></div>
+          <div className="md:flex-1 w-full rounded-xl border-2 border-white/5 p-10">
+            <h4 className="text-xl normal-case">Main Headquarters</h4>
+            <h3 className="text-4xl font-semibold">123 Estatein Plaza, City Center, Metropolis</h3>
+            <p className="text-2xl font-medium normal-case">
+              Our main headquarters serve as the heart of Estatein. Located in the bustling city center, this is where our core team of experts operates,
+              driving the excellence and innovation that define us.
+            </p>
+          </div>
         </div>
       </div>
     </div>
