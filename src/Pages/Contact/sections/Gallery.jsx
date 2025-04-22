@@ -21,7 +21,7 @@ const Gallery = () => {
         </div>
 
         <div className="flex items-center flex-wrap md:flex-nowrap mt-3 md:mt-7">
-          <div className="w-full py-10 md:flex-1">
+          <div className="w-full py-7 md:flex-1">
             <SectionIntro
               title="Explore Estatein's World"
               description="Step inside the world of Estatein, where professionalism meets warmth, and expertise meets passion. Our gallery offers a glimpse into our team and workspaces, inviting you to get to know us better."
