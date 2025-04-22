@@ -32,7 +32,7 @@ const OurOffice = () => {
               driving the excellence and innovation that define us.
             </p>
 
-            <div className="flex my-12 justify-between gap-x-2 gap-y-4 items-center w-full flex-wrap">
+            <div className="flex my-12 justify-between gap-x-3 gap-y-4 items-center w-full flex-wrap">
               <div className="flex-1 rounded-full px-2 py-2 flex gap-x-2 bg-white/5 border-white/5 border-2 items-center justify-center">
                 <Mail className="!text-5xl" />
                 <span className="text-xl text-nowrap font-semibold flex items-center">info@Estantien.com</span>
