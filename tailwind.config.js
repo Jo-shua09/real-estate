@@ -7,6 +7,9 @@ export default {
         header: "url('/src/assets/images/general/header.svg')",
         hero: "url('/src/assets/images/general/hero.svg')",
       },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      },
     },
   },
   plugins: [],

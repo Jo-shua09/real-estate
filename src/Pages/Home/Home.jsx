@@ -8,11 +8,21 @@ import HeroBanner from "../../Components/HeroBanner";
 const Home = () => {
   return (
     <div className="overflow-x-hidden">
-      <Hero />
-      <HeroBanner />
-      <Featured />
-      <Testimonials />
-      <FAQ />
+      <div data-aos="fade-down">
+        <Hero />
+      </div>
+      <div data-aos="fade-up">
+        <HeroBanner />
+      </div>
+      <div data-aos="fade-right">
+        <Featured />
+      </div>
+      <div data-aos="fade-left">
+        <Testimonials />
+      </div>
+      <div data-aos="zoom-in">
+        <FAQ />
+      </div>
     </div>
   );
 };

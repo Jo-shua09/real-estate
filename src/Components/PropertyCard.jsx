@@ -19,29 +19,16 @@ const PropertyCard = ({ property }) => {
   };
 
   return (
-    <div className="border-2 border-white/5 rounded-xl p-6 w-full h-fit shadow-lg hover:shadow-xl transition-all">
+    <div data-aos="fade-up" data-aos-delay="100" className="border-2 border-white/5 rounded-xl p-6 w-full h-fit shadow-lg hover:shadow-xl transition-all">
       <div className="">
-        <img
-          src={property.image_url}
-          alt={property.property_name}
-          className="w-full h-[25rem] object-cover rounded-xl"
-        />
+        <img src={property.image_url} alt={property.property_name} className="w-full h-[25rem] object-cover rounded-xl" />
       </div>
 
       <div className="mt-4">
         <h3 className="text-3xl font-semibold">{property.property_name}</h3>
         <div className="my-3">
-          <p
-            className={`text-2xl normal-case text-white/70 overflow-hidden ${
-              !show ? "line-clamp-2" : ""
-            }`}
-          >
-            {property.description}
-          </p>
-          <span
-            onClick={handleShow}
-            className={`font-medium text-2xl text-white cursor-pointer underline hover:no-underline`}
-          >
+          <p className={`text-2xl normal-case text-white/70 overflow-hidden ${!show ? "line-clamp-2" : ""}`}>{property.description}</p>
+          <span onClick={handleShow} className={`font-medium text-2xl text-white cursor-pointer underline hover:no-underline`}>
             {show ? "show less" : "read more"}
           </span>
         </div>
@@ -49,30 +36,22 @@ const PropertyCard = ({ property }) => {
         <div className="flex justify-between gap-x-2 my-6 items-center w-full">
           <div className="flex-1 rounded-full px-2 py-2 flex gap-x-2 bg-white/5 border-white/5 border-2 items-center justify-center">
             <BedRounded className="!text-5xl" />
-            <span className="text-xl text-nowrap font-semibold flex items-center">
-              {property.bedrooms}-bedrooms
-            </span>
+            <span className="text-xl text-nowrap font-semibold flex items-center">{property.bedrooms}-bedrooms</span>
           </div>
           <div className="flex-1 rounded-full px-2 py-2 flex gap-x-2 bg-white/5 border-white/5 border-2 items-center justify-center">
             <Bathtub className="!text-5xl" />
-            <span className="text-xl text-nowrap font-semibold flex items-center">
-              {property.bathrooms}-bathrooms
-            </span>
+            <span className="text-xl text-nowrap font-semibold flex items-center">{property.bathrooms}-bathrooms</span>
           </div>
           <div className="flex-1 rounded-full px-2 py-2 flex gap-x-2 bg-white/5 border-white/5 border-2 items-center justify-center">
             <Villa className="!text-5xl" />
-            <span className="text-xl text-nowrap font-semibold flex items-center">
-              {property.property_type}
-            </span>
+            <span className="text-xl text-nowrap font-semibold flex items-center">{property.property_type}</span>
           </div>
         </div>
 
         <div className="flex justify-between items-center mt-10 w-full">
           <div className="flex flex-col gap-y-2">
             <span className="text-xl text-white/70">price</span>
-            <p className="text-3xl font-semibold">
-              ${property.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-            </p>
+            <p className="text-3xl font-semibold">${property.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
           </div>
           <div onClick={() => handlePropertyClick(property)}>
             <Button name="view property details" />
