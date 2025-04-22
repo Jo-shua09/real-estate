@@ -1,15 +1,20 @@
 import React from "react";
 import SectionIntro from "../../../Components/SectionIntro";
+import gallery1 from "/src/assets/Images/Contact/gallery1.jpg";
+import gallery2 from "/src/assets/Images/Contact/gallery2.jpg";
+import gallery3 from "/src/assets/Images/Contact/gallery3.jpg";
+import gallery4 from "/src/assets/Images/Contact/gallery4.jpg";
+import gallery5 from "/src/assets/Images/Contact/gallery5.jpg";
 
 const Gallery = () => {
   return (
     <div className="w-full section mt-10">
       <div className="bg-hero bg-white/5 p-10 rounded-xl">
         <div className="grid-cols-2 grid items-center justify-center gap-10">
-          <img src="" alt="gallery image" className="w-full h-full object-cover rounded-xl" />
-          <img src="" alt="gallery image" className="w-full h-full object-cover rounded-xl" />
-          <img src="" alt="gallery image" className="w-full h-full object-cover rounded-xl" />
-          <img src="" alt="gallery image" className="w-full h-full object-cover rounded-xl" />
+          <img src={gallery1} alt="gallery image" className="w-full h-full object-cover rounded-xl" />
+          <img src={gallery2} alt="gallery image" className="w-full h-full object-cover rounded-xl" />
+          <img src={gallery3} alt="gallery image" className="w-full h-full object-cover rounded-xl" />
+          <img src={gallery4} alt="gallery image" className="w-full h-full object-cover rounded-xl" />
         </div>
 
         <div className="flex items-center flex-wrap md:flex-nowrap">
@@ -21,7 +26,7 @@ const Gallery = () => {
             />
           </div>
           <div className="md:flex-1 w-full">
-            <img src="" alt="gallery image" className="w-full h-full object-cover rounded-xl" />
+            <img src={gallery5} alt="gallery image" className="w-full h-full object-cover rounded-xl" />
           </div>
         </div>
       </div>
