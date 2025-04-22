@@ -6,7 +6,7 @@ import Gallery from "./sections/Gallery";
 
 const Contact = () => {
   return (
-    <div className="">
+    <div className="overflow-x-hidden">
       <ContactHero />
       <Connect />
       <OurOffice />
