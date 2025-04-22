@@ -10,7 +10,7 @@ const OurOffice = () => {
         hideButton={true}
       />
 
-      <div className="w-full flex flex-col gap-5">
+      <div className="w-full flex flex-col gap-5 mt-20">
         <div className="flex items-center gap-5 w-fit p-3 rounded-xl">
           <button className="bg-white/10 rounded-xl py-4 px-7 text-2xl font-semibold border-2 border-white/5">all</button>
           <button className="bg-white/10 rounded-xl py-4 px-7 text-2xl font-semibold border-2 border-white/5">regional</button>
