@@ -13,7 +13,10 @@ const Gallery = () => {
         <div className="grid-cols-2 grid items-center justify-center gap-10">
           <img src={gallery1} alt="gallery image" className="w-full h-full object-cover rounded-xl" />
           <img src={gallery2} alt="gallery image" className="w-full h-full object-cover rounded-xl" />
-          <img src={gallery3} alt="gallery image" className="w-full h-full object-cover rounded-xl" />
+          <div className="flex items-center gap-x-3 w-full">
+            <img src={gallery3} alt="gallery image" className="w-full h-full object-cover rounded-xl" />
+            <img src={gallery2} alt="gallery image" className="w-full h-full object-cover rounded-xl" />
+          </div>
           <img src={gallery4} alt="gallery image" className="w-full h-full object-cover rounded-xl" />
         </div>
 
