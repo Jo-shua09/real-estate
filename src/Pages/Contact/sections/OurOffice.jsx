@@ -11,12 +11,18 @@ const OurOffice = () => {
       />
 
       <div className="w-full flex flex-col gap-5 mt-20">
-        <div className="flex items-center gap-5 w-fit p-3 rounded-xl">
-          <button className="bg-white/10 rounded-xl py-4 px-7 text-2xl font-semibold border-2 border-white/5">all</button>
-          <button className="bg-white/10 rounded-xl py-4 px-7 text-2xl font-semibold border-2 border-white/5">regional</button>
-          <button className="bg-white/10 rounded-xl py-4 px-7 text-2xl font-semibold border-2 border-white/5">international</button>
+        <div className="flex items-center gap-3 w-fit p-2 rounded-xl bg-white/5">
+          <button className="bg-white/5 rounded-xl capitalize md:py-3  hover:scale-95 py-4 px-7 text-2xl font-semibold border-2 border-white/5">all</button>
+          <button className="bg-white/5 rounded-xl capitalize md:py-3  hover:scale-95 py-4 px-7 text-2xl font-semibold border-2 border-white/5">
+            regional
+          </button>
+          <button className="bg-white/5 rounded-xl capitalize md:py-3  hover:scale-95 py-4 px-7 text-2xl font-semibold border-2 border-white/5">
+            international
+          </button>
         </div>
-        <div className=""></div>
+        <div className="flex flex-wrap md:flex-nowrap items-center justify-between gap-10 w-full">
+          <div className="md:flex-1 w-full rounded-xl border-2 border-white/5"></div>
+        </div>
       </div>
     </div>
   );
