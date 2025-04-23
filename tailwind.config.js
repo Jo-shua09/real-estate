@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        header: "url('/src/assets/images/general/header.svg')",
-        hero: "url('/src/assets/images/general/hero.svg')",
+        header: "url('/src/assets/Images/General/header.svg')",
+        hero: "url('/src/assets/Images/General/hero.svg')",
       },
       animation: {
-        'spin-slow': 'spin 3s linear infinite',
+        "spin-slow": "spin 3s linear infinite",
       },
     },
   },
