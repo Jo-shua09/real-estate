@@ -32,13 +32,8 @@ const Testimonials = () => {
         768: { slidesPerView: 3 },
         1024: { slidesPerView: 4 },
       }}
-      renderSlide={(testimonial, index) => (
-        <div
-          key={index}
-          data-aos="zoom-in"
-          data-aos-delay={index * 100}
-          className="border-2 py-10 px-8 border-white/5 rounded-xl w-full p-6 h-[25rem] flex flex-col gap-y-7"
-        >
+      renderSlide={(testimonial) => (
+        <div className="border-2 py-10 px-8 border-white/5 rounded-xl w-full p-6 h-[25rem] flex flex-col gap-y-7">
           <div className="flex items-center gap-x-1">
             {[...Array(5)].map((_, index) => (
               <Star

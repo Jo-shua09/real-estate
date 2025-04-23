@@ -1,6 +1,6 @@
 import React from "react";
 import SectionIntro from "../../../Components/SectionIntro";
-import { ControlPointSharp, VerticalAlignTopOutlined } from "@mui/icons-material";
+import { ControlPointSharp, VerticalAlignTopOutlined, Assessment, Campaign, Gavel, TaskAlt } from "@mui/icons-material";
 
 const PropertyValue = () => {
   return (
@@ -15,7 +15,7 @@ const PropertyValue = () => {
           <div className="border-2 p-10 rounded-xl  flex flex-col gap-y-7 border-white/5">
             <div className="flex items-center gap-x-5">
               <div className="border-t-2 border-b-2 border-purple-600 rounded-full p-2">
-                <VerticalAlignTopOutlined className="!text-5xl border-t border-b p-2  text-purple-700 border-purple-600 rounded-full" />
+                <Assessment className="!text-5xl border-t border-b p-2  text-purple-700 border-purple-600 rounded-full" />
               </div>
               <span className="text-3xl font-semibold">valuation mastery</span>
             </div>
@@ -25,7 +25,7 @@ const PropertyValue = () => {
           <div className="border-2 p-10 rounded-xl  flex flex-col gap-y-7 border-white/5">
             <div className="flex items-center gap-x-5">
               <div className="border-t-2 border-b-2 border-purple-600 rounded-full p-2">
-                <VerticalAlignTopOutlined className="!text-5xl border-t border-b p-2  text-purple-700 border-purple-600 rounded-full" />
+                <Campaign className="!text-5xl border-t border-b p-2  text-purple-700 border-purple-600 rounded-full" />
               </div>
               <span className="text-3xl font-semibold">strategy marketing</span>
             </div>
@@ -37,7 +37,7 @@ const PropertyValue = () => {
           <div className="border-2 p-10 rounded-xl  flex flex-col gap-y-7 border-white/5">
             <div className="flex items-center gap-x-5">
               <div className="border-t-2 border-b-2 border-purple-600 rounded-full p-2">
-                <ControlPointSharp className="!text-5xl border-t border-b p-2  text-purple-700 border-purple-600 rounded-full" />
+                <Gavel className="!text-5xl border-t border-b p-2  text-purple-700 border-purple-600 rounded-full" />
               </div>
               <span className="text-3xl font-semibold">negotiation wizardry</span>
             </div>
@@ -51,7 +51,7 @@ const PropertyValue = () => {
           <div className="border-2 p-10 rounded-xl w-full h-full md:flex-1 flex flex-col gap-y-7 border-white/5">
             <div className="flex items-center gap-x-5">
               <div className="border-t-2 border-b-2 border-purple-600 rounded-full p-2">
-                <VerticalAlignTopOutlined className="!text-5xl border-t border-b p-2  text-purple-700 border-purple-600 rounded-full" />
+                <TaskAlt className="!text-5xl border-t border-b p-2  text-purple-700 border-purple-600 rounded-full" />
               </div>
               <span className="text-3xl font-semibold">closing success</span>
             </div>

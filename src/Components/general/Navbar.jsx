@@ -28,7 +28,7 @@ const Navbar = () => {
   }, [open]);
 
   return (
-    <div className="w-full h-full section-page border-b border-white/5 overflow-hidden">
+    <div className="w-full h-full section-page border-b-2 border-white/5 overflow-x-hidden">
       <div className="flex items-center justify-between w-full md:flex-nowrap flex-wrap gap-y-5">
         <div className="md:w-full w-fit">
           <Link to="/" className="flex items-center gap-x-2">
@@ -94,8 +94,8 @@ const Navbar = () => {
 
       {/* MOBILE MENU */}
       <div
-        className={`!overflow-hidden md:hidden absolute top-0 left-0 px-5 ease-in-out w-full !h-screen bg-white/5 shadow-[1px_1px_5px_rgba(0,0,0,0.5)] backdrop-blur-2xl backdrop-brightness-90 z-[999999] ${
-          open ? "block opacity-100" : "opacity-0 hidden"
+        className={`!overflow-hidden md:hidden absolute top-0 left-0 px-5 ease-in-out w-full bg-white/5 shadow-[1px_1px_5px_rgba(0,0,0,0.5)] backdrop-blur-2xl backdrop-brightness-90 z-[999999] ${
+          open ? "!h-screen" : "!h-0"
         }`}
       >
         <div className="flex items-center justify-between w-full py-5">
@@ -110,14 +110,14 @@ const Navbar = () => {
 
         <ul className="flex flex-col gap-y-5 w-full h-full mt-10 text-3xl rounded-xl font-semibold">
           <Link to="/">
-            <li className={`list-none rounded-xl py-6 px-7 hover:bg-black/20 border-white/5 ${location.pathname === "/" ? "bg-black/20 border-2" : ""}`}>
+            <li className={`list-none rounded-xl py-6 px-7 hover:bg-black/70 border-white/5 ${location.pathname === "/" ? "bg-black/70 border-2" : ""}`}>
               home
             </li>
           </Link>
           <Link to="/about">
             <li
-              className={`list-none rounded-xl py-6 px-7 text-nowrap hover:bg-black/20 border-white/5 transition-all duration-200 ${
-                location.pathname === "/about" ? "bg-black/20 border-2" : ""
+              className={`list-none rounded-xl py-6 px-7 text-nowrap hover:bg-black/70 border-white/5 transition-all duration-200 ${
+                location.pathname === "/about" ? "bg-black/70 border-2" : ""
               }`}
             >
               about us
@@ -125,8 +125,8 @@ const Navbar = () => {
           </Link>
           <Link to="/properties">
             <li
-              className={`list-none rounded-xl py-6 px-7 hover:bg-black/20 border-white/5 transition-all duration-200 ${
-                location.pathname === "/properties" ? "bg-black/20 border-2" : ""
+              className={`list-none rounded-xl py-6 px-7 hover:bg-black/70 border-white/5 transition-all duration-200 ${
+                location.pathname === "/properties" ? "bg-black/70 border-2" : ""
               }`}
             >
               properties
@@ -134,8 +134,8 @@ const Navbar = () => {
           </Link>
           <Link to="/services">
             <li
-              className={`list-none rounded-xl py-6 px-7 hover:bg-black/20 border-white/5 transition-all duration-200 ${
-                location.pathname === "/services" ? "bg-black/20 border-2" : ""
+              className={`list-none rounded-xl py-6 px-7 hover:bg-black/70 border-white/5 transition-all duration-200 ${
+                location.pathname === "/services" ? "bg-black/70 border-2" : ""
               }`}
             >
               services
@@ -143,8 +143,8 @@ const Navbar = () => {
           </Link>
           <Link to="/contact">
             <li
-              className={`list-none rounded-xl py-6 px-7 hover:bg-black/20 border-white/5 transition-all duration-200 ${
-                location.pathname === "/contact" ? "bg-black/20 border-2" : ""
+              className={`list-none rounded-xl py-6 px-7 hover:bg-black/70 border-white/5 transition-all duration-200 ${
+                location.pathname === "/contact" ? "bg-black/70 border-2" : ""
               }`}
             >
               contact

@@ -5,7 +5,7 @@ import Abstract from "/src/assets/Images/General/Abstract.png";
 const SectionIntro = ({ title, description, name, linkPath, hideButton, hide }) => {
   return (
     <div>
-      <div className="w-full">
+      <div data-aos="fade-down" className="w-full">
         {!hide && <img src={Abstract} alt="abstract image" className="w-fit h-fit object-cover" />}
         <div className="flex items-end justify-between md:gap-x-96 my-5 w-full">
           <div className="flex-[2] flex flex-col gap-y-5">

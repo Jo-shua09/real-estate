@@ -20,7 +20,7 @@ body {
   font-weight: 400;
   background-color: #000000e9;
   color: white;
-  overflow: hidden;
+  overflow-x: hidden; /* Change from overflow: hidden to overflow-x: hidden */
 }
 
 html {
