@@ -44,9 +44,6 @@ const Properties = () => {
     });
   };
 
-  console.log(results.length);
-  console.log(allProperties.length);
-  console.log(currentPage);
   return (
     <div className="w-full h-full">
       <div className="">
@@ -59,7 +56,6 @@ const Properties = () => {
             />
             <div className="w-full flex justify-center mt-10 flex-col gap-y-5">
               <h3 className="text-3xl font-semibold text-center">more properties coming soon!</h3>
-              {/* <p className="text-xl font-semibold italic normal-case text-center">"click to view available properties"</p> */}
             </div>
           </div>
         ) : (
