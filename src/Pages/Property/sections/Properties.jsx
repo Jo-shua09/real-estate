@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { useEffect, useState } from "react";
 import SwiperSlideLayout from "../../../Components/SwiperSlideLayout";
 import mockData from "../../../assets/mock_data.json";
@@ -9,10 +9,23 @@ import { Button } from "../../../Components/general/Button";
 const Properties = () => {
   const [results, setResults] = useState([]);
   const [expandedDescriptions, setExpandedDescriptions] = useState({});
+  const [currentPage, setCurrentPage] = useState(1);
+  const propertiesPerPage = 9;
+
+  // Memoize the full properties list
+  const allProperties = useMemo(() => mockData.properties || [], []);
 
   useEffect(() => {
-    setResults(mockData.properties || []);
-  }, []);
+    // Calculate the properties to show based on current page
+    const indexOfLastProperty = currentPage * propertiesPerPage;
+    const indexOfFirstProperty = indexOfLastProperty - propertiesPerPage;
+    setResults(allProperties.slice(indexOfFirstProperty, indexOfLastProperty));
+  }, [currentPage, allProperties]);
+
+  // Load more properties when reaching the end
+  const loadMore = () => {
+    setCurrentPage((prev) => prev + 1);
+  };
 
   const toggleDescription = (propertyId) => {
     setExpandedDescriptions((prev) => ({
@@ -29,7 +42,6 @@ const Properties = () => {
       },
     });
   };
-
   return (
     <div className="w-full h-full">
       <div className="">
@@ -96,6 +108,13 @@ const Properties = () => {
             </div>
           )}
         />
+        {results.length < allProperties.length && (
+          <div className="w-full flex justify-center mt-10">
+            <button onClick={loadMore} className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-xl text-xl">
+              Load More Properties
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
