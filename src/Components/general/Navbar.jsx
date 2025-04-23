@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full h-full section-page border-b-2 border-white/5 overflow-x-hidden">
-      <div className="flex items-center justify-between w-full md:flex-nowrap flex-wrap gap-y-5">
+      <div className="flex items-center justify-between w-full md:flex-nowrap flex-wrap gap-y-5" data-aos="fade-down" data-aos-duration="1000">
         <div className="md:w-full w-fit">
           <Link to="/" className="flex items-center gap-x-2">
             <img src="/Logo.svg" alt="Logo image" className="object-cover md:w-10 md:h-10 w-14 h-14" />
@@ -37,7 +37,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="w-full md:block hidden">
+        <div className="w-full md:block hidden" data-aos="fade-down" data-aos-duration="1200">
           <ul className="flex items-center justify-between place-content-center text-2xl font-medium">
             <Link to="/">
               <li className={`list-none rounded-lg py-4 px-7 hover:bg-black/20 border-white/5 ${location.pathname === "/" ? "bg-black/20 border-2" : ""}`}>
@@ -74,7 +74,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="w-full place-content-end md:flex hidden">
+        <div className="w-full place-content-end md:flex hidden" data-aos="fade-down" data-aos-duration="1400">
           <Link to="/contact">
             <button
               className={`rounded-lg py-4 px-7 bg-black/20 shadow-xl hover:bg-purple-600 delay-100 text-2xl border-white/5 transition-all duration-200 ${
@@ -87,7 +87,7 @@ const Navbar = () => {
         </div>
 
         {/* MOBILE MENU HANDLER */}
-        <div className="md:hidden w-fit">
+        <div className="md:hidden w-fit" data-aos="fade-left" data-aos-duration="1000">
           <Menu onClick={handleMenu} className="transition-all duration-200 delay-200 !text-6xl cursor-pointer" />
         </div>
       </div>
@@ -98,7 +98,7 @@ const Navbar = () => {
           open ? "!h-screen" : "!h-0"
         }`}
       >
-        <div className="flex items-center justify-between w-full py-5">
+        <div className="flex items-center justify-between w-full py-5" data-aos="fade-down" data-aos-duration="800">
           <div className="md:w-full w-fit">
             <Link to="/" className="flex items-center gap-x-2">
               <img src="/Logo.svg" alt="Logo image" className="object-cover md:w-10 md:h-10 w-14 h-14" />
@@ -108,7 +108,7 @@ const Navbar = () => {
           <Close onClick={handleMenu} className="transition-all duration-200 delay-200 !text-6xl cursor-pointer" />
         </div>
 
-        <ul className="flex flex-col gap-y-5 w-full h-full mt-10 text-3xl rounded-xl font-semibold">
+        <ul className="flex flex-col gap-y-5 w-full h-full mt-10 text-3xl rounded-xl font-semibold" data-aos="fade-up" data-aos-duration="1000">
           <Link to="/">
             <li className={`list-none rounded-xl py-6 px-7 hover:bg-black/70 border-white/5 ${location.pathname === "/" ? "bg-black/70 border-2" : ""}`}>
               home
