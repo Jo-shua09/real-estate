@@ -33,7 +33,7 @@ const Home = () => {
   return (
     <>
       {isLoading && <Loader />}
-      <div className={`overflow-x-hidden ${isLoading ? "hidden" : ""}`}>
+      <div className={`overflow-x-hidden ${isLoading ? "opacity-0" : ""}`}>
         <div data-aos="fade-down">
           <Hero />
         </div>

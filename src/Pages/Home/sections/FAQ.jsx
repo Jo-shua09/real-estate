@@ -25,29 +25,15 @@ const FAQ = () => {
 
       <div className="w-full grid lg:grid-cols-2 grid-cols-1 gap-5 mt-16 items-center justify-between">
         {faqs.map((faq) => (
-          <div
-            key={faq.id}
-            className="border-2 border-white/5 rounded-xl overflow-hidden"
-          >
-            <button
-              className="w-full p-6 flex justify-between items-center bg-black/20 hover:bg-black/30 transition-all"
-              onClick={() => toggleFAQ(faq.id)}
-            >
-              <h3 className="text-2xl font-semibold text-left">
-                {faq.question}
-              </h3>
-              {activeIndex === faq.id ? (
-                <Remove className="!text-4xl" />
-              ) : (
-                <Add className="!text-4xl" />
-              )}
+          <div key={faq.id} className="border-2 border-white/5 rounded-xl overflow-hidden">
+            <button className="w-full p-6 flex justify-between items-center bg-black/20 hover:bg-black/30 transition-all" onClick={() => toggleFAQ(faq.id)}>
+              <h3 className="text-2xl font-semibold text-left">{faq.question}</h3>
+              {activeIndex === faq.id ? <Remove className="!text-4xl" /> : <Add className="!text-4xl" />}
             </button>
 
             {activeIndex === faq.id && (
               <div className="p-6 bg-black/10">
-                <p className="text-[1.35rem] normal-case text-white/70">
-                  {faq.answer}
-                </p>
+                <p className="text-[1.35rem] normal-case text-white/70">{faq.answer}</p>
               </div>
             )}
           </div>

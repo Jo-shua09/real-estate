@@ -20,13 +20,11 @@ body {
   font-weight: 400;
   background-color: #000000e9;
   color: white;
-  overflow-x: hidden; /* Change from overflow: hidden to overflow-x: hidden */
 }
 
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
-  overflow-x: hidden;
 }
 .scroll-bar html {
   scrollbar-width: 0.1rem;
