@@ -10,7 +10,7 @@ const Properties = () => {
   const [results, setResults] = useState([]);
   const [expandedDescriptions, setExpandedDescriptions] = useState({});
   const [currentPage, setCurrentPage] = useState(1);
-  const propertiesPerPage = 9;
+  const propertiesPerPage = 10;
 
   // Memoize the full properties list
   const allProperties = useMemo(() => mockData.properties || [], []);
@@ -42,6 +42,7 @@ const Properties = () => {
       },
     });
   };
+
   return (
     <div className="w-full h-full">
       <div className="">
@@ -108,9 +109,14 @@ const Properties = () => {
             </div>
           )}
         />
-        {results.length < allProperties.length && (
+
+        {results.length === allProperties.length ? (
           <div className="w-full flex justify-center mt-10">
-            <button onClick={loadMore} className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-xl text-xl">
+            <h3 className="text-3xl font-semibold text-center text-white/70">more properties coming soon!</h3>
+          </div>
+        ) : (
+          <div className="w-full flex justify-center mt-10">
+            <button onClick={loadMore} className="bg-purple-600 hover:scale-95 text-white font-bold py-4 px-6 rounded-lg text-2xl">
               Load More Properties
             </button>
           </div>
