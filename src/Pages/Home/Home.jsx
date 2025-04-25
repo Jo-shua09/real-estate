@@ -8,8 +8,6 @@ import { useState, useEffect } from "react";
 import Loader from "../../Components/Loader";
 
 const Home = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
   useEffect(() => {
     const handleLoad = () => {
       setIsLoading(false);
